@@ -1,21 +1,15 @@
 {
-  "date": "2026-11-23",
   "interface": "Desktop browser",
   "passed": [
-    "Catalog loads",
-    "Animation details open",
-    "Playback advances",
-    "Pause",
-    "Next frame updates frame label and slider",
-    "0.5x speed selection",
-    "Search matches animation names",
-    "Search empty state",
-    "Collection filtering",
-    "Historical/runtime filtering",
-    "Preview background switch"
+    "Current-only catalog: 62 sequences / 906 frames",
+    "Chinese purpose categories",
+    "Duration sorting",
+    "Retired SnowGarden search returns no results",
+    "Special activation uses 9 frames / 0.66 seconds",
+    "All 9 filmstrip frames load",
+    "Final-frame selection updates scrubber"
   ],
   "notTested": [
-    "Physical mobile browser",
-    "Every animation played end-to-end"
+    "Physical mobile browser"
   ]
 }

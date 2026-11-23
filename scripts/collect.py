@@ -8,10 +8,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--project', type=Path, default=OUT.parent)
 args = parser.parse_args()
 ROOT = args.project.resolve()
-ART = ROOT/'ArtSource'
 RES = ROOT/'BounceGarden/BounceGarden/Assets/Resources/Art'
 items, signatures, consumed = [], {}, set()
-audit = {'excluded': [], 'scanRoots': ['ArtSource', 'BounceGarden/BounceGarden/Assets/Resources/Art'], 'policy': 'Exclude platform mirrors, screenshots, recordings, static cosmetics and non-animation UI. Keep distinct historical artwork; deduplicate identical decoded frame sequences.'}
+audit = {'version': '0.4.0', 'campaignLevels': 45, 'scanRoots': ['BounceGarden/BounceGarden/Assets/Resources/Art'], 'policy': 'Explicit runtime readers only. Never scan ArtSource, historical frame folders, or unrelated metadata.'}
 for directory in ['assets/originals','assets/previews','metadata']:
     (OUT/directory).mkdir(parents=True, exist_ok=True)
 
@@ -21,7 +20,7 @@ def store(p):
     if not target.exists(): shutil.copyfile(p,target)
     return {'file': target.relative_to(OUT).as_posix(), 'source': p.relative_to(ROOT).as_posix(), 'sha256': digest}
 
-def add(name, group, frames, sources, fps=None, durations=None, status='历史素材', evidence='', note=''):
+def add(name, group, frames, sources, fps=None, durations=None, status='现用动画', evidence='', note=''):
     if len(frames)<2:return
     frames = [im.convert('RGBA') for im in frames]
     h = hashlib.sha256()
@@ -39,7 +38,7 @@ def add(name, group, frames, sources, fps=None, durations=None, status='历史�
     cols=min(8,len(frames)); rows=math.ceil(len(frames)/cols)
     sheet=Image.new('RGBA',(w*cols,hh*rows))
     for i,im in enumerate(frames): sheet.paste(im,((i%cols)*w+(w-im.width)//2,(i//cols)*hh+(hh-im.height)//2))
-    sheet.save(OUT/f'assets/previews/{uid}.webp',lossless=True,method=3)
+    if not (OUT/f'assets/previews/{uid}.webp').exists():sheet.save(OUT/f'assets/previews/{uid}.webp',lossless=True,method=3)
     thumb=frames[0].copy();thumb.thumbnail((240,240));thumb.save(OUT/f'assets/previews/{uid}-thumb.webp',lossless=True)
     originals=[store(p) for p in dict.fromkeys(sources)]
     timing='原始时长' if durations else '原始帧率' if fps else '预览帧率'
@@ -59,16 +58,16 @@ def runtime(p,name=None,cols=4,rows=4,indices=None,fps=None,durations=None,code=
 
 # Explicit runtime slicing rules, checked against the Unity readers.
 for folder,code,fps in [('SevenSpecialV80','SevenSpecialArt.cs',16/.76),('IngotSpecialFXV1','IngotSpecialFx.cs',16/.76),('VictoryFinaleV1','VictoryBombArt.cs',None)]:
-    for p in sorted((RES/folder).glob('*.png')):runtime(p,code=code,fps=fps)
-for p in sorted((RES/'FiveBakedV80').glob('ordinary-*.png')):runtime(p,code='SevenSpecialArt.BakedFrames',note='16 张原画帧；游戏可能按不同阶段选取播放。')
+    for p in sorted((RES/folder).glob('*.png')):runtime(p,code=code,fps=fps or 20)
+for p in sorted((RES/'FiveBakedV80').glob('ordinary-*.png')):runtime(p,fps=25,code='SevenSpecialArt.cs',note='16 张原画帧；游戏可能按不同阶段选取播放。')
 for p in sorted((RES/'FiveBakedV80').glob('*-five-colors.png')):
     for color in range(5):
-        # Unity repeats the five phases into a sixteen-frame sequence.
-        ids=[color+5*phase for phase in [0]*4+[1]*3+[2]*3+[3]*3+[4]*3]
-        runtime(p,p.stem+f' / 颜色 {color+1}',5,5,ids,code='SevenSpecialArt.BakedFrames',note='按游戏逻辑将五阶段映射为16帧；前7帧的独立方砖贴图未叠加。')
+        # SevenSpecialFx plays only frame indices 7 through 15.
+        ids=[color+5*phase for phase in [2]*3+[3]*3+[4]*3]
+        runtime(p,p.stem+f' / 颜色 {color+1}',5,5,ids,fps=9/.66,code='SevenSpecialArt.cs',note='只播放 SevenSpecialFx 实际使用的第7–15帧，共9帧／0.66秒；不展示已被方砖替换的旧待机阶段。')
 runtime(RES/'Jelly/blue_jelly_pop.png','蓝色果冻消除',fps=25,code='JellyBrickArt.cs')
 for folder,ds in [('VictoryCatV23',[300,100,100,180,80,80,80,120,100,80,80,80,100,100,140,200]),('FailureCatV26',[280,140,140,180,140,140,120,120,100,100,100,100,120,140,160,240])]:
-    runtime(RES/folder/'cat-atlas.png','胜利猫咪' if folder.startswith('Victory') else '失败猫咪',durations=ds,code=folder+' Animation.cs')
+    runtime(RES/folder/'cat-atlas.png','胜利猫咪' if folder.startswith('Victory') else '失败猫咪',durations=ds,code='VictoryCatAnimation.cs' if folder.startswith('Victory') else 'FailureCatAnimation.cs')
 d=json.loads((RES/'YarnV19/launcher_manifest.json').read_text(encoding='utf-8-sig'))
 runtime(RES/'YarnV19/cat_fixed_pivot_atlas.png','猫咪发射',durations=d['frame_durations_ms'],code='YarnArt.cs')
 for p in (RES/'StreakBoostersV62').glob('*.png'):
@@ -81,7 +80,7 @@ for folder,filename,bottom in [('YarnObstacleV3','animation-layout.json',True),(
     for clip in data['clips']:
         if len(clip['frames'])<2:continue
         # These are state alternatives rather than a temporal animation.
-        if clip['key'] in ['states','ingot']:continue
+        if clip['key'] in ['states','ingot','shimmer']:continue
         p=RES/folder/(clip['key']+'.png'); image=Image.open(p);sw=clip['sourceWidth'];sh=clip['sourceHeight']
         frames=[]
         for f in clip['frames']:
@@ -89,6 +88,7 @@ for folder,filename,bottom in [('YarnObstacleV3','animation-layout.json',True),(
             if bottom:y=sh-y-h
             frames.append(image.crop((round(x*image.width/sw),round(y*image.height/sh),round((x+w)*image.width/sw),round((y+h)*image.height/sh))))
         fps=25 if clip['key']=='yarn-unravel' else 16/.68 if 'layer-loss' in clip['key'] else 20 if folder=='FourthGroup' else 12 if clip['key']=='shimmer' else 24 if clip['key']=='ring' else None
+        if clip['key']=='cat':frames=frames[3:];fps=20
         add(clip['key'],folder,frames,[p],fps=fps,status='运行资源',evidence=layout.relative_to(ROOT).as_posix(),note='按项目裁切元数据读取；状态与连续动作合在同一图集时可逐帧检查。')
 # Packed victory effect rectangles are top-left pixels, not a uniform grid.
 layout=RES/'VictoryV23/atlases.json'
@@ -101,7 +101,7 @@ for key,es in groups.items():
     fs=[];ps=[]
     for _,e in sorted(es):
         p=RES/'VictoryV23'/(e['texture']+'.png');im=Image.open(p);x,y,w,h=e['rect'];fs.append(im.crop((x,y,x+w,y+h)));ps.append(p)
-    add(key,'VictoryV23',fs,ps,status='运行资源',evidence=layout.relative_to(ROOT).as_posix())
+    add(key,'VictoryV23',fs,ps,fps=8 if key=='halo' else 12,status='运行资源',evidence=layout.relative_to(ROOT).as_posix())
 
 # Current failure screen packed clips.
 layout=RES/'FailureV25/atlases.json'
@@ -113,70 +113,45 @@ for prefix in ['background','title']:
         p=RES/'FailureV25'/(e['texture']+'.png');im=Image.open(p)
         sw,sh=(2560,3840) if e['texture']=='background' else (2048,256)
         x,y,w,h=e['rect'];fs.append(im.crop((round(x*im.width/sw),round(y*im.height/sh),round((x+w)*im.width/sw),round((y+h)*im.height/sh))));ps.append(p)
-    add(prefix,'FailureV25',fs,ps,status='运行资源',evidence=layout.relative_to(ROOT).as_posix())
+    add(prefix,'FailureV25',fs,ps,fps=24,status='运行资源',evidence=layout.relative_to(ROOT).as_posix())
 
-# Historical registered yarn revisions have no exported PNG frames.
-for layout in sorted(ART.glob('YarnObstacle-v*/animation-layout.json')):
-    for clip in json.loads(layout.read_text(encoding='utf-8-sig'))['clips']:
-        if len(clip['frames'])<2:continue
-        p=layout.parent/(clip['key']+'.png')
-        if not p.exists():continue
-        image=Image.open(p);sw=clip['sourceWidth'];sh=clip['sourceHeight'];fs=[]
-        for f in clip['frames']:
-            x,y,w,h=[f[k] for k in ['x','y','w','h']];y=sh-y-h
-            fs.append(image.crop((round(x*image.width/sw),round(y*image.height/sh),round((x+w)*image.width/sw),round((y+h)*image.height/sh))))
-        add(clip['key'],layout.parent.name,fs,[p],evidence=layout.relative_to(ROOT).as_posix())
-p=ART/'LoadingPreview-v1/cat-walk-sheet.png'
-add('猫咪行走','LoadingPreview-v1',grid(p,4,2),[p],evidence='ArtSource/LoadingPreview-v1/build_preview.py')
-
-# Read explicit file-based sequences from all historical art manifests.
-def walk(obj, manifest, key='', parent=None):
-    if isinstance(obj,dict):
-        for k,v in obj.items():
-            if k in ['frames','frameFiles'] and isinstance(v,list) and len(v)>1:
-                files=[x if isinstance(x,str) else x.get('file','') if isinstance(x,dict) else '' for x in v]
-                if all(isinstance(x,str) and x.lower().endswith('.png') for x in files):
-                    paths=[manifest.parent/x for x in files]
-                    if all(p.is_file() for p in paths):
-                        # Mixed rows in a sheet are split by numbered filename below.
-                        stems={re.sub(r'[-_]\d+$','',p.stem) for p in paths}
-                        if len(stems)==1 and next(iter(stems)) not in ['loot_icons','power_cube_pairs']:
-                            ds=obj.get('durationsMs') or obj.get('preview_durations_ms')
-                            if isinstance(v[0],dict) and all('duration_ms' in x for x in v):ds=[x['duration_ms'] for x in v]
-                            add(obj.get('name') or obj.get('key') or next(iter(stems))+' '+key,manifest.relative_to(ART).parts[0],[Image.open(p).copy() for p in paths],paths,obj.get('fps') or obj.get('recommended_fps'),ds,evidence=manifest.relative_to(ROOT).as_posix())
-                            consumed.update(p.resolve() for p in paths)
-            walk(v,manifest,key+'/'+k,obj)
-    elif isinstance(obj,list):
-        for i,x in enumerate(obj):walk(x,manifest,key+'/'+str(i),parent)
-
-for manifest in sorted(ART.rglob('*.json')):
-    if not any(s in manifest.name for s in ['manifest','layout']):continue
-    try:walk(json.loads(manifest.read_text(encoding='utf-8-sig')),manifest)
-    except (ValueError,KeyError,TypeError):continue
-
-# Numbered exported frame folders cover older art pipelines with no manifest.
-groups=collections.defaultdict(list)
-for p in sorted(ART.rglob('*.png')):
-    rel=p.relative_to(ART);parts=[s.lower() for s in rel.parts]
-    if p.resolve() in consumed:continue
-    if any(s in '/'.join(parts) for s in ['evidence','introductions','inputframes','cosmetics','catcosmetics','source/']):continue
-    if not any(s in ['frames','assets'] for s in parts[:-1]):continue
-    m=re.match(r'(.+?)[_-](\d+)$',p.stem)
-    if m and m[1] not in ['loot_icons','power_cube_pairs']:groups[(p.parent,m[1])].append((int(m[2]),p))
-for (directory,name),entries in groups.items():
-    if len(entries)<2:continue
-    paths=[p for _,p in sorted(entries)]
-    # Skip collections of distinct icons, levels and rendered rigs.
-    if len({Image.open(p).size for p in paths})>1 and 'frame' not in directory.name.lower():continue
-    add(name,directory.relative_to(ART).parts[0],[Image.open(p).copy() for p in paths],paths,note='按文件编号排序；没有可靠时长元数据时使用12fps预览。')
-
-# Copy small metadata used to trace the extraction; source artwork stays byte-exact.
-for p in [*ART.rglob('*manifest.json'),*ART.rglob('*layout.json'),*RES.rglob('*layout*.json')]:
-    rel=p.relative_to(ROOT);target=OUT/'metadata'/rel
+# Only metadata consumed by the retained animation readers belongs in this library.
+for rel in ['YarnV19/launcher_manifest.json','YarnObstacleV3/animation-layout.json','ThirdGroup/layout.json','FourthGroup/layout.json','VictoryV23/atlases.json','FailureV25/atlases.json']:
+    p=RES/rel;target=OUT/'metadata'/p.relative_to(ROOT)
     target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
-priority={'VictoryCatV23':0,'FailureCatV26':1,'YarnV19':2,'Jelly':3,'SevenSpecialV80':4,'YarnObstacleV3':5,'ThirdGroup':6,'IngotSpecialFXV1':7}
-items.sort(key=lambda a:(a['status']!='运行资源',priority.get(a['group'],20),a['group'],a['name']))
-catalog={'title':'喵弹拆箱 · 序列帧动画库','animations':items,'stats':{'animations':len(items),'frames':sum(a['count'] for a in items),'runtime':sum(a['status']=='运行资源' for a in items),'groups':len(set(a['group'] for a in items))},'audit':audit}
+groups={'VictoryCatV23':'猫咪角色','FailureCatV26':'猫咪角色','YarnV19':'猫咪角色','ThirdGroup':'招财猫与元宝','Jelly':'普通果冻','FiveBakedV80':'果冻与特殊砖','SevenSpecialV80':'特殊砖组合','IngotSpecialFXV1':'元宝技能','YarnObstacleV3':'毛线机关','StreakBoostersV62':'强化球','FourthGroup':'铜钱机关','VictoryV23':'通关与失败','VictoryFinaleV1':'通关与失败','FailureV25':'通关与失败'}
+labels={'combo-bands':'条带组合','combo-bomb':'双炸弹组合','combo-cross':'十字组合','combo-merge':'技能合并','flower-vortex':'五色花漩涡','yarn-layer-loss':'二级毛线脱层','yarn-layer-loss-l3':'三级毛线脱层','yarn-unravel':'毛线完全解开','cat':'招财猫挥爪','ring':'元宝光环','burst':'通关爆发','halo':'通关光晕','background':'失败云朵循环','single-burst':'单色结算爆炸','bomb-3-colors':'三色结算爆炸','bomb-4-colors':'四色结算爆炸','bomb-5-colors':'五色结算爆炸'}
+kind_names={'bomb':'炸弹','cross':'十字激光','flower':'五色花','horizontal':'横向激光','vertical':'纵向激光','ordinary':'普通果冻'}
+colors={'pink':'粉红','yellow':'明黄','mint':'薄荷绿','blue':'天蓝','lilac':'丁香紫'}
+for item in items:
+    family=item['group'];name=item['name'];item['family']=family;item['group']=groups[family]
+    if family=='FiveBakedV80':
+        kind=name.split('-')[0]
+        if kind=='ordinary':item['name']=colors[name.split('-')[1]]+'果冻消除'
+        else:item['name']=list(colors.values())[int(name.rsplit(' ',1)[1])-1]+kind_names[kind]+'施放'
+    elif family=='IngotSpecialFXV1':item['name']='元宝'+{'bomb':'爆炸','flower':'五色花','laser':'激光','merge':'合并'}[name]
+    elif family=='StreakBoostersV62':
+        kind=name.split(' / ')[0];item['name']={'bomb':'炸弹球','pierce':'穿透球','super':'超级球'}[kind]+' / '+name.split(' / ')[1]
+    elif name=='burst' and family=='FourthGroup':item['name']='铜钱破碎'
+    else:item['name']=labels.get(name,name)
+    item['status']='现用动画';item['aliases']=[]
+    if family=='ThirdGroup' and name=='cat':item['note']='当前招财猫挥爪动作：源图第3–15帧，20fps；初始与蓄力状态不是独立动画。'
+priority={'猫咪角色':0,'普通果冻':1,'果冻与特殊砖':2,'特殊砖组合':3,'毛线机关':4,'招财猫与元宝':5,'元宝技能':6,'强化球':7,'铜钱机关':8,'通关与失败':9}
+items.sort(key=lambda a:(priority[a['group']],a['name']))
+policy=json.loads((OUT/'runtime-policy.json').read_text(encoding='utf-8'))
+assert {s['source'] for a in items for s in a['originals']}==set(policy['resourcePaths']),'Runtime resource allowlist changed; review before publishing.'
+catalog={'title':'喵弹拆箱 · 现用动画库','animations':items,'stats':{'animations':len(items),'frames':sum(a['count'] for a in items),'runtime':len(items),'groups':len(set(a['group'] for a in items))},'audit':audit}
 (OUT/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
 (OUT/'catalog.js').write_text('window.ANIMATION_CATALOG='+json.dumps(catalog,ensure_ascii=False)+';',encoding='utf-8')
+used={a[k] for a in items for k in ['sheet','thumb']}|{s['file'] for a in items for s in a['originals']}
+for folder in ['assets/originals','assets/previews']:
+    base=(OUT/folder).resolve()
+    for p in base.iterdir():
+        if p.is_file() and p.relative_to(OUT).as_posix() not in used:
+            assert p.resolve().is_relative_to(base);p.unlink()
+metadata_roots={(OUT/'metadata'/RES.relative_to(ROOT)/rel).resolve() for rel in ['YarnV19/launcher_manifest.json','YarnObstacleV3/animation-layout.json','ThirdGroup/layout.json','FourthGroup/layout.json','VictoryV23/atlases.json','FailureV25/atlases.json']}
+for p in (OUT/'metadata').rglob('*'):
+    if p.is_file() and p.resolve() not in metadata_roots:p.unlink()
+for p in sorted((OUT/'metadata').rglob('*'),key=lambda p:len(p.parts),reverse=True):
+    if p.is_dir() and not any(p.iterdir()):p.rmdir()
 print(json.dumps(catalog['stats'],ensure_ascii=False))

@@ -1,0 +1,57 @@
+{
+  "deletedFiles": 5290,
+  "deletedSourceDirectories": 23,
+  "deletedBytes": 1016868568,
+  "removedRuntimeAssets": [
+    "BounceGarden/BounceGarden/Assets/Resources/Art/FailureV25/glyphs.png",
+    "BounceGarden/BounceGarden/Assets/Resources/Art/ThirdGroup/shimmer.png",
+    "BounceGarden/BounceGarden/Assets/Resources/Art/VictoryV23/glyphs.png",
+    "AndroidBuildProject/Assets/Resources/Art/FailureV25/glyphs.png",
+    "AndroidBuildProject/Assets/Resources/Art/ThirdGroup/shimmer.png",
+    "AndroidBuildProject/Assets/Resources/Art/VictoryV23/glyphs.png",
+    "Builds/WeChatOptimizedUnityProject/Assets/WeChatDeferred/Art/FailureV25/glyphs.png",
+    "Builds/WeChatOptimizedUnityProject/Assets/WeChatDeferred/Art/ThirdGroup/shimmer.png",
+    "Builds/WeChatOptimizedUnityProject/Assets/WeChatDeferred/Art/VictoryV23/glyphs.png"
+  ],
+  "modifiedRuntimeMetadata": [
+    "BounceGarden/BounceGarden/Assets/Resources/Art/FailureV25/atlases.json",
+    "BounceGarden/BounceGarden/Assets/Resources/Art/ThirdGroup/layout.json",
+    "BounceGarden/BounceGarden/Assets/Resources/Art/VictoryV23/atlases.json",
+    "AndroidBuildProject/Assets/Resources/Art/FailureV25/atlases.json",
+    "AndroidBuildProject/Assets/Resources/Art/ThirdGroup/layout.json",
+    "AndroidBuildProject/Assets/Resources/Art/VictoryV23/atlases.json",
+    "Builds/WeChatOptimizedUnityProject/Assets/WeChatDeferred/Art/FailureV25/atlases.json",
+    "Builds/WeChatOptimizedUnityProject/Assets/WeChatDeferred/Art/ThirdGroup/layout.json",
+    "Builds/WeChatOptimizedUnityProject/Assets/WeChatDeferred/Art/VictoryV23/atlases.json"
+  ],
+  "retainedRuntimeFilesVerified": 1308,
+  "runtimeProtection": "Every retained runtime art file outside the nine intentionally pruned metadata files kept its exact SHA256.",
+  "validation": {
+    "version": "0.4.0",
+    "campaignLevels": 45,
+    "unityExitCode": 0,
+    "animationFrameChecks": 1115,
+    "campaignAndMigrationChecks": 1509,
+    "onboardingChecks": 1541,
+    "androidCompilation": "passed",
+    "wechatCompilation": "passed",
+    "wechatContentKeys": 408,
+    "wechatMissingAssets": 0,
+    "deletedRuntimeGuidReferences": 0
+  },
+  "galleryBefore": {
+    "animations": 167,
+    "frames": 2806,
+    "originals": 1655
+  },
+  "galleryAfter": {
+    "animations": 62,
+    "frames": 906,
+    "originals": 39
+  },
+  "projectCommit": "d462cc5e5f97a8c774955dc4a0046433534084d5",
+  "removedPublicSamples": [
+    "assets/previews/0c833b994f21495b1eb6.webp",
+    "assets/originals/0780399529116fc8dce2e583e880cae10f6ba1527130309d41d6b1b435a173c5.png"
+  ]
+}

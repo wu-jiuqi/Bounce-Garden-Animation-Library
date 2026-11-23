@@ -1,14 +1,16 @@
 {
   "result": "passed",
-  "animations": 167,
-  "frames": 2806,
-  "verifiedOriginals": 1655,
+  "animations": 62,
+  "frames": 906,
+  "verifiedOriginals": 39,
   "checks": [
     "Unique animation IDs",
     "Nonnegative authored frame durations and positive clip duration",
     "Atlas frame geometry",
     "Decodable preview assets",
     "Original file SHA256",
-    "Statistics match catalog"
+    "Statistics match catalog",
+    "Runtime resource allowlist",
+    "No historical aliases or orphaned asset files"
   ]
 }
