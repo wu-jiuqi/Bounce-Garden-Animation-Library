@@ -1,10 +1,16 @@
 # 喵弹拆箱 · 序列帧动画素材馆
 
+## 在线展示
+
+**[点击打开动画素材馆](https://wu-jiuqi.github.io/Bounce-Garden-Animation-Library/)**
+
+直接在浏览器查看、播放和逐帧检查动画，无需下载仓库或安装依赖。
+
 Bounce Garden / BounceBusters 项目的独立动画资源归档与展示界面。
 
 本次归档：**167 组独立序列、2,806 帧、41 个素材系列**；其中63组为主工程运行资源。保留1,655份原始PNG文件，整理后约451MB。
 
-## 打开展示界面
+## 本地浏览
 
 克隆或下载整个仓库，双击 `index.html` 即可浏览和播放。页面为原生 HTML / CSS / JavaScript，无需 Node.js、安装依赖或构建。
 
@@ -54,4 +60,13 @@ node --check app.js
 
 导出脚本只读原工程，输出到本仓库。新增代码切图格式时，在脚本中登记切片规则；不要通过图集长宽猜测静态图标是否为动画。
 
-本仓库默认私有。GitHub 仓库页面可查看素材与源码；完整交互展示需要克隆后打开或使用本地预览，不依赖公开 GitHub Pages。
+本仓库保持私有，在线动画素材馆通过 GitHub Pages 公开访问。`gh-pages` 发布分支只包含展示页、动画清单和素材，不包含维护脚本与项目元数据。
+
+更新素材后，先提交 `main`，再运行以下命令更新同一个在线地址：
+
+```sh
+python scripts/verify.py
+python scripts/publish_pages.py
+```
+
+GitHub Pages 使用 `gh-pages` 分支根目录发布。部署状态可在仓库的 Actions / Pages 设置中查看。
