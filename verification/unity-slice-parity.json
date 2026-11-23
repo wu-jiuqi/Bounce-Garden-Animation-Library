@@ -1,0 +1,7 @@
+{
+  "result": "passed",
+  "comparedFrames": 906,
+  "maxSourceRectErrorPixels": 0.00030517578139210855,
+  "maxPivotErrorPixels": 1.102835877164754e-05,
+  "method": "Actual Unity Sprite.rect and Sprite.pivot compared to each web frame; no web exporter logic used in the engine dump."
+}

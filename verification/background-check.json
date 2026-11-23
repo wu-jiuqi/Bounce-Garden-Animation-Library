@@ -1,0 +1,39 @@
+{
+  "example": "丁香紫纵向激光施放 / first frame",
+  "cause": "Old public export displayed low-alpha near-white source pixels without game material alpha remapping.",
+  "sourceBackgroundSamplesRGBA": [
+    [
+      239,
+      228,
+      249,
+      49
+    ],
+    [
+      237,
+      231,
+      255,
+      43
+    ],
+    [
+      249,
+      244,
+      249,
+      49
+    ],
+    [
+      231,
+      231,
+      247,
+      32
+    ]
+  ],
+  "correctedCornerMeanAlpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "rectangularMatteChecks": 906,
+  "rectangularMatteFailures": 0,
+  "originalPNGRepainted": false
+}

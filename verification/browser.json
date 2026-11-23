@@ -7,7 +7,11 @@
     "Retired SnowGarden search returns no results",
     "Special activation uses 9 frames / 0.66 seconds",
     "All 9 filmstrip frames load",
-    "Final-frame selection updates scrubber"
+    "Final-frame selection updates scrubber",
+    "Reviewed alpha-corrected 62-series first/middle/last contacts",
+    "Purple flower first frame contains no prior-phase cap",
+    "Purple vertical laser first-frame background is transparent",
+    "Origin guides toggle without changing playback"
   ],
   "notTested": [
     "Physical mobile browser"

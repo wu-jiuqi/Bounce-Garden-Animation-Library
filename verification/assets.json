@@ -11,6 +11,9 @@
     "Original file SHA256",
     "Statistics match catalog",
     "Runtime resource allowlist",
-    "No historical aliases or orphaned asset files"
+    "No historical aliases or orphaned asset files",
+    "906 source rectangles and shared pivots",
+    "Transparent atlas-cell guards: no neighboring-cell bleed",
+    "No persistent rectangular corner matte in any of 906 frames"
   ]
 }

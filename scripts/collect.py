@@ -2,6 +2,7 @@
 from pathlib import Path
 from PIL import Image
 import argparse, collections, hashlib, json, math, re, shutil
+from slicing import sample_rect, register_frames
 
 OUT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -22,8 +23,8 @@ def store(p):
 
 def add(name, group, frames, sources, fps=None, durations=None, status='现用动画', evidence='', note=''):
     if len(frames)<2:return
-    frames = [im.convert('RGBA') for im in frames]
-    h = hashlib.sha256()
+    frames,geometry,anchor = register_frames(frames,group)
+    h = hashlib.sha256(b'registered-preview-v3')
     for im in frames: h.update(str(im.size).encode()); h.update(im.tobytes())
     sig=h.hexdigest()
     origin={'name':name,'group':group,'status':status,'sources':[p.relative_to(ROOT).as_posix() for p in sources], 'evidence':evidence}
@@ -33,7 +34,7 @@ def add(name, group, frames, sources, fps=None, durations=None, status='现用�
         signatures[sig]['originals'].extend(store(p) for p in dict.fromkeys(sources) if p.relative_to(ROOT).as_posix() not in known)
         return
     uid=sig[:20]
-    # One common canvas preserves frame registration. No per-frame auto-cropping.
+    # Frames are registered by their actual pivots before atlas packing.
     w=max(im.width for im in frames); hh=max(im.height for im in frames)
     cols=min(8,len(frames)); rows=math.ceil(len(frames)/cols)
     sheet=Image.new('RGBA',(w*cols,hh*rows))
@@ -45,13 +46,13 @@ def add(name, group, frames, sources, fps=None, durations=None, status='现用�
     durations=durations if durations and len(durations)==len(frames) else [1000/(fps or 12)]*len(frames)
     item=dict(id=uid,name=name,group=group,status=status,count=len(frames),width=w,height=hh,columns=cols,
               sheet=f'assets/previews/{uid}.webp',thumb=f'assets/previews/{uid}-thumb.webp',durations=durations,
-              timing=timing,fps=fps or 12,originals=originals,evidence=evidence,note=note,aliases=[])
+              timing=timing,fps=fps or 12,originals=originals,evidence=evidence,note=note,aliases=[],frameGeometry=geometry,origin=anchor,previewVersion=3)
     items.append(item);signatures[sig]=item
 
 def grid(p,cols=4,rows=4,indices=None):
     with Image.open(p) as image:
         w,h=image.size
-        return [image.crop((round(i%cols*w/cols),round(i//cols*h/rows),round((i%cols+1)*w/cols),round((i//cols+1)*h/rows))) for i in (indices if indices is not None else range(cols*rows))]
+        return [sample_rect(image,(i%cols*w/cols,i//cols*h/rows,w/cols,h/rows)) for i in (indices if indices is not None else range(cols*rows))]
 
 def runtime(p,name=None,cols=4,rows=4,indices=None,fps=None,durations=None,code='',note=''):
     add(name or p.stem,p.parent.name,grid(p,cols,rows,indices),[p],fps,durations,'运行资源',code,note)
@@ -64,12 +65,19 @@ for p in sorted((RES/'FiveBakedV80').glob('*-five-colors.png')):
     for color in range(5):
         # SevenSpecialFx plays only frame indices 7 through 15.
         ids=[color+5*phase for phase in [2]*3+[3]*3+[4]*3]
-        runtime(p,p.stem+f' / 颜色 {color+1}',5,5,ids,fps=9/.66,code='SevenSpecialArt.cs',note='只播放 SevenSpecialFx 实际使用的第7–15帧，共9帧／0.66秒；不展示已被方砖替换的旧待机阶段。')
+        im=Image.open(p);kind=p.stem.split('-')[0]
+        spec=next(e for e in json.loads((RES/'FiveBakedV80/sequence-layout.json').read_text(encoding='utf-8'))['entries'] if e['key']==kind and e['column']==color)
+        bands=next(e['cuts'] for e in json.loads((RES/'FiveBakedV80/sequence-layout.json').read_text(encoding='utf-8'))['rows'] if e['key']==kind)
+        frames=[sample_rect(im,(spec['left']*im.width,bands[phase]*im.height,spec['width']*im.width,(bands[phase+1]-bands[phase])*im.height),pivot=(spec['pivotX'],(bands[phase+1]-(phase+.5)/5)/(bands[phase+1]-bands[phase]))) for phase in [2]*3+[3]*3+[4]*3]
+        add(p.stem+f' / 颜色 {color+1}','FiveBakedV80',frames,[p],fps=9/.66,evidence='SevenSpecialArt.cs + FiveBakedV80/sequence-layout.json',note='按原画实际列间隔切片，与游戏共享轴心；只播放实际施放的第7–15帧，共0.66秒。')
 runtime(RES/'Jelly/blue_jelly_pop.png','蓝色果冻消除',fps=25,code='JellyBrickArt.cs')
 for folder,ds in [('VictoryCatV23',[300,100,100,180,80,80,80,120,100,80,80,80,100,100,140,200]),('FailureCatV26',[280,140,140,180,140,140,120,120,100,100,100,100,120,140,160,240])]:
     runtime(RES/folder/'cat-atlas.png','胜利猫咪' if folder.startswith('Victory') else '失败猫咪',durations=ds,code='VictoryCatAnimation.cs' if folder.startswith('Victory') else 'FailureCatAnimation.cs')
 d=json.loads((RES/'YarnV19/launcher_manifest.json').read_text(encoding='utf-8-sig'))
-runtime(RES/'YarnV19/cat_fixed_pivot_atlas.png','猫咪发射',durations=d['frame_durations_ms'],code='YarnArt.cs')
+launcher=RES/'YarnV19/cat_fixed_pivot_atlas.png'
+launcher_frames=grid(launcher)
+for f in launcher_frames:f.info['sprite']['pivot']=d['pivot_unity']
+add('猫咪发射','YarnV19',launcher_frames,[launcher],durations=d['frame_durations_ms'],evidence='YarnArt.cs')
 for p in (RES/'StreakBoostersV62').glob('*.png'):
     if 'trail' in p.stem:continue
     runtime(p,p.stem+' / 球体循环',indices=range(4,8),fps=12,code='StreakBallArt.cs')
@@ -86,7 +94,10 @@ for folder,filename,bottom in [('YarnObstacleV3','animation-layout.json',True),(
         for f in clip['frames']:
             x,y,w,h=[f[k] for k in ['x','y','w','h']]
             if bottom:y=sh-y-h
-            frames.append(image.crop((round(x*image.width/sw),round(y*image.height/sh),round((x+w)*image.width/sw),round((y+h)*image.height/sh))))
+            sx=image.width/sw;sy=image.height/sh
+            pivot=(f.get('px',.5),f.get('py',0)) if bottom else (.5,0) if clip['key']=='cat' else (.5,.5)
+            scale=(256/(f['bodyWidth']*sx),256/(f['bodyHeight']*sy)) if bottom else (256/(clip['reference']*sx),)*2 if clip['key']=='cat' else (256/(w*sx),256/(h*sy)) if folder=='FourthGroup' else (256/max(w*sx,h*sy),)*2
+            frames.append(sample_rect(image,(x*sx,y*sy,w*sx,h*sy),pivot=pivot,scale=scale))
         fps=25 if clip['key']=='yarn-unravel' else 16/.68 if 'layer-loss' in clip['key'] else 20 if folder=='FourthGroup' else 12 if clip['key']=='shimmer' else 24 if clip['key']=='ring' else None
         if clip['key']=='cat':frames=frames[3:];fps=20
         add(clip['key'],folder,frames,[p],fps=fps,status='运行资源',evidence=layout.relative_to(ROOT).as_posix(),note='按项目裁切元数据读取；状态与连续动作合在同一图集时可逐帧检查。')
@@ -100,7 +111,7 @@ for entry in data['sprites']:
 for key,es in groups.items():
     fs=[];ps=[]
     for _,e in sorted(es):
-        p=RES/'VictoryV23'/(e['texture']+'.png');im=Image.open(p);x,y,w,h=e['rect'];fs.append(im.crop((x,y,x+w,y+h)));ps.append(p)
+        p=RES/'VictoryV23'/(e['texture']+'.png');im=Image.open(p);x,y,w,h=e['rect'];sw,sh=(3072,2048) if e['texture']=='halo' else (1024,1024);sx=im.width/sw;sy=im.height/sh;fs.append(sample_rect(im,(x*sx,y*sy,w*sx,h*sy)));ps.append(p)
     add(key,'VictoryV23',fs,ps,fps=8 if key=='halo' else 12,status='运行资源',evidence=layout.relative_to(ROOT).as_posix())
 
 # Current failure screen packed clips.
@@ -112,11 +123,11 @@ for prefix in ['background','title']:
         if not e['name'].startswith(prefix+'_'):continue
         p=RES/'FailureV25'/(e['texture']+'.png');im=Image.open(p)
         sw,sh=(2560,3840) if e['texture']=='background' else (2048,256)
-        x,y,w,h=e['rect'];fs.append(im.crop((round(x*im.width/sw),round(y*im.height/sh),round((x+w)*im.width/sw),round((y+h)*im.height/sh))));ps.append(p)
+        x,y,w,h=e['rect'];fs.append(sample_rect(im,(x*im.width/sw,y*im.height/sh,w*im.width/sw,h*im.height/sh)));ps.append(p)
     add(prefix,'FailureV25',fs,ps,fps=24,status='运行资源',evidence=layout.relative_to(ROOT).as_posix())
 
 # Only metadata consumed by the retained animation readers belongs in this library.
-for rel in ['YarnV19/launcher_manifest.json','YarnObstacleV3/animation-layout.json','ThirdGroup/layout.json','FourthGroup/layout.json','VictoryV23/atlases.json','FailureV25/atlases.json']:
+for rel in ['FiveBakedV80/sequence-layout.json','YarnV19/launcher_manifest.json','YarnObstacleV3/animation-layout.json','ThirdGroup/layout.json','FourthGroup/layout.json','VictoryV23/atlases.json','FailureV25/atlases.json']:
     p=RES/rel;target=OUT/'metadata'/p.relative_to(ROOT)
     target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
 groups={'VictoryCatV23':'猫咪角色','FailureCatV26':'猫咪角色','YarnV19':'猫咪角色','ThirdGroup':'招财猫与元宝','Jelly':'普通果冻','FiveBakedV80':'果冻与特殊砖','SevenSpecialV80':'特殊砖组合','IngotSpecialFXV1':'元宝技能','YarnObstacleV3':'毛线机关','StreakBoostersV62':'强化球','FourthGroup':'铜钱机关','VictoryV23':'通关与失败','VictoryFinaleV1':'通关与失败','FailureV25':'通关与失败'}
@@ -149,7 +160,7 @@ for folder in ['assets/originals','assets/previews']:
     for p in base.iterdir():
         if p.is_file() and p.relative_to(OUT).as_posix() not in used:
             assert p.resolve().is_relative_to(base);p.unlink()
-metadata_roots={(OUT/'metadata'/RES.relative_to(ROOT)/rel).resolve() for rel in ['YarnV19/launcher_manifest.json','YarnObstacleV3/animation-layout.json','ThirdGroup/layout.json','FourthGroup/layout.json','VictoryV23/atlases.json','FailureV25/atlases.json']}
+metadata_roots={(OUT/'metadata'/RES.relative_to(ROOT)/rel).resolve() for rel in ['FiveBakedV80/sequence-layout.json','YarnV19/launcher_manifest.json','YarnObstacleV3/animation-layout.json','ThirdGroup/layout.json','FourthGroup/layout.json','VictoryV23/atlases.json','FailureV25/atlases.json']}
 for p in (OUT/'metadata').rglob('*'):
     if p.is_file() and p.resolve() not in metadata_roots:p.unlink()
 for p in sorted((OUT/'metadata').rglob('*'),key=lambda p:len(p.parts),reverse=True):
