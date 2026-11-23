@@ -1,0 +1,41 @@
+{
+  "method": "built-in image_gen",
+  "artwork": [
+    {
+      "key": "miao",
+      "glyph": "喵",
+      "palette": "creamy honey gold #F4CF70",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-edb9fbe0-326e-42e0-b93f-3a8af63ac20b.png",
+      "prompt": "Production game brand glyph sprite. Reference image is ONLY a material and drawing style reference. Generate EXACTLY ONE complete simplified Chinese character \"喵\" by itself. No other character, word, punctuation, stars or flowers. SINGLE CHARACTER ONLY. Square canvas, centered, full glyph contained inside with about 12% clear margin on every edge. Very thick inflated rounded Chinese strokes, accurate recognizable simplified Chinese anatomy; cream ivory outline, shallow muted warm plum extrusion toward bottom-right, soft glossy white highlights. Main color creamy honey gold #F4CF70. Match the soft pastel cat garden aesthetic and rounded 3D jelly logo style. two tiny integrated rounded cat ears on the TOP OUTLINE, not extra characters. Consistent front-on camera, no rotation or tilt, upright same baseline as a matched four-glyph family. Genuine transparent alpha background everywhere outside the glyph. No backdrop, floor, vignette, haze or broad cast shadow. Clean edges, no grain or scattered fragments. One separate game-ready PNG glyph, NOT a crop of a larger word. The ONLY text visible is \"喵\".",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV60\\Logo\\miao.png",
+      "sha256": "f131bab9809c3d7bbd38aac77c9580c90a521190cc78c7080dcda3373b751e3a"
+    },
+    {
+      "key": "tan",
+      "glyph": "弹",
+      "palette": "soft pastel mint #A0E2C3",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-06f72d9e-4458-43b7-921f-e069c02cc5d6.png",
+      "prompt": "Production game brand glyph sprite. Reference image is ONLY a material and drawing style reference. Generate EXACTLY ONE complete simplified Chinese character \"弹\" by itself. No other character, word, punctuation, stars or flowers. SINGLE CHARACTER ONLY. Square canvas, centered, full glyph contained inside with about 12% clear margin on every edge. Very thick inflated rounded Chinese strokes, accurate recognizable simplified Chinese anatomy; cream ivory outline, shallow muted warm plum extrusion toward bottom-right, soft glossy white highlights. Main color soft pastel mint #A0E2C3. Match the soft pastel cat garden aesthetic and rounded 3D jelly logo style. no accessories. Consistent front-on camera, no rotation or tilt, upright same baseline as a matched four-glyph family. Genuine transparent alpha background everywhere outside the glyph. No backdrop, floor, vignette, haze or broad cast shadow. Clean edges, no grain or scattered fragments. One separate game-ready PNG glyph, NOT a crop of a larger word. The ONLY text visible is \"弹\".",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV60\\Logo\\tan.png",
+      "sha256": "5695fcab4e9245d0a49758baf9e676dca9822dc2841d20930d250420df5be3c1"
+    },
+    {
+      "key": "chai",
+      "glyph": "拆",
+      "palette": "creamy honey gold #F4CF70",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-e6290f9c-70cc-4f1a-9580-a015f14b0e93.png",
+      "prompt": "Production game brand glyph sprite. Reference image is ONLY a material and drawing style reference. Generate EXACTLY ONE complete simplified Chinese character \"拆\" by itself. No other character, word, punctuation, stars or flowers. SINGLE CHARACTER ONLY. Square canvas, centered, full glyph contained inside with about 12% clear margin on every edge. Very thick inflated rounded Chinese strokes, accurate recognizable simplified Chinese anatomy; cream ivory outline, shallow muted warm plum extrusion toward bottom-right, soft glossy white highlights. Main color creamy honey gold #F4CF70. Match the soft pastel cat garden aesthetic and rounded 3D jelly logo style. no accessories. Consistent front-on camera, no rotation or tilt, upright same baseline as a matched four-glyph family. Genuine transparent alpha background everywhere outside the glyph. No backdrop, floor, vignette, haze or broad cast shadow. Clean edges, no grain or scattered fragments. One separate game-ready PNG glyph, NOT a crop of a larger word. The ONLY text visible is \"拆\".",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV60\\Logo\\chai.png",
+      "sha256": "398b5c8f2dc8745b7a109f6bc32664039f513e622c9979322a0c65d937995d77"
+    },
+    {
+      "key": "xiang",
+      "glyph": "箱",
+      "palette": "soft pastel mint #A0E2C3",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-8292abd4-72a1-4981-bddc-09941066a9be.png",
+      "prompt": "Production game brand glyph sprite. Reference image is ONLY a material and drawing style reference. Generate EXACTLY ONE complete simplified Chinese character \"箱\" by itself. No other character, word, punctuation, stars or flowers. SINGLE CHARACTER ONLY. Square canvas, centered, full glyph contained inside with about 12% clear margin on every edge. Very thick inflated rounded Chinese strokes, accurate recognizable simplified Chinese anatomy; cream ivory outline, shallow muted warm plum extrusion toward bottom-right, soft glossy white highlights. Main color soft pastel mint #A0E2C3. Match the soft pastel cat garden aesthetic and rounded 3D jelly logo style. no accessories. Consistent front-on camera, no rotation or tilt, upright same baseline as a matched four-glyph family. Genuine transparent alpha background everywhere outside the glyph. No backdrop, floor, vignette, haze or broad cast shadow. Clean edges, no grain or scattered fragments. One separate game-ready PNG glyph, NOT a crop of a larger word. The ONLY text visible is \"箱\".",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV60\\Logo\\xiang.png",
+      "sha256": "9c24b718dec960756ef234f44169214cc6def7310299c2de54a703bfde76d557"
+    }
+  ]
+}

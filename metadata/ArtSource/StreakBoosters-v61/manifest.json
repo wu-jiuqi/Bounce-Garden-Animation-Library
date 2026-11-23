@@ -1,0 +1,1079 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-11-04",
+  "status": "integrated in v0.1.62 per subsequent user instruction",
+  "runtimeIntegrated": true,
+  "grid": [
+    4,
+    4
+  ],
+  "note": "Keep original RGBA. Slice proportionally to actual dimensions; do not force integer 512px cells. No raster artwork was redrawn by script.",
+  "assets": [
+    {
+      "key": "pierce",
+      "file": "pierce-atlas-v1.png",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "1b1e43269645350214df292501bcd90641282ec95fa84d17e12da464124fe618",
+      "fullyTransparentFraction": 0.5902,
+      "ballAnimation": {
+        "frames": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "fps": 12,
+        "loop": true
+      },
+      "impactAnimation": {
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "fps": 12,
+        "loop": false
+      },
+      "cells": [
+        {
+          "index": 0,
+          "name": "inventory-icon",
+          "rectTopLeft": [
+            0.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 1,
+          "name": "ball-rest",
+          "rectTopLeft": [
+            313.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 2,
+          "name": "trail",
+          "rectTopLeft": [
+            627.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 3,
+          "name": "contact-spark",
+          "rectTopLeft": [
+            940.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 4,
+          "name": "ball-loop-0",
+          "rectTopLeft": [
+            0.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 5,
+          "name": "ball-loop-1",
+          "rectTopLeft": [
+            313.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 6,
+          "name": "ball-loop-2",
+          "rectTopLeft": [
+            627.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 7,
+          "name": "ball-loop-3",
+          "rectTopLeft": [
+            940.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 8,
+          "name": "impact-0",
+          "rectTopLeft": [
+            0.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 9,
+          "name": "impact-1",
+          "rectTopLeft": [
+            313.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 10,
+          "name": "impact-2",
+          "rectTopLeft": [
+            627.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 11,
+          "name": "impact-3",
+          "rectTopLeft": [
+            940.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 12,
+          "name": "impact-4",
+          "rectTopLeft": [
+            0.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 13,
+          "name": "impact-5",
+          "rectTopLeft": [
+            313.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 14,
+          "name": "impact-6",
+          "rectTopLeft": [
+            627.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 15,
+          "name": "impact-7",
+          "rectTopLeft": [
+            940.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bomb",
+      "file": "bomb-atlas-v1.png",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "96009671d265922f6c8bd7b8d2c10da39463bc730fd8865febb63c16de622462",
+      "fullyTransparentFraction": 0.5353,
+      "ballAnimation": {
+        "frames": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "fps": 12,
+        "loop": true
+      },
+      "impactAnimation": {
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "fps": 12,
+        "loop": false
+      },
+      "cells": [
+        {
+          "index": 0,
+          "name": "inventory-icon",
+          "rectTopLeft": [
+            0.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 1,
+          "name": "ball-rest",
+          "rectTopLeft": [
+            313.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 2,
+          "name": "trail",
+          "rectTopLeft": [
+            627.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 3,
+          "name": "contact-spark",
+          "rectTopLeft": [
+            940.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 4,
+          "name": "ball-loop-0",
+          "rectTopLeft": [
+            0.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 5,
+          "name": "ball-loop-1",
+          "rectTopLeft": [
+            313.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 6,
+          "name": "ball-loop-2",
+          "rectTopLeft": [
+            627.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 7,
+          "name": "ball-loop-3",
+          "rectTopLeft": [
+            940.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 8,
+          "name": "impact-0",
+          "rectTopLeft": [
+            0.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 9,
+          "name": "impact-1",
+          "rectTopLeft": [
+            313.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 10,
+          "name": "impact-2",
+          "rectTopLeft": [
+            627.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 11,
+          "name": "impact-3",
+          "rectTopLeft": [
+            940.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 12,
+          "name": "impact-4",
+          "rectTopLeft": [
+            0.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 13,
+          "name": "impact-5",
+          "rectTopLeft": [
+            313.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 14,
+          "name": "impact-6",
+          "rectTopLeft": [
+            627.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 15,
+          "name": "impact-7",
+          "rectTopLeft": [
+            940.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "super",
+      "file": "super-atlas-v1.png",
+      "mode": "RGBA",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "436dbbccab011f6b42990cd0deb2a177d8110770b861f7761d2a92ca91ca439b",
+      "fullyTransparentFraction": 0.5058,
+      "ballAnimation": {
+        "frames": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "fps": 12,
+        "loop": true
+      },
+      "impactAnimation": {
+        "frames": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "fps": 12,
+        "loop": false
+      },
+      "cells": [
+        {
+          "index": 0,
+          "name": "inventory-icon",
+          "rectTopLeft": [
+            0.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 1,
+          "name": "ball-rest",
+          "rectTopLeft": [
+            313.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 2,
+          "name": "beam",
+          "rectTopLeft": [
+            627.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 3,
+          "name": "contact-spark",
+          "rectTopLeft": [
+            940.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 4,
+          "name": "ball-loop-0",
+          "rectTopLeft": [
+            0.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 5,
+          "name": "ball-loop-1",
+          "rectTopLeft": [
+            313.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 6,
+          "name": "ball-loop-2",
+          "rectTopLeft": [
+            627.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 7,
+          "name": "ball-loop-3",
+          "rectTopLeft": [
+            940.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 8,
+          "name": "impact-0",
+          "rectTopLeft": [
+            0.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 9,
+          "name": "impact-1",
+          "rectTopLeft": [
+            313.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 10,
+          "name": "impact-2",
+          "rectTopLeft": [
+            627.0,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 11,
+          "name": "impact-3",
+          "rectTopLeft": [
+            940.5,
+            627.0,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            313.5,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 12,
+          "name": "impact-4",
+          "rectTopLeft": [
+            0.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            0.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 13,
+          "name": "impact-5",
+          "rectTopLeft": [
+            313.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            313.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 14,
+          "name": "impact-6",
+          "rectTopLeft": [
+            627.0,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            627.0,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "index": 15,
+          "name": "impact-7",
+          "rectTopLeft": [
+            940.5,
+            940.5,
+            313.5,
+            313.5
+          ],
+          "unityRect": [
+            940.5,
+            0.0,
+            313.5,
+            313.5
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  ],
+  "runtimeDirectory": "BounceGarden/BounceGarden/Assets/Resources/Art/StreakBoostersV62"
+}

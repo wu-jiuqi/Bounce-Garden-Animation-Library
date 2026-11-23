@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "atlas": "vfx_feedback_atlas_rgba.png",
+  "width": 1536,
+  "height": 1024,
+  "color_mode": "RGBA",
+  "generator": "built-in image_gen.imagegen",
+  "final_asset_is_unmodified_generated_png": true,
+  "coordinate_notes": {
+    "top_left": "x right, y down; width and height are pixel counts",
+    "unity": "x right, y up; y = atlasHeight - top - height",
+    "rect_policy": "Measured alpha >= 8/255 content bounds, add up to 16 pixels padding, clamp to each original grid cell. Original atlas alpha is not modified. Minor generated alpha haze below 8/255 may continue beyond rect.",
+    "pivot": "Custom visual pivot; streak anchored at bright head, not rectangle center.",
+    "size_units": "Visible max dimension relative to one board-cell width; NOT Unity units. Set by visible content size; transparent rect padding must not inflate visual size."
+  },
+  "import_recommendation": {
+    "texture_type": "Sprite (2D and UI)",
+    "sprite_mode": "Multiple",
+    "mesh_type": "Full Rect",
+    "alpha_source": "Input Texture Alpha",
+    "alpha_is_transparency": true,
+    "sRGB": true,
+    "filter": "Bilinear",
+    "wrap": "Clamp",
+    "mipmaps": false,
+    "initial_compression": "None",
+    "max_size": 2048,
+    "sprite_atlas_padding_px": 8,
+    "sprite_atlas_rotation": false
+  },
+  "alpha_statistics": {
+    "minimum": 0,
+    "maximum": 254,
+    "fully_transparent_pixels": 1067842,
+    "fully_transparent_fraction": 0.678916,
+    "alpha_intermediate_pixels": 505022,
+    "ring_center_alpha_at_576_310": 1,
+    "all_four_corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "sha256": "6bd2db490dd0988d581f311e3c1457df955c3e8bfe8c4003f9a83be80a611769",
+  "sprites": [
+    {
+      "name": "impact_star",
+      "name_zh": "命中星芒",
+      "row_from_top": 0,
+      "column": 0,
+      "grid_rect_top_left_xywh": [
+        0,
+        0,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        13,
+        117,
+        369,
+        381
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        13,
+        526,
+        369,
+        381
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        29,
+        133,
+        337,
+        349
+      ],
+      "pivot_atlas_top_left_xy": [
+        197,
+        310
+      ],
+      "pivot_unity_normalized_xy": [
+        0.498645,
+        0.493438
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.08,
+        0.12
+      ],
+      "visible_max_dimension_cells_range": [
+        0.28,
+        0.42
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.091691,
+      "max_alpha_on_grid_border": 3
+    },
+    {
+      "name": "shockwave_ring",
+      "name_zh": "扩散环",
+      "row_from_top": 0,
+      "column": 1,
+      "grid_rect_top_left_xywh": [
+        384,
+        0,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        385,
+        119,
+        381,
+        375
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        385,
+        530,
+        381,
+        375
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        401,
+        135,
+        349,
+        343
+      ],
+      "pivot_atlas_top_left_xy": [
+        576,
+        307
+      ],
+      "pivot_unity_normalized_xy": [
+        0.501312,
+        0.498667
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.12,
+        0.2
+      ],
+      "visible_max_dimension_cells_range": [
+        0.2,
+        0.68
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.091691,
+      "max_alpha_on_grid_border": 3
+    },
+    {
+      "name": "soft_glow",
+      "name_zh": "柔光",
+      "row_from_top": 0,
+      "column": 2,
+      "grid_rect_top_left_xywh": [
+        768,
+        0,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        773,
+        131,
+        357,
+        351
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        773,
+        542,
+        357,
+        351
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        789,
+        147,
+        325,
+        319
+      ],
+      "pivot_atlas_top_left_xy": [
+        951,
+        312
+      ],
+      "pivot_unity_normalized_xy": [
+        0.498599,
+        0.48433
+      ],
+      "recommended_blend": "SrcAlpha One",
+      "lifetime_seconds_range": [
+        0.08,
+        0.14
+      ],
+      "visible_max_dimension_cells_range": [
+        0.3,
+        0.5
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.098462,
+      "max_alpha_on_grid_border": 3
+    },
+    {
+      "name": "short_streak",
+      "name_zh": "短促拖尾",
+      "row_from_top": 0,
+      "column": 3,
+      "grid_rect_top_left_xywh": [
+        1152,
+        0,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        1152,
+        258,
+        381,
+        118
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        1152,
+        648,
+        381,
+        118
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        1157,
+        274,
+        360,
+        86
+      ],
+      "pivot_atlas_top_left_xy": [
+        1482,
+        317
+      ],
+      "pivot_unity_normalized_xy": [
+        0.866142,
+        0.5
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.06,
+        0.1
+      ],
+      "visible_max_dimension_cells_range": [
+        0.18,
+        0.35
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.058333,
+      "max_alpha_on_grid_border": 4
+    },
+    {
+      "name": "four_point_spark",
+      "name_zh": "四角闪点",
+      "row_from_top": 1,
+      "column": 0,
+      "grid_rect_top_left_xywh": [
+        0,
+        512,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        95,
+        618,
+        199,
+        298
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        95,
+        108,
+        199,
+        298
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        111,
+        634,
+        167,
+        266
+      ],
+      "pivot_atlas_top_left_xy": [
+        195,
+        767
+      ],
+      "pivot_unity_normalized_xy": [
+        0.502513,
+        0.5
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.12,
+        0.22
+      ],
+      "visible_max_dimension_cells_range": [
+        0.06,
+        0.11
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.120301,
+      "max_alpha_on_grid_border": 1
+    },
+    {
+      "name": "debris_blue",
+      "name_zh": "蓝色碎片",
+      "row_from_top": 1,
+      "column": 1,
+      "grid_rect_top_left_xywh": [
+        384,
+        512,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        424,
+        625,
+        285,
+        274
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        424,
+        125,
+        285,
+        274
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        440,
+        641,
+        253,
+        242
+      ],
+      "pivot_atlas_top_left_xy": [
+        566,
+        763
+      ],
+      "pivot_unity_normalized_xy": [
+        0.498246,
+        0.49635
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.25,
+        0.4
+      ],
+      "visible_max_dimension_cells_range": [
+        0.08,
+        0.14
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.126482,
+      "max_alpha_on_grid_border": 1
+    },
+    {
+      "name": "debris_orange",
+      "name_zh": "橙色碎片",
+      "row_from_top": 1,
+      "column": 2,
+      "grid_rect_top_left_xywh": [
+        768,
+        512,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        809,
+        624,
+        283,
+        275
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        809,
+        125,
+        283,
+        275
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        825,
+        640,
+        251,
+        243
+      ],
+      "pivot_atlas_top_left_xy": [
+        953,
+        762
+      ],
+      "pivot_unity_normalized_xy": [
+        0.508834,
+        0.498182
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.25,
+        0.4
+      ],
+      "visible_max_dimension_cells_range": [
+        0.08,
+        0.14
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.12749,
+      "max_alpha_on_grid_border": 1
+    },
+    {
+      "name": "debris_neutral",
+      "name_zh": "中性碎片",
+      "row_from_top": 1,
+      "column": 3,
+      "grid_rect_top_left_xywh": [
+        1152,
+        512,
+        384,
+        512
+      ],
+      "sprite_rect_top_left_xywh": [
+        1193,
+        623,
+        282,
+        276
+      ],
+      "unity_sprite_rect_bottom_left_xywh": [
+        1193,
+        125,
+        282,
+        276
+      ],
+      "content_bounds_alpha_gte_8_top_left_xywh": [
+        1209,
+        639,
+        250,
+        244
+      ],
+      "pivot_atlas_top_left_xy": [
+        1334,
+        762
+      ],
+      "pivot_unity_normalized_xy": [
+        0.5,
+        0.496377
+      ],
+      "recommended_blend": "SrcAlpha OneMinusSrcAlpha",
+      "lifetime_seconds_range": [
+        0.25,
+        0.4
+      ],
+      "visible_max_dimension_cells_range": [
+        0.08,
+        0.14
+      ],
+      "rect_size_multiplier_for_visible_max_dimension": 1.128,
+      "max_alpha_on_grid_border": 1
+    }
+  ]
+}

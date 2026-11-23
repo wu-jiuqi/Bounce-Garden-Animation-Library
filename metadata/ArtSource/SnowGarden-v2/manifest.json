@@ -1,0 +1,1776 @@
+{
+  "status": "offline-review-only",
+  "atlases": [
+    {
+      "key": "ice",
+      "source": "source/ice.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "grid": [
+        4,
+        4
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "fps": 10,
+      "frameBoundsAlpha24": [
+        [
+          36,
+          41,
+          221,
+          228
+        ],
+        [
+          36,
+          41,
+          221,
+          228
+        ],
+        [
+          36,
+          41,
+          221,
+          228
+        ],
+        [
+          36,
+          41,
+          220,
+          228
+        ],
+        [
+          36,
+          43,
+          221,
+          229
+        ],
+        [
+          36,
+          43,
+          221,
+          229
+        ],
+        [
+          36,
+          43,
+          221,
+          229
+        ],
+        [
+          36,
+          43,
+          221,
+          229
+        ],
+        [
+          36,
+          38,
+          225,
+          236
+        ],
+        [
+          32,
+          32,
+          226,
+          236
+        ],
+        [
+          27,
+          31,
+          230,
+          237
+        ],
+        [
+          26,
+          30,
+          229,
+          237
+        ],
+        [
+          28,
+          34,
+          228,
+          235
+        ],
+        [
+          32,
+          34,
+          227,
+          234
+        ],
+        [
+          37,
+          34,
+          224,
+          232
+        ],
+        null
+      ],
+      "sha256": "0a4b59568b4fa55f96504c0399cc870eb31049a9b464b5e91aa5f1030418d2b1",
+      "frameFiles": [
+        "frames/ice-00.png",
+        "frames/ice-01.png",
+        "frames/ice-02.png",
+        "frames/ice-03.png",
+        "frames/ice-04.png",
+        "frames/ice-05.png",
+        "frames/ice-06.png",
+        "frames/ice-07.png",
+        "frames/ice-08.png",
+        "frames/ice-09.png",
+        "frames/ice-10.png",
+        "frames/ice-11.png",
+        "frames/ice-12.png",
+        "frames/ice-13.png",
+        "frames/ice-14.png",
+        "frames/ice-15.png"
+      ],
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hitOrStage2": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "releaseOrStage1": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "fadeOrClear": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "key": "snowball",
+      "source": "source/snowball.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "grid": [
+        4,
+        4
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "fps": 10,
+      "frameBoundsAlpha24": [
+        [
+          36,
+          41,
+          220,
+          223
+        ],
+        [
+          36,
+          41,
+          220,
+          223
+        ],
+        [
+          36,
+          41,
+          220,
+          223
+        ],
+        [
+          36,
+          41,
+          220,
+          223
+        ],
+        [
+          44,
+          47,
+          213,
+          216
+        ],
+        [
+          53,
+          57,
+          203,
+          206
+        ],
+        [
+          62,
+          66,
+          194,
+          197
+        ],
+        [
+          72,
+          76,
+          184,
+          188
+        ],
+        [
+          73,
+          77,
+          184,
+          188
+        ],
+        [
+          83,
+          87,
+          174,
+          177
+        ],
+        [
+          91,
+          95,
+          166,
+          170
+        ],
+        [
+          98,
+          103,
+          158,
+          162
+        ],
+        [
+          46,
+          46,
+          208,
+          210
+        ],
+        [
+          48,
+          45,
+          207,
+          206
+        ],
+        [
+          59,
+          56,
+          203,
+          202
+        ],
+        null
+      ],
+      "sha256": "4a2c0901d0d3a280fd3f82e0de483509bfc0f347d04d67ed54b5821ff29d56ed",
+      "frameFiles": [
+        "frames/snowball-00.png",
+        "frames/snowball-01.png",
+        "frames/snowball-02.png",
+        "frames/snowball-03.png",
+        "frames/snowball-04.png",
+        "frames/snowball-05.png",
+        "frames/snowball-06.png",
+        "frames/snowball-07.png",
+        "frames/snowball-08.png",
+        "frames/snowball-09.png",
+        "frames/snowball-10.png",
+        "frames/snowball-11.png",
+        "frames/snowball-12.png",
+        "frames/snowball-13.png",
+        "frames/snowball-14.png",
+        "frames/snowball-15.png"
+      ],
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hitOrStage2": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "releaseOrStage1": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "fadeOrClear": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "key": "snowdrift",
+      "source": "source/snowdrift.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "grid": [
+        4,
+        4
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "fps": 10,
+      "frameBoundsAlpha24": [
+        [
+          33,
+          41,
+          231,
+          240
+        ],
+        [
+          29,
+          41,
+          229,
+          240
+        ],
+        [
+          27,
+          41,
+          226,
+          240
+        ],
+        [
+          26,
+          41,
+          224,
+          240
+        ],
+        [
+          33,
+          40,
+          231,
+          239
+        ],
+        [
+          30,
+          40,
+          229,
+          239
+        ],
+        [
+          27,
+          40,
+          227,
+          239
+        ],
+        [
+          25,
+          40,
+          225,
+          239
+        ],
+        [
+          32,
+          38,
+          232,
+          237
+        ],
+        [
+          29,
+          38,
+          230,
+          237
+        ],
+        [
+          27,
+          38,
+          228,
+          237
+        ],
+        [
+          25,
+          38,
+          225,
+          237
+        ],
+        [
+          31,
+          34,
+          232,
+          234
+        ],
+        [
+          30,
+          35,
+          228,
+          233
+        ],
+        [
+          28,
+          35,
+          220,
+          231
+        ],
+        null
+      ],
+      "sha256": "b755ea2618a6fd049d22d7f958e2fdfd45c8bdf6692794c6f3c4b9a2fe3a085a",
+      "frameFiles": [
+        "frames/snowdrift-00.png",
+        "frames/snowdrift-01.png",
+        "frames/snowdrift-02.png",
+        "frames/snowdrift-03.png",
+        "frames/snowdrift-04.png",
+        "frames/snowdrift-05.png",
+        "frames/snowdrift-06.png",
+        "frames/snowdrift-07.png",
+        "frames/snowdrift-08.png",
+        "frames/snowdrift-09.png",
+        "frames/snowdrift-10.png",
+        "frames/snowdrift-11.png",
+        "frames/snowdrift-12.png",
+        "frames/snowdrift-13.png",
+        "frames/snowdrift-14.png",
+        "frames/snowdrift-15.png"
+      ],
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hitOrStage2": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "releaseOrStage1": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "fadeOrClear": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "key": "cocoa",
+      "source": "source/cocoa.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "grid": [
+        4,
+        4
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "fps": 10,
+      "frameBoundsAlpha24": [
+        [
+          37,
+          40,
+          219,
+          221
+        ],
+        [
+          36,
+          40,
+          219,
+          221
+        ],
+        [
+          36,
+          40,
+          220,
+          221
+        ],
+        [
+          37,
+          40,
+          220,
+          221
+        ],
+        [
+          32,
+          44,
+          223,
+          217
+        ],
+        [
+          26,
+          53,
+          229,
+          210
+        ],
+        [
+          30,
+          44,
+          227,
+          217
+        ],
+        [
+          34,
+          40,
+          222,
+          220
+        ],
+        [
+          33,
+          37,
+          222,
+          222
+        ],
+        [
+          29,
+          35,
+          227,
+          222
+        ],
+        [
+          16,
+          27,
+          240,
+          230
+        ],
+        [
+          21,
+          22,
+          237,
+          231
+        ],
+        [
+          28,
+          23,
+          231,
+          228
+        ],
+        [
+          33,
+          21,
+          220,
+          217
+        ],
+        [
+          46,
+          36,
+          207,
+          205
+        ],
+        null
+      ],
+      "sha256": "75f4d78e819fc8cef55e49e92bf0a1e19231b5ba51739ec2a4e3fd52e4e9c578",
+      "frameFiles": [
+        "frames/cocoa-00.png",
+        "frames/cocoa-01.png",
+        "frames/cocoa-02.png",
+        "frames/cocoa-03.png",
+        "frames/cocoa-04.png",
+        "frames/cocoa-05.png",
+        "frames/cocoa-06.png",
+        "frames/cocoa-07.png",
+        "frames/cocoa-08.png",
+        "frames/cocoa-09.png",
+        "frames/cocoa-10.png",
+        "frames/cocoa-11.png",
+        "frames/cocoa-12.png",
+        "frames/cocoa-13.png",
+        "frames/cocoa-14.png",
+        "frames/cocoa-15.png"
+      ],
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hitOrStage2": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "releaseOrStage1": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "fadeOrClear": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "key": "anchor",
+      "source": "source/anchor.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "grid": [
+        4,
+        4
+      ],
+      "frameSize": [
+        256,
+        256
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "fps": 10,
+      "frameBoundsAlpha24": [
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          35,
+          35,
+          220,
+          226
+        ],
+        [
+          24,
+          34,
+          220,
+          226
+        ],
+        [
+          19,
+          22,
+          220,
+          226
+        ],
+        [
+          18,
+          28,
+          220,
+          226
+        ],
+        [
+          25,
+          30,
+          220,
+          226
+        ],
+        [
+          26,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ],
+        [
+          36,
+          42,
+          220,
+          226
+        ]
+      ],
+      "sha256": "876181b65e07fb5ce0b6f3e67cf3bdc70585e5294ff9a121eaf39bbee752eacd",
+      "frameFiles": [
+        "frames/anchor-00.png",
+        "frames/anchor-01.png",
+        "frames/anchor-02.png",
+        "frames/anchor-03.png",
+        "frames/anchor-04.png",
+        "frames/anchor-05.png",
+        "frames/anchor-06.png",
+        "frames/anchor-07.png",
+        "frames/anchor-08.png",
+        "frames/anchor-09.png",
+        "frames/anchor-10.png",
+        "frames/anchor-11.png",
+        "frames/anchor-12.png",
+        "frames/anchor-13.png",
+        "frames/anchor-14.png",
+        "frames/anchor-15.png"
+      ],
+      "sequences": {
+        "idle": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hitOrStage2": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "releaseOrStage1": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "fadeOrClear": [
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "key": "N",
+      "copiedFrom": "D:\\Game\\BounceBusters\\ArtSource\\SnowGarden-v2\\source\\current-white-jelly.png",
+      "file": "sprites/N.png"
+    },
+    {
+      "key": "M",
+      "copiedFrom": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\gameplay\\brick_blank_mint.png",
+      "file": "sprites/M.png"
+    },
+    {
+      "key": "F",
+      "copiedFrom": "D:\\Game\\BounceBusters\\ArtSource\\ContainerChain-v6\\Frames\\cookie_cube_states-00.png",
+      "file": "sprites/F.png"
+    },
+    {
+      "key": "T",
+      "copiedFrom": "D:\\Game\\BounceBusters\\ArtSource\\ContainerChain-v6\\Frames\\toy_cube_states-00.png",
+      "file": "sprites/T.png"
+    },
+    {
+      "key": "L",
+      "copiedFrom": "D:\\Game\\BounceBusters\\ArtSource\\ContainerChain-v6\\Frames\\power_cube_pairs-00.png",
+      "file": "sprites/L.png"
+    },
+    {
+      "key": "B",
+      "copiedFrom": "D:\\Game\\BounceBusters\\ArtSource\\ContainerChain-v6\\Frames\\power_cube_pairs-02.png",
+      "file": "sprites/B.png"
+    },
+    {
+      "key": "ball",
+      "copiedFrom": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\gameplay\\ball_blue.png",
+      "file": "sprites/ball.png"
+    }
+  ],
+  "introductions": [
+    {
+      "key": "ice",
+      "title": "冰封砖",
+      "text": [
+        "发现冰里的目标",
+        "先击碎外层薄冰",
+        "继续命中内部方盒",
+        "击碎后完成收集"
+      ],
+      "rule": "解冻不等于收集；同一次攻击不穿透冰层。",
+      "originalPage": "introductions/ice-page.png",
+      "animation": "introductions/ice-motion.gif",
+      "frames": 32,
+      "frameSize": [
+        540,
+        1170
+      ],
+      "fps": 8.333,
+      "layerDirectory": "introductions/ice-layers",
+      "animationLayers": [
+        "background",
+        "title",
+        "hero1",
+        "hero2",
+        "hero3",
+        "hero4",
+        "arrow",
+        "ball",
+        "effect",
+        "editableCaptions"
+      ]
+    },
+    {
+      "key": "snowball",
+      "title": "缩小雪砖",
+      "text": [
+        "方形雪砖挡住通路",
+        "命中后缩小一圈",
+        "通路随之变宽",
+        "最后一击清开入口"
+      ],
+      "rule": "雪砖原地缩小，不滚动，也不会下落。",
+      "originalPage": "introductions/snowball-page.png",
+      "animation": "introductions/snowball-motion.gif",
+      "frames": 32,
+      "frameSize": [
+        540,
+        1170
+      ],
+      "fps": 8.333,
+      "layerDirectory": "introductions/snowball-layers",
+      "animationLayers": [
+        "background",
+        "title",
+        "hero1",
+        "hero2",
+        "hero3",
+        "hero4",
+        "arrow",
+        "ball",
+        "effect",
+        "editableCaptions"
+      ]
+    },
+    {
+      "key": "snowdrift",
+      "title": "雪堆砖",
+      "text": [
+        "找到紧邻的普通砖",
+        "消除邻砖清掉一层",
+        "只看上下左右",
+        "直接命中也能清雪"
+      ],
+      "rule": "斜角不生效；雪堆消失不会连带清雪。",
+      "originalPage": "introductions/snowdrift-page.png",
+      "animation": "introductions/snowdrift-motion.gif",
+      "frames": 32,
+      "frameSize": [
+        540,
+        1170
+      ],
+      "fps": 8.333,
+      "layerDirectory": "introductions/snowdrift-layers",
+      "animationLayers": [
+        "background",
+        "title",
+        "hero1",
+        "hero2",
+        "hero3",
+        "hero4",
+        "arrow",
+        "ball",
+        "effect",
+        "editableCaptions"
+      ]
+    },
+    {
+      "key": "cocoa",
+      "title": "热可可砖",
+      "text": [
+        "击破热可可果冻砖",
+        "暖流覆盖周围八格",
+        "每种冰雪各减一层",
+        "露出目标后继续收集"
+      ],
+      "rule": "只解冻八个邻格，不造成伤害或激活其他道具。",
+      "originalPage": "introductions/cocoa-page.png",
+      "animation": "introductions/cocoa-motion.gif",
+      "frames": 32,
+      "frameSize": [
+        540,
+        1170
+      ],
+      "fps": 8.333,
+      "layerDirectory": "introductions/cocoa-layers",
+      "animationLayers": [
+        "background",
+        "title",
+        "hero1",
+        "hero2",
+        "hero3",
+        "hero4",
+        "arrow",
+        "ball",
+        "effect",
+        "editableCaptions"
+      ]
+    },
+    {
+      "key": "anchor",
+      "title": "固定砖",
+      "text": [
+        "认准砖内的方形标记",
+        "弹球碰到就会反弹",
+        "不会破碎也不会下落",
+        "利用两侧空隙绕行"
+      ],
+      "rule": "热可可无法改变固定砖。",
+      "originalPage": "introductions/anchor-page.png",
+      "animation": "introductions/anchor-motion.gif",
+      "frames": 32,
+      "frameSize": [
+        540,
+        1170
+      ],
+      "fps": 8.333,
+      "layerDirectory": "introductions/anchor-layers",
+      "animationLayers": [
+        "background",
+        "title",
+        "hero1",
+        "hero2",
+        "hero3",
+        "hero4",
+        "arrow",
+        "ball",
+        "effect",
+        "editableCaptions"
+      ]
+    }
+  ],
+  "introductionComponents": [
+    {
+      "key": "ice",
+      "source": "source/ice-intro-layers.png",
+      "grid": [
+        2,
+        3
+      ],
+      "layers": [
+        {
+          "name": "title",
+          "sourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "file": "introductions/ice-layers/title.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            14,
+            175,
+            498,
+            337
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero1",
+          "sourceRect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "file": "introductions/ice-layers/hero1.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            32,
+            85,
+            459,
+            499
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero2",
+          "sourceRect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "file": "introductions/ice-layers/hero2.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            64,
+            40,
+            492,
+            458
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero3",
+          "sourceRect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "file": "introductions/ice-layers/hero3.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            50,
+            69,
+            418,
+            429
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero4",
+          "sourceRect": [
+            0,
+            1024,
+            512,
+            1536
+          ],
+          "file": "introductions/ice-layers/hero4.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            72,
+            29,
+            462,
+            424
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "arrow",
+          "sourceRect": [
+            512,
+            1024,
+            1024,
+            1536
+          ],
+          "file": "introductions/ice-layers/arrow.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            22,
+            42,
+            420,
+            410
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "snowball",
+      "source": "source/snowball-intro-layers.png",
+      "grid": [
+        2,
+        3
+      ],
+      "layers": [
+        {
+          "name": "title",
+          "sourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "file": "introductions/snowball-layers/title.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            14,
+            186,
+            498,
+            325
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero1",
+          "sourceRect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "file": "introductions/snowball-layers/hero1.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            41,
+            88,
+            446,
+            492
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero2",
+          "sourceRect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "file": "introductions/snowball-layers/hero2.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            128,
+            111,
+            414,
+            399
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero3",
+          "sourceRect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "file": "introductions/snowball-layers/hero3.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            141,
+            156,
+            333,
+            352
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero4",
+          "sourceRect": [
+            0,
+            1024,
+            512,
+            1536
+          ],
+          "file": "introductions/snowball-layers/hero4.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            89,
+            64,
+            445,
+            409
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "arrow",
+          "sourceRect": [
+            512,
+            1024,
+            1024,
+            1536
+          ],
+          "file": "introductions/snowball-layers/arrow.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            22,
+            42,
+            420,
+            410
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "snowdrift",
+      "source": "source/snowdrift-intro-layers.png",
+      "grid": [
+        2,
+        3
+      ],
+      "layers": [
+        {
+          "name": "title",
+          "sourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "file": "introductions/snowdrift-layers/title.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            14,
+            173,
+            498,
+            338
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero1",
+          "sourceRect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "file": "introductions/snowdrift-layers/hero1.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            28,
+            156,
+            468,
+            387
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero2",
+          "sourceRect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "file": "introductions/snowdrift-layers/hero2.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            47,
+            142,
+            490,
+            372
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero3",
+          "sourceRect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "file": "introductions/snowdrift-layers/hero3.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            16,
+            28,
+            472,
+            476
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero4",
+          "sourceRect": [
+            0,
+            1024,
+            512,
+            1536
+          ],
+          "file": "introductions/snowdrift-layers/hero4.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            46,
+            70,
+            486,
+            325
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "arrow",
+          "sourceRect": [
+            512,
+            1024,
+            1024,
+            1536
+          ],
+          "file": "introductions/snowdrift-layers/arrow.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            22,
+            42,
+            420,
+            410
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "cocoa",
+      "source": "source/cocoa-intro-layers.png",
+      "grid": [
+        2,
+        3
+      ],
+      "layers": [
+        {
+          "name": "title",
+          "sourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "file": "introductions/cocoa-layers/title.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            14,
+            186,
+            498,
+            326
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero1",
+          "sourceRect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "file": "introductions/cocoa-layers/hero1.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            98,
+            103,
+            414,
+            416
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero2",
+          "sourceRect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "file": "introductions/cocoa-layers/hero2.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            32,
+            32,
+            477,
+            477
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero3",
+          "sourceRect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "file": "introductions/cocoa-layers/hero3.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            26,
+            22,
+            483,
+            488
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero4",
+          "sourceRect": [
+            0,
+            1024,
+            512,
+            1536
+          ],
+          "file": "introductions/cocoa-layers/hero4.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            43,
+            148,
+            497,
+            372
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "arrow",
+          "sourceRect": [
+            512,
+            1024,
+            1024,
+            1536
+          ],
+          "file": "introductions/cocoa-layers/arrow.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            22,
+            42,
+            420,
+            410
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "key": "anchor",
+      "source": "source/anchor-intro-layers.png",
+      "grid": [
+        2,
+        3
+      ],
+      "layers": [
+        {
+          "name": "title",
+          "sourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "file": "introductions/anchor-layers/title.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            14,
+            173,
+            498,
+            338
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero1",
+          "sourceRect": [
+            512,
+            0,
+            1024,
+            512
+          ],
+          "file": "introductions/anchor-layers/hero1.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            97,
+            106,
+            415,
+            425
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero2",
+          "sourceRect": [
+            0,
+            512,
+            512,
+            1024
+          ],
+          "file": "introductions/anchor-layers/hero2.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            97,
+            106,
+            415,
+            425
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero3",
+          "sourceRect": [
+            512,
+            512,
+            1024,
+            1024
+          ],
+          "file": "introductions/anchor-layers/hero3.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            0,
+            106,
+            512,
+            425
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "hero4",
+          "sourceRect": [
+            0,
+            1024,
+            512,
+            1536
+          ],
+          "file": "introductions/anchor-layers/hero4.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            0,
+            106,
+            415,
+            425
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "arrow",
+          "sourceRect": [
+            512,
+            1024,
+            1024,
+            1536
+          ],
+          "file": "introductions/anchor-layers/arrow.png",
+          "size": [
+            512,
+            512
+          ],
+          "alphaBounds": [
+            22,
+            42,
+            420,
+            410
+          ],
+          "pivot": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  ]
+}

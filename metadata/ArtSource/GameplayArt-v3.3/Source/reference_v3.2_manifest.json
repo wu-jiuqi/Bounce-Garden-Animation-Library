@@ -1,0 +1,562 @@
+{
+  "version": "3.2-rear-cat",
+  "scope": "Art-only; no Unity writes",
+  "character_technique": "Rear-view whole-character 16-frame sequence; right paw only; ball drawn behind cat",
+  "frames": [
+    {
+      "index": 0,
+      "file": "Frames/cat_00.png",
+      "source_rect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "source_alpha_bounds": [
+        57,
+        26,
+        266,
+        314
+      ],
+      "placement_px": [
+        104,
+        54
+      ],
+      "duration_ms": 180,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 1,
+      "file": "Frames/cat_01.png",
+      "source_rect": [
+        314,
+        0,
+        627,
+        314
+      ],
+      "source_alpha_bounds": [
+        59,
+        26,
+        268,
+        310
+      ],
+      "placement_px": [
+        104,
+        57
+      ],
+      "duration_ms": 80,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 2,
+      "file": "Frames/cat_02.png",
+      "source_rect": [
+        627,
+        0,
+        940,
+        314
+      ],
+      "source_alpha_bounds": [
+        60,
+        26,
+        274,
+        313
+      ],
+      "placement_px": [
+        100,
+        54
+      ],
+      "duration_ms": 80,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 3,
+      "file": "Frames/cat_03.png",
+      "source_rect": [
+        940,
+        0,
+        1254,
+        314
+      ],
+      "source_alpha_bounds": [
+        59,
+        41,
+        273,
+        314
+      ],
+      "placement_px": [
+        100,
+        76
+      ],
+      "duration_ms": 100,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 4,
+      "file": "Frames/cat_04.png",
+      "source_rect": [
+        0,
+        314,
+        314,
+        627
+      ],
+      "source_alpha_bounds": [
+        58,
+        27,
+        301,
+        307
+      ],
+      "placement_px": [
+        79,
+        63
+      ],
+      "duration_ms": 50,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 5,
+      "file": "Frames/cat_05.png",
+      "source_rect": [
+        314,
+        314,
+        627,
+        627
+      ],
+      "source_alpha_bounds": [
+        59,
+        25,
+        313,
+        306
+      ],
+      "placement_px": [
+        72,
+        61
+      ],
+      "duration_ms": 50,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 6,
+      "file": "Frames/cat_06.png",
+      "source_rect": [
+        627,
+        314,
+        940,
+        627
+      ],
+      "source_alpha_bounds": [
+        59,
+        24,
+        309,
+        306
+      ],
+      "placement_px": [
+        74,
+        60
+      ],
+      "duration_ms": 50,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 7,
+      "file": "Frames/cat_07.png",
+      "source_rect": [
+        940,
+        314,
+        1254,
+        627
+      ],
+      "source_alpha_bounds": [
+        59,
+        19,
+        301,
+        306
+      ],
+      "placement_px": [
+        80,
+        53
+      ],
+      "duration_ms": 60,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 8,
+      "file": "Frames/cat_08.png",
+      "source_rect": [
+        0,
+        627,
+        314,
+        940
+      ],
+      "source_alpha_bounds": [
+        57,
+        13,
+        307,
+        306
+      ],
+      "placement_px": [
+        74,
+        44
+      ],
+      "duration_ms": 60,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 9,
+      "file": "Frames/cat_09.png",
+      "source_rect": [
+        314,
+        627,
+        627,
+        940
+      ],
+      "source_alpha_bounds": [
+        58,
+        28,
+        295,
+        304
+      ],
+      "placement_px": [
+        84,
+        69
+      ],
+      "duration_ms": 70,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 10,
+      "file": "Frames/cat_10.png",
+      "source_rect": [
+        627,
+        627,
+        940,
+        940
+      ],
+      "source_alpha_bounds": [
+        60,
+        29,
+        266,
+        304
+      ],
+      "placement_px": [
+        106,
+        70
+      ],
+      "duration_ms": 90,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 11,
+      "file": "Frames/cat_11.png",
+      "source_rect": [
+        940,
+        627,
+        1254,
+        940
+      ],
+      "source_alpha_bounds": [
+        59,
+        29,
+        265,
+        306
+      ],
+      "placement_px": [
+        106,
+        67
+      ],
+      "duration_ms": 100,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 12,
+      "file": "Frames/cat_12.png",
+      "source_rect": [
+        0,
+        940,
+        314,
+        1254
+      ],
+      "source_alpha_bounds": [
+        58,
+        8,
+        264,
+        284
+      ],
+      "placement_px": [
+        106,
+        69
+      ],
+      "duration_ms": 90,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 13,
+      "file": "Frames/cat_13.png",
+      "source_rect": [
+        314,
+        940,
+        627,
+        1254
+      ],
+      "source_alpha_bounds": [
+        64,
+        11,
+        265,
+        286
+      ],
+      "placement_px": [
+        109,
+        70
+      ],
+      "duration_ms": 80,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 14,
+      "file": "Frames/cat_14.png",
+      "source_rect": [
+        627,
+        940,
+        940,
+        1254
+      ],
+      "source_alpha_bounds": [
+        59,
+        7,
+        266,
+        288
+      ],
+      "placement_px": [
+        105,
+        61
+      ],
+      "duration_ms": 90,
+      "active_in_default_clip": true
+    },
+    {
+      "index": 15,
+      "file": "Frames/cat_15.png",
+      "source_rect": [
+        940,
+        940,
+        1254,
+        1254
+      ],
+      "source_alpha_bounds": [
+        60,
+        8,
+        266,
+        288
+      ],
+      "placement_px": [
+        106,
+        63
+      ],
+      "duration_ms": 270,
+      "active_in_default_clip": true
+    }
+  ],
+  "canvas": [
+    512,
+    512
+  ],
+  "atlas": {
+    "file": "Sprites/cat_whole_atlas.png",
+    "grid": [
+      4,
+      4
+    ],
+    "cell": [
+      512,
+      512
+    ],
+    "order": "left-to-right, top-to-bottom"
+  },
+  "pivot_unity": [
+    0.5,
+    0.08203125
+  ],
+  "common_scale": 1.4334470989761092,
+  "contact_frame": 6,
+  "contact_ms": 540,
+  "duration_ms": 1500,
+  "ball_contact_local_top_left": [
+    420,
+    180
+  ],
+  "reference_scene": [
+    540,
+    1170
+  ],
+  "root_final_center": [
+    198.25,
+    955
+  ],
+  "root_idle_center": [
+    220.25,
+    955
+  ],
+  "cat_display_width": 224,
+  "release_position": [
+    270.0,
+    921.75
+  ],
+  "color_variants": [
+    "apricot",
+    "blue",
+    "coral",
+    "mint"
+  ],
+  "source": {
+    "file": "Source/cat_rear_4x4.png",
+    "sha256": "3261303e7396eb3b45609b02d100895765c5bb5af58cb901c0f891762d6aa8d7"
+  },
+  "reuse_from_v3": [
+    {
+      "file": "Sprites/aim_dot.png",
+      "sha256": "5d4514fbac8018bd8b9357933d572ed6f097b38fe26f735a4c9cdf9e1497e8f3"
+    },
+    {
+      "file": "Sprites/aim_endpoint.png",
+      "sha256": "89f99dcdbdb5ad42baf0c1ada1620dc28f320238a85b7962c4baf4d8eba49c8c"
+    },
+    {
+      "file": "Sprites/aim_turn.png",
+      "sha256": "a755fd415a578262f86faed7c7c421f42374dd099082a348f7e1caf79bcd23b8"
+    },
+    {
+      "file": "Sprites/ammo_panel.png",
+      "sha256": "e0eda3529eba1313441d8ddf2194f9e5960ec7e7293c41c5cbb7891d866de374"
+    },
+    {
+      "file": "Sprites/ball_yarn_apricot.png",
+      "sha256": "7d1f4427d3ba0730662a46fe848819d4be87cc8cba96450a1e0444a04bc88f18"
+    },
+    {
+      "file": "Sprites/ball_yarn_blue.png",
+      "sha256": "2ea606950ca5b353b07e8c76c755a1f7d09e4d18e2168e042728116b4e5bb1c2"
+    },
+    {
+      "file": "Sprites/ball_yarn_coral.png",
+      "sha256": "95a0c0bf0db04897511a49d5d915d0909cde16cb3e20550f3092df054f16c08e"
+    },
+    {
+      "file": "Sprites/ball_yarn_mint.png",
+      "sha256": "6e07fbcf7c03f39867f64e648dd48dc225d068e83a8372f56b9e0ad34d102a81"
+    },
+    {
+      "file": "Sprites/field_bottom.png",
+      "sha256": "33886142267f4a2771f7cbcff7d8aba7502cec27209fa5f60386a33cf3df39dd"
+    },
+    {
+      "file": "Sprites/field_floor.png",
+      "sha256": "c23d796aabb34c54264bb6f5ec1870fbfc92c6b5575fe2a1fda3619b6369dfd1"
+    },
+    {
+      "file": "Sprites/field_rail_left.png",
+      "sha256": "780168d93efce6ee66f8165021696fb61573d9bad855f4c297014c1b6c9472f7"
+    },
+    {
+      "file": "Sprites/field_rail_right.png",
+      "sha256": "514e78b1c24c3e29759e27b0d628b2f777029b1ecbd0c5e572979f4240d4a93d"
+    },
+    {
+      "file": "Sprites/field_recovery.png",
+      "sha256": "4eab4759c86cae704facb6631ee4415c5a994ec0880b630936d4b42bd2ae1df4"
+    },
+    {
+      "file": "Sprites/field_top.png",
+      "sha256": "33886142267f4a2771f7cbcff7d8aba7502cec27209fa5f60386a33cf3df39dd"
+    },
+    {
+      "file": "Sprites/fx_hit.png",
+      "sha256": "bd1d41a937c3301cd7106f27f6c6ee969a1e18d57661d639f321a9d6921ff305"
+    },
+    {
+      "file": "Sprites/fx_launch.png",
+      "sha256": "0ef62b9cd2d93a2bbb1cd0a336744d4149ae04d000df67651a185a4594c6bead"
+    },
+    {
+      "file": "Sprites/fx_recovery.png",
+      "sha256": "a30527466be12a996271da50510d2bb25c3037caf7cdf38b390f5274989a5870"
+    },
+    {
+      "file": "Sprites/jelly_damage_1.png",
+      "sha256": "56588ee67f2c21b4863b9f14a00dee0450877b68bdbf70b7329db37fdca4f640"
+    },
+    {
+      "file": "Sprites/jelly_damage_2.png",
+      "sha256": "dce46b5b4de104b9781824b4d314f8ce4217d6a1d1ed76c787b8a24864664dc7"
+    },
+    {
+      "file": "Sprites/jelly_intact.png",
+      "sha256": "3fb27cf4b9e17e332d022a052f973dafc562b9f9f5dc6a304d2b3584f7035b9f"
+    },
+    {
+      "file": "Sprites/thread_apricot.png",
+      "sha256": "8a13b38ecd3b63d9d926e36aa298c9d0314a8d3b56caf291392fa88786b875a4"
+    },
+    {
+      "file": "Sprites/thread_blue.png",
+      "sha256": "2bbd08f46897a140f43b9eced4e0ec1c9e886ec83726f020373efa0b29b46f18"
+    },
+    {
+      "file": "Sprites/thread_coral.png",
+      "sha256": "2040238814d3a38dd9b0743de2047aad23e417b209585faf9f5b63c2073eb833"
+    },
+    {
+      "file": "Sprites/thread_mint.png",
+      "sha256": "388be3efa31486167db1e60abc294ff1c8b288928e48122152316657e763e180"
+    }
+  ],
+  "playback_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "view": "rear; no face visible; right forepaw only",
+  "layer_order_back_to_front": [
+    "field",
+    "ball_and_thread",
+    "whole_rear_cat",
+    "small_launch_accents"
+  ],
+  "contact_ball_occluded_fraction": 0.26098076873041204,
+  "handoff_samples": {
+    "before": [
+      269.99999999996294,
+      921.7500000002428
+    ],
+    "contact": [
+      270.0,
+      921.75
+    ],
+    "after": [
+      270,
+      921.7499132352941
+    ]
+  },
+  "loop_root_samples": {
+    "start": [
+      220.25,
+      955
+    ],
+    "end": [
+      220.25,
+      955
+    ]
+  }
+}

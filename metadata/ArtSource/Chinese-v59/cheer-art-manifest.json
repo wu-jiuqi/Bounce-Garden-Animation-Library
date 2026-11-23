@@ -1,0 +1,41 @@
+{
+  "method": "built-in image_gen",
+  "artwork": [
+    {
+      "name": "nice",
+      "label": "真不错！",
+      "palette": "soft pastel mint green #A0E2C3 with aqua #8BD6CD",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-51c4bd0e-b586-4ee1-b6cf-88e8d112b13f.png",
+      "prompt": "Use case: text-localization / production game sprite. Input is a style reference for glossy inflated letter material, not a layout to preserve. Create ONE standalone simplified Chinese encouragement word sprite with exact text \"真不错！\". One horizontal line, large very thick rounded bubbly Chinese strokes, accurate legible characters. Palette: soft pastel mint green #A0E2C3 with aqua #8BD6CD. REDUCE saturation to coordinate with a soft pastel mint/lavender/cream cat garden game. Broad soft white highlight, smooth rounded 3D jelly material, thick warm ivory #FFF2DA outline, shallow muted warm mauve #997A91 extrusion at lower-right. Delicate small cream-gold four-point sparkle on each outside end, only two. Center full composition with generous empty margins on a wide 3:1 canvas. Genuine transparent alpha background. Nothing behind the word. NO colored backdrop, vignette, gradient backdrop, floor, halo, shadow cloud, haze, noise, checkerboard painting, panel or other words. Edges must be crisp and clean, completely transparent outside the cream outline and tiny sparkles. This is a single game-ready sprite, not a poster. Entire word must fit without clipping.",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV59\\Cheers\\nice.png",
+      "sha256": "6e448507bd4902c0c29132a0e662a21481144deae2a8e7671e0d9841c147cb1f"
+    },
+    {
+      "name": "great",
+      "label": "太棒啦！",
+      "palette": "soft peach pink #F0ABB6 with apricot #F6C18F",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-21ae4262-661d-4a48-b8bd-8eba4ec775a0.png",
+      "prompt": "Use case: text-localization / production game sprite. Input is a style reference for glossy inflated letter material, not a layout to preserve. Create ONE standalone simplified Chinese encouragement word sprite with exact text \"太棒啦！\". One horizontal line, large very thick rounded bubbly Chinese strokes, accurate legible characters. Palette: soft peach pink #F0ABB6 with apricot #F6C18F. REDUCE saturation to coordinate with a soft pastel mint/lavender/cream cat garden game. Broad soft white highlight, smooth rounded 3D jelly material, thick warm ivory #FFF2DA outline, shallow muted warm mauve #997A91 extrusion at lower-right. Delicate small cream-gold four-point sparkle on each outside end, only two. Center full composition with generous empty margins on a wide 3:1 canvas. Genuine transparent alpha background. Nothing behind the word. NO colored backdrop, vignette, gradient backdrop, floor, halo, shadow cloud, haze, noise, checkerboard painting, panel or other words. Edges must be crisp and clean, completely transparent outside the cream outline and tiny sparkles. This is a single game-ready sprite, not a poster. Entire word must fit without clipping.",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV59\\Cheers\\great.png",
+      "sha256": "b2b3f383f978e2c08ce44f9c0214cd0a38f8a39516657c54464262026923c0d1"
+    },
+    {
+      "name": "amazing",
+      "label": "好厉害！",
+      "palette": "warm creamy honey gold #F4CF70 with soft golden apricot #EDB765",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-18909907-f950-4aea-85a1-0dca46c80705.png",
+      "prompt": "Use case: text-localization / production game sprite. Input is a style reference for glossy inflated letter material, not a layout to preserve. Create ONE standalone simplified Chinese encouragement word sprite with exact text \"好厉害！\". One horizontal line, large very thick rounded bubbly Chinese strokes, accurate legible characters. Palette: warm creamy honey gold #F4CF70 with soft golden apricot #EDB765. REDUCE saturation to coordinate with a soft pastel mint/lavender/cream cat garden game. Broad soft white highlight, smooth rounded 3D jelly material, thick warm ivory #FFF2DA outline, shallow muted warm mauve #997A91 extrusion at lower-right. Delicate small cream-gold four-point sparkle on each outside end, only two. Center full composition with generous empty margins on a wide 3:1 canvas. Genuine transparent alpha background. Nothing behind the word. NO colored backdrop, vignette, gradient backdrop, floor, halo, shadow cloud, haze, noise, checkerboard painting, panel or other words. Edges must be crisp and clean, completely transparent outside the cream outline and tiny sparkles. This is a single game-ready sprite, not a poster. Entire word must fit without clipping.",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV59\\Cheers\\amazing.png",
+      "sha256": "a4c07ad6b781d78b983b165915e25ba890ed76a1d516dd95e344c5be998ca273"
+    },
+    {
+      "name": "incredible",
+      "label": "不可思议！",
+      "palette": "pastel lavender #C4A7E4 with gentle blush #E5BDD9",
+      "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a1a564-b056-74e0-89da-43b15eddcfc2\\exec-17ea7c56-cd6c-440e-a1be-ae77ab77f608.png",
+      "prompt": "Use case: text-localization / production game sprite. Input is a style reference for glossy inflated letter material, not a layout to preserve. Create ONE standalone simplified Chinese encouragement word sprite with exact text \"不可思议！\". One horizontal line, large very thick rounded bubbly Chinese strokes, accurate legible characters. Palette: pastel lavender #C4A7E4 with gentle blush #E5BDD9. REDUCE saturation to coordinate with a soft pastel mint/lavender/cream cat garden game. Broad soft white highlight, smooth rounded 3D jelly material, thick warm ivory #FFF2DA outline, shallow muted warm mauve #997A91 extrusion at lower-right. Delicate small cream-gold four-point sparkle on each outside end, only two. Center full composition with generous empty margins on a wide 3:1 canvas. Genuine transparent alpha background. Nothing behind the word. NO colored backdrop, vignette, gradient backdrop, floor, halo, shadow cloud, haze, noise, checkerboard painting, panel or other words. Edges must be crisp and clean, completely transparent outside the cream outline and tiny sparkles. This is a single game-ready sprite, not a poster. Entire word must fit without clipping.",
+      "runtimeAsset": "D:\\Game\\BounceBusters\\BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\ChineseV59\\Cheers\\incredible.png",
+      "sha256": "494ac494de8e70e8b8a680ddbef086d563165e6c173cbaa5feb568b6aa81d0da"
+    }
+  ]
+}

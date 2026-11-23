@@ -1,0 +1,62 @@
+[
+  {
+    "level": 40,
+    "x": 176.01,
+    "y": 132,
+    "state": "node-locked"
+  },
+  {
+    "level": 39,
+    "x": 118.14,
+    "y": 223,
+    "state": "node-locked"
+  },
+  {
+    "level": 38,
+    "x": 352.84,
+    "y": 314,
+    "state": "node-locked"
+  },
+  {
+    "level": 37,
+    "x": 417.47,
+    "y": 405,
+    "state": "node-locked"
+  },
+  {
+    "level": 36,
+    "x": 180.66,
+    "y": 496,
+    "state": "node-current"
+  },
+  {
+    "level": 35,
+    "x": 128.46,
+    "y": 587,
+    "state": "node-complete"
+  },
+  {
+    "level": 34,
+    "x": 267.69,
+    "y": 678,
+    "state": "node-complete"
+  },
+  {
+    "level": 33,
+    "x": 272.15,
+    "y": 769,
+    "state": "node-complete"
+  },
+  {
+    "level": 32,
+    "x": 158.87,
+    "y": 860,
+    "state": "node-complete"
+  },
+  {
+    "level": 31,
+    "x": 122.98,
+    "y": 951,
+    "state": "node-complete"
+  }
+]

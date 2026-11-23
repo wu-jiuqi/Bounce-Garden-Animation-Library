@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image_gen",
+  "reference": "../Native-v50/chapter-orb-reference.png",
+  "asset": "chapter-orb.png",
+  "runtime": "Assets/Resources/Art/ChapterOrbV51/chapter-orb.png",
+  "hint": "native cream/yellow badge with TMP exclamation; animated separately",
+  "prompt": "Extract/recreate only the large top mint jelly circular medallion from the approved reference: cream cushion, lilac open book, ivory pages, gold cat paw. Preserve design, colors, proportions and clay/jelly material. Front view, one centered sprite, fully transparent outside silhouette, no labels, no sample poses, no external floor shadow.",
+  "nativeTextureImportMax": 512,
+  "appearanceApprovedByUser": true
+}

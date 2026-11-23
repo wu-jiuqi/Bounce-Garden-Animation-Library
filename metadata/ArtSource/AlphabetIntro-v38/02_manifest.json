@@ -1,0 +1,129 @@
+{
+  "id": 2,
+  "tool": "built-in image_gen",
+  "source": "C:\\Users\\joyee\\.codex\\generated_images\\01a18bfa-3ef2-72e2-8f1d-5ecf959808b4\\exec-f6fe0a70-10eb-41b6-8cb8-210d60c5474e.png",
+  "prompt": "Use case: background-extraction. Production sprite atlas for a Unity mobile game tutorial, based on the attached approved page as STYLE/OBJECT reference only. Create SIX isolated transparent cutouts, arranged in exactly TWO COLUMNS and THREE ROWS of equal SQUARE cells in a 2:3 portrait canvas. True RGBA transparency everywhere outside objects. Large EMPTY TRANSPARENT gutters around EVERY cell, at least 12% of each cell. NO visible grid lines, no cell borders, no background, no checkerboard, no screenshot. Each cutout fits entirely in its own cell and never crosses gutters. Premium glossy soft candy 3D game art, rounded SQUARE block silhouettes, warm golden highlights, same objects/colors as reference. Cell1 top-left: gold dimensional English title \"FISH BOX\" with small white flowers and green leaves; English ONLY. Cell2 top-right: a golden small square fish biscuit box with a raised fish emblem above centered numeral7. Cell3 middle-left: the same small golden fish box numeral1 cracking. Cell4 middle-right: a single cute golden fish-shaped biscuit collectible. Cell5 bottom-left: a small golden fish box numeral1 cracking with tiny static fragments. Cell6 bottom-right: a SINGLE thick curved golden arrow pointing diagonally down-right. All numbers centered and legible. Static base illustrations only: REMOVE ALL blue balls, motion trails, laser beams, flying collectibles, task cards and captions; those are independent native runtime layers. No Chinese text. Do not add instruction sentences. All six cells independent and clearly separated by transparency.",
+  "gutterColumns": [
+    552,
+    530,
+    512
+  ],
+  "gutterRows": [
+    [
+      0,
+      512,
+      1024,
+      1536
+    ],
+    [
+      0,
+      512,
+      1024,
+      1536
+    ]
+  ],
+  "layers": [
+    {
+      "layer": "title",
+      "size": [
+        523,
+        337
+      ],
+      "bbox": [
+        12,
+        96,
+        535,
+        433
+      ],
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "layer": "hero1",
+      "size": [
+        366,
+        377
+      ],
+      "bbox": [
+        52,
+        93,
+        418,
+        470
+      ],
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "layer": "hero2",
+      "size": [
+        501,
+        430
+      ],
+      "bbox": [
+        12,
+        54,
+        513,
+        484
+      ],
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "layer": "hero3",
+      "size": [
+        387,
+        286
+      ],
+      "bbox": [
+        66,
+        146,
+        453,
+        432
+      ],
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "layer": "hero4",
+      "size": [
+        447,
+        371
+      ],
+      "bbox": [
+        44,
+        63,
+        491,
+        434
+      ],
+      "alpha": [
+        0,
+        254
+      ]
+    },
+    {
+      "layer": "arrow",
+      "size": [
+        384,
+        288
+      ],
+      "bbox": [
+        70,
+        130,
+        454,
+        418
+      ],
+      "alpha": [
+        0,
+        254
+      ]
+    }
+  ]
+}

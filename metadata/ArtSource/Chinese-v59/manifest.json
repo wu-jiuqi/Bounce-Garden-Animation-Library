@@ -1,0 +1,26 @@
+{
+  "method": "built-in image_gen",
+  "brand": "喵弹拆箱",
+  "runtimeAssets": [
+    {
+      "file": "BounceGarden/BounceGarden/Assets/Resources/Art/ChineseV59/logo.png",
+      "prompt": "Production game logo sprite for a cute cat jelly brick-bouncing game. EXACT simplified Chinese brand text 喵弹拆箱, four correct readable Chinese glyphs in ONE horizontal line, no other words. Render at 1536x512 horizontal canvas, all content inside x=80..1456 y=60..450. Genuine transparent alpha background, absolutely NO background color, NO gradient backdrop, NO checkerboard, NO vignette, NO wide cast shadow. Four enormous rounded inflated jelly Chinese characters with glossy highlights, thick warm cream outline and compact plum purple 3D extrusion underneath. First character 喵 honey gold, second 弹 mint green, third 拆 honey gold, fourth 箱 mint green. Tiny cat ear accents on first glyph, one little cream daisy at far right. Charming polished 3D casual mobile game logo, legibility is paramount. Make the four glyphs physically separated by narrow transparent gaps so each can animate independently. Exact text 喵弹拆箱."
+    },
+    {
+      "file": "BounceGarden/BounceGarden/Assets/Resources/Art/ReferenceV49/chapters-alphabet.png",
+      "prompt": "Edit ONLY text on right side. Alphabet Garden -> 字母花园; Levels 1–26 -> 第1—26关. Keep exact 758x294 canvas, same rounded gold card, cream field, cat identity, ABC blocks unchanged. ABC are gameplay teaching letters and MUST remain ABC. Same illustration, framing, shadows and positions. Render correct rounded simplified Chinese."
+    },
+    {
+      "file": "BounceGarden/BounceGarden/Assets/Resources/Art/ReferenceV49/chapters-picnic.png",
+      "prompt": "Edit ONLY text: CHAPTER 02 -> 第二章; Kitty Picnic -> 猫咪野餐; Levels 27–52 -> 第27—52关. Keep exact 758x744 canvas, mint card border, illustration, cat identity, basket, fish cookie, all colors, positions, lower empty cream region for live UI untouched. Correct simplified Chinese thick rounded brown lettering."
+    },
+    {
+      "file": "BounceGarden/BounceGarden/Assets/Resources/Art/ReferenceV49/chapters-toy.png",
+      "prompt": "Edit ONLY text: Toy Workshop -> 玩具工坊; Levels 53–78 -> 第53—78关; Clear level 52 to unlock -> 通关第52关解锁. Keep exact 758x249 card, lavender border, toy blocks and windmill, lock icon, exact colors and framing. Correct readable rounded brown simplified Chinese lettering."
+    }
+  ],
+  "rejected": [
+    "Generated chapters-base.png: transparent noise and obsolete brand; original clean backing retained.",
+    "Six-row and four-row cheer atlases: alpha noise; replaced with native rounded-font SDF graphics."
+  ]
+}

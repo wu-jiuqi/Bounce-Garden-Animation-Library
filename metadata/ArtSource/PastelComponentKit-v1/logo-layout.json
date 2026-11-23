@@ -1,0 +1,202 @@
+{
+  "canvas_px": [
+    1513,
+    590
+  ],
+  "coordinate_origin": "top-left; y down",
+  "glyphs": [
+    {
+      "name": "logo_B",
+      "row": 0,
+      "word_xy_top_left": [
+        20,
+        20
+      ],
+      "size_px": [
+        218,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        69,
+        35
+      ]
+    },
+    {
+      "name": "logo_O",
+      "row": 0,
+      "word_xy_top_left": [
+        248,
+        20
+      ],
+      "size_px": [
+        233,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        297,
+        35
+      ]
+    },
+    {
+      "name": "logo_U",
+      "row": 0,
+      "word_xy_top_left": [
+        491,
+        20
+      ],
+      "size_px": [
+        225,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        540,
+        35
+      ]
+    },
+    {
+      "name": "logo_N1",
+      "row": 0,
+      "word_xy_top_left": [
+        726,
+        20
+      ],
+      "size_px": [
+        233,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        775,
+        35
+      ]
+    },
+    {
+      "name": "logo_C",
+      "row": 0,
+      "word_xy_top_left": [
+        969,
+        20
+      ],
+      "size_px": [
+        222,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        1018,
+        35
+      ]
+    },
+    {
+      "name": "logo_E1",
+      "row": 0,
+      "word_xy_top_left": [
+        1201,
+        20
+      ],
+      "size_px": [
+        193,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        1250,
+        35
+      ]
+    },
+    {
+      "name": "logo_G",
+      "row": 1,
+      "word_xy_top_left": [
+        20,
+        20
+      ],
+      "size_px": [
+        241,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        40,
+        320
+      ]
+    },
+    {
+      "name": "logo_A",
+      "row": 1,
+      "word_xy_top_left": [
+        271,
+        20
+      ],
+      "size_px": [
+        250,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        291,
+        320
+      ]
+    },
+    {
+      "name": "logo_R",
+      "row": 1,
+      "word_xy_top_left": [
+        531,
+        20
+      ],
+      "size_px": [
+        219,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        551,
+        320
+      ]
+    },
+    {
+      "name": "logo_D",
+      "row": 1,
+      "word_xy_top_left": [
+        760,
+        20
+      ],
+      "size_px": [
+        233,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        780,
+        320
+      ]
+    },
+    {
+      "name": "logo_E2",
+      "row": 1,
+      "word_xy_top_left": [
+        1003,
+        20
+      ],
+      "size_px": [
+        201,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        1023,
+        320
+      ]
+    },
+    {
+      "name": "logo_N2",
+      "row": 1,
+      "word_xy_top_left": [
+        1214,
+        20
+      ],
+      "size_px": [
+        239,
+        240
+      ],
+      "full_logo_xy_top_left": [
+        1234,
+        320
+      ]
+    }
+  ],
+  "note": "Use matching final glyph scale/size and positions. UI root origin conversion is required in Unity."
+}

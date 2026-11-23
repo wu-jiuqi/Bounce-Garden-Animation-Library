@@ -1,0 +1,431 @@
+{
+  "surfaces_and_layers": [
+    {
+      "name": "button_mint",
+      "resource": "Art/Pastel/Sprites/surfaces/button_mint",
+      "size": [
+        289,
+        239
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        87,
+        0,
+        87,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        236,
+        187
+      ],
+      "footprint": [
+        18,
+        17,
+        236,
+        203
+      ]
+    },
+    {
+      "name": "button_cream",
+      "resource": "Art/Pastel/Sprites/surfaces/button_cream",
+      "size": [
+        294,
+        240
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        88,
+        0,
+        88,
+        0
+      ],
+      "visible": [
+        19,
+        18,
+        242,
+        187
+      ],
+      "footprint": [
+        19,
+        18,
+        242,
+        208
+      ]
+    },
+    {
+      "name": "modal_panel",
+      "resource": "Art/Pastel/Sprites/surfaces/modal_panel",
+      "size": [
+        336,
+        317
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        70,
+        70,
+        70,
+        70
+      ],
+      "visible": [
+        19,
+        17,
+        286,
+        266
+      ],
+      "footprint": [
+        19,
+        17,
+        286,
+        246
+      ]
+    },
+    {
+      "name": "tab_selected_lavender",
+      "resource": "Art/Pastel/Sprites/surfaces/tab_selected_lavender",
+      "size": [
+        280,
+        181
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        81,
+        0,
+        81,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        232,
+        133
+      ],
+      "footprint": [
+        17,
+        17,
+        232,
+        200
+      ]
+    },
+    {
+      "name": "icon_settings",
+      "resource": "Art/Pastel/Sprites/controls/icon_settings",
+      "size": [
+        265,
+        266
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        230,
+        231
+      ],
+      "footprint": [
+        18,
+        17,
+        230,
+        198
+      ]
+    },
+    {
+      "name": "icon_home",
+      "resource": "Art/Pastel/Sprites/controls/icon_home",
+      "size": [
+        270,
+        251
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        235,
+        217
+      ],
+      "footprint": [
+        18,
+        17,
+        235,
+        202
+      ]
+    },
+    {
+      "name": "icon_shop",
+      "resource": "Art/Pastel/Sprites/controls/icon_shop",
+      "size": [
+        263,
+        242
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        228,
+        207
+      ],
+      "footprint": [
+        17,
+        17,
+        228,
+        196
+      ]
+    },
+    {
+      "name": "icon_ranking",
+      "resource": "Art/Pastel/Sprites/controls/icon_ranking",
+      "size": [
+        262,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        227,
+        240
+      ],
+      "footprint": [
+        17,
+        17,
+        227,
+        195
+      ]
+    },
+    {
+      "name": "icon_coin",
+      "resource": "Art/Pastel/Sprites/controls/icon_coin",
+      "size": [
+        264,
+        263
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        230,
+        229
+      ],
+      "footprint": [
+        17,
+        17,
+        230,
+        198
+      ]
+    },
+    {
+      "name": "coin_stack_small",
+      "resource": "Art/Pastel/Sprites/support-icons/coin_stack_small",
+      "size": [
+        215,
+        230
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        180,
+        194
+      ],
+      "footprint": [
+        17,
+        17,
+        180,
+        155
+      ]
+    },
+    {
+      "name": "coin_stack_large",
+      "resource": "Art/Pastel/Sprites/support-icons/coin_stack_large",
+      "size": [
+        205,
+        293
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        170,
+        256
+      ],
+      "footprint": [
+        18,
+        17,
+        170,
+        146
+      ]
+    },
+    {
+      "name": "leaf_mint",
+      "resource": "Art/Pastel/Sprites/support-icons/leaf_mint",
+      "size": [
+        254,
+        203
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        18,
+        220,
+        168
+      ],
+      "footprint": [
+        17,
+        18,
+        220,
+        189
+      ]
+    },
+    {
+      "name": "cat_idle",
+      "resource": "Art/Pastel/Sprites/cat-poses/cat_idle",
+      "size": [
+        512,
+        512
+      ],
+      "pivot": [
+        0.5,
+        0.0625
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        105,
+        53,
+        353,
+        426
+      ],
+      "footprint": [
+        105,
+        53,
+        353,
+        304
+      ]
+    },
+    {
+      "name": "fx_spark",
+      "resource": "Art/Pastel/Sprites/vfx/fx_spark",
+      "size": [
+        173,
+        189
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        20,
+        20,
+        136,
+        151
+      ],
+      "footprint": [
+        20,
+        20,
+        136,
+        117
+      ]
+    }
+  ],
+  "cosmetics": "Original CatCosmeticsV3, 20 PNG, 1254x1254, all 100 measured pair layouts",
+  "layout": "uniform 500-unit width; anchored header/navigation; scrollable content",
+  "surface_corner_scale": {
+    "card": 0.24,
+    "modal": 0.4
+  },
+  "animation": "UIBounce + modal fade/scale + selection preview pop + layered banner float + success sparks"
+}

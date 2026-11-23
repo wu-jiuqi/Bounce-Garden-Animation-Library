@@ -1,0 +1,70 @@
+{
+  "source": "built-in image_gen",
+  "atlas": "pudding-atlas.png",
+  "columns": 6,
+  "rows": 4,
+  "cell": [
+    256,
+    256
+  ],
+  "runtimeResource": "Art/BossPudding/pudding-atlas",
+  "animations": [
+    {
+      "name": "idle",
+      "row": 0,
+      "frames": [
+        "Frames/idle-00.png",
+        "Frames/idle-01.png",
+        "Frames/idle-02.png",
+        "Frames/idle-03.png",
+        "Frames/idle-04.png",
+        "Frames/idle-05.png"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "name": "hit",
+      "row": 1,
+      "frames": [
+        "Frames/hit-00.png",
+        "Frames/hit-01.png",
+        "Frames/hit-02.png",
+        "Frames/hit-03.png",
+        "Frames/hit-04.png",
+        "Frames/hit-05.png"
+      ],
+      "fps": 18,
+      "loop": false
+    },
+    {
+      "name": "action",
+      "row": 2,
+      "frames": [
+        "Frames/action-00.png",
+        "Frames/action-01.png",
+        "Frames/action-02.png",
+        "Frames/action-03.png",
+        "Frames/action-04.png",
+        "Frames/action-05.png"
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    {
+      "name": "defeat",
+      "row": 3,
+      "frames": [
+        "Frames/defeat-00.png",
+        "Frames/defeat-01.png",
+        "Frames/defeat-02.png",
+        "Frames/defeat-03.png",
+        "Frames/defeat-04.png",
+        "Frames/defeat-05.png"
+      ],
+      "fps": 6,
+      "loop": false
+    }
+  ],
+  "processing": "Unmodified generated RGBA atlas; frame files are direct grid crops."
+}

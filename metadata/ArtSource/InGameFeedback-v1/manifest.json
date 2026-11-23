@@ -1,0 +1,76 @@
+{
+  "status": "art-preview-only",
+  "integrated": false,
+  "reference": "Existing gameplay screenshot; not a new playable level",
+  "sprites": [
+    {
+      "name": "nice",
+      "file": "Sprites/nice.png",
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255
+    },
+    {
+      "name": "great",
+      "file": "Sprites/great.png",
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255
+    },
+    {
+      "name": "amazing",
+      "file": "Sprites/amazing.png",
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255
+    },
+    {
+      "name": "incredible",
+      "file": "Sprites/incredible.png",
+      "width": 2144,
+      "height": 733,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255
+    }
+  ],
+  "plate": {
+    "path": "Sprites/danmaku-plate.png",
+    "width": 640,
+    "height": 80,
+    "color": "#4b4b4f",
+    "opacity": 0.4,
+    "cornerRadius": 20,
+    "sliceBorder": [
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "motion": {
+    "danmaku": {
+      "direction": "right-to-left",
+      "seconds": 6,
+      "plannedInterval": [
+        18,
+        28
+      ]
+    },
+    "cheer": {
+      "seconds": 1.5,
+      "tiers": [
+        4,
+        8,
+        12,
+        18
+      ]
+    }
+  }
+}

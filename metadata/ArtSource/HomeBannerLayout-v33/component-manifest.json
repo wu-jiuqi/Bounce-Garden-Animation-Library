@@ -1,0 +1,531 @@
+{
+  "name": "HomeBanner-v33",
+  "reference": "home-banner-wechat-reference.png",
+  "sources": [
+    "Scripts/UI/AppUI.cs",
+    "Scripts/UI/AppUI.Shop.cs",
+    "Scripts/UI/ActivityCarousel.cs",
+    "Scripts/UI/LeagueRankingView.cs",
+    "Scripts/UI/WeChatLayoutMetrics.cs",
+    "Scripts/UI/ViewportBackdrop.cs",
+    "Scripts/HomeBannerQA.cs",
+    "Editor/HomeBannerBuild.cs"
+  ],
+  "source_sha256": {
+    "Scripts/UI/AppUI.cs": "16c7c4307de9de32358d131f436a4df801b7d0ac926755d340c0c208c272c735",
+    "Scripts/UI/AppUI.Shop.cs": "5f91ca6ce199ce59c4ee510cf01fb9c235b9c2bcef6debcc294e9b19ebd64a26",
+    "Scripts/UI/ActivityCarousel.cs": "a86c667206d65d569054bda8bd6ead2bdf10ea7755cd49bd566be6a3e4301879",
+    "Scripts/UI/LeagueRankingView.cs": "42aab93eef95177281b5738572e4b440be877622aef3fc16f18500e7b42696c8",
+    "Scripts/UI/WeChatLayoutMetrics.cs": "c9c77bc97329af4219cc55384729a837531ad4dda8ec60bb1ef6136e8357de0c",
+    "Scripts/UI/ViewportBackdrop.cs": "6b02c4412979eb5cf77fe1b035e430a4902ba6892ef4d8e2dfe318971bfc4692",
+    "Scripts/HomeBannerQA.cs": "cc10d95ba67acfa40bb35b7a4c44025c14ca9130bd48296222bf8f0985a2f415",
+    "Editor/HomeBannerBuild.cs": "210f441a37201b63c73a03952fca25ef2d3d34f9fb7b55b93b76a6f33fa55720"
+  },
+  "surfaces": [
+    {
+      "name": "button_mint",
+      "resource": "Art/Pastel/Sprites/surfaces/button_mint",
+      "size": [
+        289,
+        239
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        87,
+        0,
+        87,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        236,
+        187
+      ],
+      "footprint": [
+        18,
+        17,
+        236,
+        203
+      ]
+    },
+    {
+      "name": "button_cream",
+      "resource": "Art/Pastel/Sprites/surfaces/button_cream",
+      "size": [
+        294,
+        240
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        88,
+        0,
+        88,
+        0
+      ],
+      "visible": [
+        19,
+        18,
+        242,
+        187
+      ],
+      "footprint": [
+        19,
+        18,
+        242,
+        208
+      ]
+    },
+    {
+      "name": "button_circle_cream",
+      "resource": "Art/Pastel/Sprites/surfaces/button_circle_cream",
+      "size": [
+        214,
+        220
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        168,
+        172
+      ],
+      "footprint": [
+        17,
+        17,
+        168,
+        144
+      ]
+    },
+    {
+      "name": "icon_settings",
+      "resource": "Art/Pastel/Sprites/controls/icon_settings",
+      "size": [
+        265,
+        266
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        230,
+        231
+      ],
+      "footprint": [
+        18,
+        17,
+        230,
+        198
+      ]
+    },
+    {
+      "name": "logo_B",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_B",
+      "size": [
+        306,
+        334
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        18,
+        272,
+        300
+      ],
+      "footprint": [
+        17,
+        18,
+        272,
+        234
+      ]
+    },
+    {
+      "name": "logo_O",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_O",
+      "size": [
+        333,
+        342
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        299,
+        309
+      ],
+      "footprint": [
+        17,
+        17,
+        299,
+        257
+      ]
+    },
+    {
+      "name": "logo_U",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_U",
+      "size": [
+        311,
+        329
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        277,
+        294
+      ],
+      "footprint": [
+        17,
+        17,
+        277,
+        238
+      ]
+    },
+    {
+      "name": "logo_N1",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_N1",
+      "size": [
+        318,
+        326
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        283,
+        291
+      ],
+      "footprint": [
+        17,
+        17,
+        283,
+        243
+      ]
+    },
+    {
+      "name": "logo_C",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_C",
+      "size": [
+        309,
+        331
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        275,
+        296
+      ],
+      "footprint": [
+        18,
+        17,
+        275,
+        236
+      ]
+    },
+    {
+      "name": "logo_E1",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_E1",
+      "size": [
+        268,
+        325
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        18,
+        234,
+        290
+      ],
+      "footprint": [
+        17,
+        18,
+        234,
+        201
+      ]
+    },
+    {
+      "name": "logo_G",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_G",
+      "size": [
+        332,
+        331
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        298,
+        296
+      ],
+      "footprint": [
+        17,
+        17,
+        298,
+        256
+      ]
+    },
+    {
+      "name": "logo_A",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_A",
+      "size": [
+        338,
+        326
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        18,
+        303,
+        291
+      ],
+      "footprint": [
+        17,
+        18,
+        303,
+        261
+      ]
+    },
+    {
+      "name": "logo_R",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_R",
+      "size": [
+        298,
+        323
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        264,
+        289
+      ],
+      "footprint": [
+        17,
+        17,
+        264,
+        227
+      ]
+    },
+    {
+      "name": "logo_D",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_D",
+      "size": [
+        311,
+        319
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        276,
+        284
+      ],
+      "footprint": [
+        17,
+        17,
+        276,
+        237
+      ]
+    },
+    {
+      "name": "logo_E2",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_E2",
+      "size": [
+        272,
+        318
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        18,
+        17,
+        237,
+        283
+      ],
+      "footprint": [
+        18,
+        17,
+        237,
+        204
+      ]
+    },
+    {
+      "name": "logo_N2",
+      "resource": "Art/Pastel/Sprites/logo-letters/logo_N2",
+      "size": [
+        316,
+        317
+      ],
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "visible": [
+        17,
+        17,
+        282,
+        283
+      ],
+      "footprint": [
+        17,
+        17,
+        282,
+        243
+      ]
+    }
+  ],
+  "components": [
+    "header avatar/frame layers",
+    "individual logo glyphs",
+    "settings face/icon/hit region",
+    "carousel viewport/content",
+    "banner face/title/subtitle/icon/status",
+    "feedback title/detail",
+    "level path/nodes",
+    "start hit region/visual/label"
+  ],
+  "motion": [
+    "HomeWordmarkWiggle",
+    "ActivityJellyMotion",
+    "EncouragementDrag",
+    "UIBounce",
+    "DOTween page transition and modal fade/scale"
+  ],
+  "routes": {
+    "Garden League": "ranking / existing local LeagueSource",
+    "Style Shop": "shop / Featured + Avatars + Frames",
+    "header avatar": "OpenDressing",
+    "shop and ranking Home": "home",
+    "dressing More styles": "OpenShopCategory(current dressing tab)"
+  },
+  "wechat": "WX.GetWindowInfo + WX.GetMenuButtonBoundingClientRect; on init, show, resize and focus; retry 20 times; no server deployment"
+}

@@ -1,0 +1,666 @@
+{
+  "version": 3,
+  "theme": "Existing cream/taupe cat + original blue jelly; multicolor cotton yarn projectiles",
+  "generator": "Built-in image_gen for yarn and cat layers; editable native support shapes; no generated brick",
+  "selected_color": "apricot",
+  "scope": "ArtSource/GameplayArt-v3 ONLY; no Unity integration",
+  "sources": [
+    {
+      "file": "Source/ball_yarn_cream.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "952ffffe4d4598e70207fc6e2cd6ff280db4b8c72741a0aa15d9d08a144d488f"
+    },
+    {
+      "file": "Source/ball_yarn_blue.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "e7e4851cd8d2a1e27d3407f1fe582e0f0ca97090ab6adacb35bf3c9011d3d95f"
+    },
+    {
+      "file": "Source/ball_yarn_coral.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "98b933bd402c6b25735ed54683ad7cbcf1ea25223ed000be291fe7633b0611c7"
+    },
+    {
+      "file": "Source/ball_yarn_mint.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "5c01790d22bf33f5a3adc5208aba6858603b7e951377041d7df0a33d46922802"
+    },
+    {
+      "file": "Source/current_blue_jelly_pop.png",
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Jelly\\blue_jelly_pop.png",
+      "sha256": "7bced95af426f91fb71ba70faeaf373539e283fd01e24154684db7dfeebdc370"
+    },
+    {
+      "file": "Source/cat_body.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "4502deb701ef5e55ad66ea2366ed3ec121acc91f9ac57ef30fd4c8bbe45f09cc"
+    },
+    {
+      "file": "Source/cat_paw.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "2c92a2623f6f94610f72d40541b780223732a09e738e5537add797d4246c0adf"
+    },
+    {
+      "file": "Source/cat_tail.png",
+      "original": "Built-in imagegen; prompt in Docs/prompts.json",
+      "sha256": "ef1e181008ccc7b053393554fab8b98aba8ccddb86b7d88a12035eee1428b38d"
+    },
+    {
+      "file": "Source/current_cat_idle.png",
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\cat-poses\\cat_idle.png",
+      "sha256": "d214ef1b259f24e6607712525098c716283237b0d5f41a8a97dcafcf73c00da6"
+    },
+    {
+      "file": "Source/current_resource_capsule.png",
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\surfaces\\resource_capsule.png",
+      "sha256": "e0eda3529eba1313441d8ddf2194f9e5960ec7e7293c41c5cbb7891d866de374"
+    }
+  ],
+  "sprites": [
+    {
+      "name": "ball_yarn_apricot",
+      "file": "Sprites/ball_yarn_apricot.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/ball_yarn_cream.png",
+      "note": "Generated matte cotton yarn, extraction/resize only; no pearl or metallic material.",
+      "alpha_bounds": [
+        16,
+        19,
+        240,
+        237
+      ],
+      "sha256": "7d1f4427d3ba0730662a46fe848819d4be87cc8cba96450a1e0444a04bc88f18"
+    },
+    {
+      "name": "thread_apricot",
+      "file": "Sprites/thread_apricot.png",
+      "size": [
+        256,
+        64
+      ],
+      "pivot_unity": [
+        0.965,
+        0.5
+      ],
+      "source": "Native support graphic; matching yarn palette",
+      "note": "Right end attaches just inside ball silhouette; tail thins/fades. Never connect back to cat.",
+      "alpha_bounds": [
+        14,
+        28,
+        256,
+        38
+      ],
+      "sha256": "8a13b38ecd3b63d9d926e36aa298c9d0314a8d3b56caf291392fa88786b875a4"
+    },
+    {
+      "name": "ball_yarn_blue",
+      "file": "Sprites/ball_yarn_blue.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/ball_yarn_blue.png",
+      "note": "Generated matte cotton yarn, extraction/resize only; no pearl or metallic material.",
+      "alpha_bounds": [
+        16,
+        16,
+        240,
+        240
+      ],
+      "sha256": "2ea606950ca5b353b07e8c76c755a1f7d09e4d18e2168e042728116b4e5bb1c2"
+    },
+    {
+      "name": "thread_blue",
+      "file": "Sprites/thread_blue.png",
+      "size": [
+        256,
+        64
+      ],
+      "pivot_unity": [
+        0.965,
+        0.5
+      ],
+      "source": "Native support graphic; matching yarn palette",
+      "note": "Right end attaches just inside ball silhouette; tail thins/fades. Never connect back to cat.",
+      "alpha_bounds": [
+        14,
+        28,
+        256,
+        38
+      ],
+      "sha256": "2bbd08f46897a140f43b9eced4e0ec1c9e886ec83726f020373efa0b29b46f18"
+    },
+    {
+      "name": "ball_yarn_coral",
+      "file": "Sprites/ball_yarn_coral.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/ball_yarn_coral.png",
+      "note": "Generated matte cotton yarn, extraction/resize only; no pearl or metallic material.",
+      "alpha_bounds": [
+        16,
+        17,
+        240,
+        238
+      ],
+      "sha256": "95a0c0bf0db04897511a49d5d915d0909cde16cb3e20550f3092df054f16c08e"
+    },
+    {
+      "name": "thread_coral",
+      "file": "Sprites/thread_coral.png",
+      "size": [
+        256,
+        64
+      ],
+      "pivot_unity": [
+        0.965,
+        0.5
+      ],
+      "source": "Native support graphic; matching yarn palette",
+      "note": "Right end attaches just inside ball silhouette; tail thins/fades. Never connect back to cat.",
+      "alpha_bounds": [
+        14,
+        28,
+        256,
+        38
+      ],
+      "sha256": "2040238814d3a38dd9b0743de2047aad23e417b209585faf9f5b63c2073eb833"
+    },
+    {
+      "name": "ball_yarn_mint",
+      "file": "Sprites/ball_yarn_mint.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/ball_yarn_mint.png",
+      "note": "Generated matte cotton yarn, extraction/resize only; no pearl or metallic material.",
+      "alpha_bounds": [
+        16,
+        16,
+        239,
+        240
+      ],
+      "sha256": "6e07fbcf7c03f39867f64e648dd48dc225d068e83a8372f56b9e0ad34d102a81"
+    },
+    {
+      "name": "thread_mint",
+      "file": "Sprites/thread_mint.png",
+      "size": [
+        256,
+        64
+      ],
+      "pivot_unity": [
+        0.965,
+        0.5
+      ],
+      "source": "Native support graphic; matching yarn palette",
+      "note": "Right end attaches just inside ball silhouette; tail thins/fades. Never connect back to cat.",
+      "alpha_bounds": [
+        14,
+        28,
+        256,
+        38
+      ],
+      "sha256": "388be3efa31486167db1e60abc294ff1c8b288928e48122152316657e763e180"
+    },
+    {
+      "name": "jelly_intact",
+      "file": "Sprites/jelly_intact.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Current runtime blue_jelly_pop frame 0",
+      "note": "Exact source crop, no new brick generation.",
+      "alpha_bounds": [
+        67,
+        67,
+        189,
+        189
+      ],
+      "sha256": "3fb27cf4b9e17e332d022a052f973dafc562b9f9f5dc6a304d2b3584f7035b9f"
+    },
+    {
+      "name": "jelly_damage_1",
+      "file": "Sprites/jelly_damage_1.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Same runtime frame; local RGB fold overlay in editable build_art.py",
+      "note": "Short soft compression folds, no bruises; source alpha and border unchanged.",
+      "alpha_bounds": [
+        67,
+        67,
+        189,
+        189
+      ],
+      "sha256": "56588ee67f2c21b4863b9f14a00dee0450877b68bdbf70b7329db37fdca4f640"
+    },
+    {
+      "name": "jelly_damage_2",
+      "file": "Sprites/jelly_damage_2.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Same runtime frame; local RGB fold overlay in editable build_art.py",
+      "note": "Short soft compression folds, no bruises; source alpha and border unchanged.",
+      "alpha_bounds": [
+        67,
+        67,
+        189,
+        189
+      ],
+      "sha256": "dce46b5b4de104b9781824b4d314f8ce4217d6a1d1ed76c787b8a24864664dc7"
+    },
+    {
+      "name": "cat_body",
+      "file": "Sprites/cat_body.png",
+      "size": [
+        640,
+        560
+      ],
+      "pivot_unity": [
+        0.445,
+        0.11
+      ],
+      "source": "Source/cat_body.png",
+      "note": "Same mascot reference; no bowl, no cannon; right batting limb and tail separate.",
+      "alpha_bounds": [
+        105,
+        41,
+        464,
+        499
+      ],
+      "sha256": "62bc248cd953b247dab06c05a0825e1904cf97a9e1cf03010618db74ffbb61f7"
+    },
+    {
+      "name": "cat_paw",
+      "file": "Sprites/cat_paw.png",
+      "size": [
+        640,
+        560
+      ],
+      "pivot_unity": [
+        0.5734375,
+        0.36964285714285716
+      ],
+      "source": "Source/cat_paw.png",
+      "note": "Shoulder pixel (367,353), toe target approximately (497,213). Rotate around shoulder, not canvas center.",
+      "alpha_bounds": [
+        347,
+        207,
+        525,
+        373
+      ],
+      "sha256": "d94230c48e4e2b495521eabd34e6f093e6e74e9411d8942e2635cddfdad42a92"
+    },
+    {
+      "name": "cat_tail",
+      "file": "Sprites/cat_tail.png",
+      "size": [
+        640,
+        560
+      ],
+      "pivot_unity": [
+        0.2734375,
+        0.2232142857142857
+      ],
+      "source": "Source/cat_tail.png",
+      "note": "Tail behind body; pivot pixel (175,435).",
+      "alpha_bounds": [
+        55,
+        302,
+        193,
+        452
+      ],
+      "sha256": "94af1fa062c87eceb9606821d472651877b0eab2586d1d1cb94efb3c5a4643a2"
+    },
+    {
+      "name": "field_floor",
+      "file": "Sprites/field_floor.png",
+      "size": [
+        512,
+        512
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native low-contrast cream panel",
+      "note": "Extend as panel; no central ornaments or screenshot UI baked in.",
+      "alpha_bounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "c23d796aabb34c54264bb6f5ec1870fbfc92c6b5575fe2a1fda3619b6369dfd1"
+    },
+    {
+      "name": "field_rail_left",
+      "file": "Sprites/field_rail_left.png",
+      "size": [
+        40,
+        512
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native cream peripheral rail",
+      "note": "Straight rail; rounded endcaps are provided by field_top/bottom; stretch straight center only.",
+      "alpha_bounds": [
+        5,
+        0,
+        36,
+        512
+      ],
+      "sha256": "780168d93efce6ee66f8165021696fb61573d9bad855f4c297014c1b6c9472f7"
+    },
+    {
+      "name": "field_rail_right",
+      "file": "Sprites/field_rail_right.png",
+      "size": [
+        40,
+        512
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native cream peripheral rail",
+      "note": "Straight rail; rounded endcaps are provided by field_top/bottom; stretch straight center only.",
+      "alpha_bounds": [
+        4,
+        0,
+        35,
+        512
+      ],
+      "sha256": "514e78b1c24c3e29759e27b0d628b2f777029b1ecbd0c5e572979f4240d4a93d"
+    },
+    {
+      "name": "field_top",
+      "file": "Sprites/field_top.png",
+      "size": [
+        512,
+        40
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native cream peripheral rail",
+      "note": "",
+      "alpha_bounds": [
+        4,
+        7,
+        508,
+        35
+      ],
+      "sha256": "33886142267f4a2771f7cbcff7d8aba7502cec27209fa5f60386a33cf3df39dd"
+    },
+    {
+      "name": "field_bottom",
+      "file": "Sprites/field_bottom.png",
+      "size": [
+        512,
+        40
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native cream peripheral rail",
+      "note": "",
+      "alpha_bounds": [
+        4,
+        7,
+        508,
+        35
+      ],
+      "sha256": "33886142267f4a2771f7cbcff7d8aba7502cec27209fa5f60386a33cf3df39dd"
+    },
+    {
+      "name": "field_recovery",
+      "file": "Sprites/field_recovery.png",
+      "size": [
+        512,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native pale lavender recovery band",
+      "note": "",
+      "alpha_bounds": [
+        12,
+        28,
+        501,
+        41
+      ],
+      "sha256": "4eab4759c86cae704facb6631ee4415c5a994ec0880b630936d4b42bd2ae1df4"
+    },
+    {
+      "name": "ammo_panel",
+      "file": "Sprites/ammo_panel.png",
+      "size": [
+        388,
+        178
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing resource_capsule.png",
+      "note": "Original panel; ball tokens and count independent.",
+      "alpha_bounds": [
+        16,
+        16,
+        371,
+        161
+      ],
+      "sha256": "e0eda3529eba1313441d8ddf2194f9e5960ec7e7293c41c5cbb7891d866de374"
+    },
+    {
+      "name": "aim_dot",
+      "file": "Sprites/aim_dot.png",
+      "size": [
+        32,
+        32
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native quiet aim dot",
+      "note": "",
+      "alpha_bounds": [
+        11,
+        11,
+        22,
+        22
+      ],
+      "sha256": "5d4514fbac8018bd8b9357933d572ed6f097b38fe26f735a4c9cdf9e1497e8f3"
+    },
+    {
+      "name": "aim_endpoint",
+      "file": "Sprites/aim_endpoint.png",
+      "size": [
+        64,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native open aim endpoint",
+      "note": "",
+      "alpha_bounds": [
+        18,
+        18,
+        47,
+        47
+      ],
+      "sha256": "89f99dcdbdb5ad42baf0c1ada1620dc28f320238a85b7962c4baf4d8eba49c8c"
+    },
+    {
+      "name": "aim_turn",
+      "file": "Sprites/aim_turn.png",
+      "size": [
+        64,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native quiet turn hint",
+      "note": "",
+      "alpha_bounds": [
+        23,
+        19,
+        37,
+        46
+      ],
+      "sha256": "a755fd415a578262f86faed7c7c421f42374dd099082a348f7e1caf79bcd23b8"
+    },
+    {
+      "name": "fx_launch",
+      "file": "Sprites/fx_launch.png",
+      "size": [
+        64,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native short paw-flick accents",
+      "note": "60-90ms, no explosion cloud.",
+      "alpha_bounds": [
+        7,
+        11,
+        45,
+        36
+      ],
+      "sha256": "0ef62b9cd2d93a2bbb1cd0a336744d4149ae04d000df67651a185a4594c6bead"
+    },
+    {
+      "name": "fx_hit",
+      "file": "Sprites/fx_hit.png",
+      "size": [
+        64,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native compact warm flash",
+      "note": "Maximum visible diameter .7 ball diameter, 60ms.",
+      "alpha_bounds": [
+        14,
+        13,
+        50,
+        51
+      ],
+      "sha256": "bd1d41a937c3301cd7106f27f6c6ee969a1e18d57661d639f321a9d6921ff305"
+    },
+    {
+      "name": "fx_recovery",
+      "file": "Sprites/fx_recovery.png",
+      "size": [
+        96,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Native recovery loop",
+      "note": "120-180ms, no board-sized flash.",
+      "alpha_bounds": [
+        17,
+        21,
+        79,
+        44
+      ],
+      "sha256": "a30527466be12a996271da50510d2bb25c3037caf7cdf38b390f5274989a5870"
+    }
+  ],
+  "animation": {
+    "loop_seconds": 2.4,
+    "fps": 25,
+    "anticipation_ms": 340,
+    "swat_ms": 120,
+    "recovery_ms": 560,
+    "cat_canvas": [
+      640,
+      560
+    ],
+    "layer_order": [
+      "cat_tail",
+      "cat_body",
+      "cat_paw",
+      "ball_yarn_COLOR"
+    ],
+    "paw_pivot_top_left_px": [
+      367,
+      353
+    ],
+    "tail_pivot_top_left_px": [
+      175,
+      435
+    ],
+    "aim_and_projectile_logic": "Unchanged, preview only"
+  },
+  "checks": {
+    "original_frame_exact": true,
+    "damage_alpha_equal": [
+      true,
+      true
+    ],
+    "changed_rgb_pixels": [
+      202,
+      414
+    ],
+    "new_brick_generated": false
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "generator": "built-in imagegen",
+  "atlas": "atlas.png",
+  "slices": [
+    {
+      "key": "score_capsule",
+      "sourceRect": [
+        0,
+        180,
+        512,
+        375
+      ],
+      "crop": [
+        5,
+        6,
+        503,
+        182
+      ],
+      "size": [
+        498,
+        176
+      ]
+    },
+    {
+      "key": "best_capsule",
+      "sourceRect": [
+        512,
+        180,
+        1024,
+        375
+      ],
+      "crop": [
+        6,
+        6,
+        505,
+        182
+      ],
+      "size": [
+        499,
+        176
+      ]
+    },
+    {
+      "key": "result_card",
+      "sourceRect": [
+        0,
+        590,
+        512,
+        940
+      ],
+      "crop": [
+        5,
+        14,
+        506,
+        328
+      ],
+      "size": [
+        501,
+        314
+      ]
+    },
+    {
+      "key": "score_star",
+      "sourceRect": [
+        540,
+        540,
+        1000,
+        960
+      ],
+      "crop": [
+        10,
+        13,
+        442,
+        416
+      ],
+      "size": [
+        432,
+        403
+      ]
+    },
+    {
+      "key": "record_badge",
+      "sourceRect": [
+        40,
+        1008,
+        475,
+        1525
+      ],
+      "crop": [
+        11,
+        0,
+        416,
+        504
+      ],
+      "size": [
+        405,
+        504
+      ]
+    },
+    {
+      "key": "gain_spark",
+      "sourceRect": [
+        565,
+        1040,
+        970,
+        1460
+      ],
+      "crop": [
+        8,
+        7,
+        388,
+        406
+      ],
+      "size": [
+        380,
+        399
+      ]
+    }
+  ]
+}

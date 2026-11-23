@@ -1,0 +1,177 @@
+{
+  "base": "Picnic-v47",
+  "themes": [
+    "alphabet",
+    "picnic"
+  ],
+  "mode": "built-in image_gen",
+  "frameDurationMs": [
+    2400,
+    300,
+    300,
+    300,
+    300
+  ],
+  "files": [
+    {
+      "name": "picnic-idle-00.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "7feb93ad8ca1bd7f3397891770b2970e9564a480df96c9d6acc31ccfb392530e"
+    },
+    {
+      "name": "picnic-idle-01.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        444,
+        0,
+        887,
+        444
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "7a5053937cb9c83bfaba7f9c7ea526c9248166040b5613ecdcd84690d4cfb3c6"
+    },
+    {
+      "name": "picnic-idle-02.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        887,
+        0,
+        1330,
+        444
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "fd1fc08eb6cf95eb167058e93876524a426eb7a76986039ab08dd0d631f31afd"
+    },
+    {
+      "name": "picnic-idle-03.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        1330,
+        0,
+        1774,
+        444
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "4701e62b4b792f6b16c9cd62f47a6e2a4ede9e2654d7e188806e6c6ebbdc5426"
+    },
+    {
+      "name": "alphabet-idle-00.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        0,
+        444,
+        444,
+        887
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "6dc1105545151b8979caceef7c7892d905709dd67d05f60924d54c24f6fe0511"
+    },
+    {
+      "name": "alphabet-idle-01.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        444,
+        444,
+        887,
+        887
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "8d7512ab7a410ea2b8cb229064a157c8737b2bc870bcb299478870a928b2744f"
+    },
+    {
+      "name": "alphabet-idle-02.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        887,
+        444,
+        1330,
+        887
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "7cfa15da3366d96b50f9ca2ff09db1f2940fbe305ec3e8601b283ad8f403b1ce"
+    },
+    {
+      "name": "alphabet-idle-03.png",
+      "size": [
+        512,
+        512
+      ],
+      "sourceCell": [
+        1330,
+        444,
+        1774,
+        887
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "7a70078905f9534ddfb398eedfa26ffabdebeb8de39ba613e72ff527874acaab"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "approved v2 reference, decomposed with built-in image_gen",
+  "frames": 24,
+  "fps": 12,
+  "columns": 6,
+  "rows": 4,
+  "frameSize": 256,
+  "loops": [
+    "leaf-loop",
+    "flower-loop"
+  ],
+  "sprites": [
+    "corner-bloom",
+    "peek-cat",
+    "leaf",
+    "sleep-cat",
+    "cat-stones",
+    "flower"
+  ],
+  "clickAnimation": "runtime damped squash, hop and sway; no physics colliders",
+  "pause": "all motion uses session gated local time"
+}

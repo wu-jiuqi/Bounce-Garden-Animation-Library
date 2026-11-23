@@ -1,0 +1,473 @@
+{
+  "revision": "v2-existing-art",
+  "sources": [
+    {
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Jelly\\blue_jelly_pop.png",
+      "copy": "Source/current_blue_jelly_pop.png",
+      "sha256": "7bced95af426f91fb71ba70faeaf373539e283fd01e24154684db7dfeebdc370"
+    },
+    {
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\gameplay\\ball_blue.png",
+      "copy": "Source/current_ball_blue.png",
+      "sha256": "10e36cb8b985a175be4a7f9bd04c3484070d1a6d8ad73510a30663ca8bf396b5"
+    },
+    {
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\gameplay\\launcher_empty.png",
+      "copy": "Source/current_launcher_empty.png",
+      "sha256": "0545c642ef7a00b1e7ed48a74eab71d2c9a539e899e7ba365d33337f07b193b2"
+    },
+    {
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\gameplay\\launcher_rear.png",
+      "copy": "Source/current_launcher_rear.png",
+      "sha256": "82a57366b7cb917562782b4ef723fa84de848e99b619f5b9c8cd3a8b7c67ff38"
+    },
+    {
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\gameplay\\launcher_front.png",
+      "copy": "Source/current_launcher_front.png",
+      "sha256": "1aecf558100e94cbca77b581429cfe308fad838bf9a8f38badd321a387598bd2"
+    },
+    {
+      "original": "BounceGarden\\Evidence\\BricksOnlyV11\\level-1.png",
+      "copy": "Source/existing_game_level1.png",
+      "sha256": "320c8c13a76c0ea06f7c942b5ee54ac61b98fee1d0c8dfcbb083beb4e0cd41db"
+    },
+    {
+      "original": "BounceGarden\\BounceGarden\\Assets\\Resources\\Art\\Pastel\\Sprites\\surfaces\\resource_capsule.png",
+      "copy": "Source/current_resource_capsule.png",
+      "sha256": "e0eda3529eba1313441d8ddf2194f9e5960ec7e7293c41c5cbb7891d866de374"
+    }
+  ],
+  "sprites": [
+    {
+      "name": "jelly_intact",
+      "file": "Sprites/jelly_intact.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_blue_jelly_pop.png frame0",
+      "method": "Exact 256x256 crop; no pixel edits.",
+      "sha256": "3fb27cf4b9e17e332d022a052f973dafc562b9f9f5dc6a304d2b3584f7035b9f"
+    },
+    {
+      "name": "jelly_damage_overlay_1",
+      "file": "Sprites/jelly_damage_overlay_1.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_blue_jelly_pop.png",
+      "method": "Only modified original front-face pixels; optional patch, same 256 canvas.",
+      "sha256": "524dccfe5dabdb3b4b276b46dad9085ea4b1a8f9bf3aff8f9d126d12be5544a3"
+    },
+    {
+      "name": "jelly_dented",
+      "file": "Sprites/jelly_dented.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_blue_jelly_pop.png frame0",
+      "method": "Original front-face local RGB shading only; alpha, outer rim and canvas unchanged.",
+      "sha256": "100ca8cced63b01137c34a3b503ddd2ac133682b5e3053a0b5f44fdae54d818d"
+    },
+    {
+      "name": "jelly_damage_overlay_2",
+      "file": "Sprites/jelly_damage_overlay_2.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_blue_jelly_pop.png",
+      "method": "Only modified original front-face pixels; optional patch, same 256 canvas.",
+      "sha256": "2370e11a19c2554ef4fff1e4760573eb83af0d4fd80c939f9215e336c6843826"
+    },
+    {
+      "name": "jelly_heavy",
+      "file": "Sprites/jelly_heavy.png",
+      "size": [
+        256,
+        256
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_blue_jelly_pop.png frame0",
+      "method": "Original front-face local RGB shading only; alpha, outer rim and canvas unchanged.",
+      "sha256": "7c5820fa47ec0746a1a6e7a6203b1513b57d10f7165d1dd7488628fca478fe0c"
+    },
+    {
+      "name": "ball_blue_original",
+      "file": "Sprites/ball_blue_original.png",
+      "size": [
+        165,
+        165
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_ball_blue.png",
+      "method": "Existing sphere crop; circular alpha removes ground shadow.",
+      "sha256": "58343f8bd54618ed97d6b3b11d754f7988b25ee12c4f395f12b8385bfc5db09c"
+    },
+    {
+      "name": "ball_pearl",
+      "file": "Sprites/ball_pearl.png",
+      "size": [
+        165,
+        165
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_ball_blue.png",
+      "method": "Same sphere lighting; pearl recolor or retained blue with a thin matte edge.",
+      "sha256": "5991d0a6e97d199f7e866d00a9248cc73dc65f77de38beb0a8f6ddd17a528a9d"
+    },
+    {
+      "name": "ball_blue",
+      "file": "Sprites/ball_blue.png",
+      "size": [
+        165,
+        165
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_ball_blue.png",
+      "method": "Same sphere lighting; pearl recolor or retained blue with a thin matte edge.",
+      "sha256": "490fcee9326992cfa7002aea896ed15da0d43147d21c5e8b1e2f1f52963ef928"
+    },
+    {
+      "name": "trail_pearl",
+      "file": "Sprites/trail_pearl.png",
+      "size": [
+        256,
+        64
+      ],
+      "pivot_unity": [
+        0.94,
+        0.5
+      ],
+      "source": "Current ball palette",
+      "method": "Single soft alpha ribbon. Head right.",
+      "sha256": "c7ed92967f0ed51daee8c2c240111954ebea0dc8709f00e0062cb989f413c33e"
+    },
+    {
+      "name": "trail_blue",
+      "file": "Sprites/trail_blue.png",
+      "size": [
+        256,
+        64
+      ],
+      "pivot_unity": [
+        0.94,
+        0.5
+      ],
+      "source": "Current ball palette",
+      "method": "Single soft alpha ribbon. Head right.",
+      "sha256": "9cd870f745bc06a430ff28f01ec47198cda11aa1e8c8d612cac9ad81d40b1355"
+    },
+    {
+      "name": "aim_dot",
+      "file": "Sprites/aim_dot.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "312f3b1599eece1c1cf43bf0b53539774fd71ef7a17861cc2b5487903f4520fd"
+    },
+    {
+      "name": "aim_endpoint",
+      "file": "Sprites/aim_endpoint.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "b528adc3cc6fa231d351cd4edf4577de52ce52caf0507945f76beb81d4229f21"
+    },
+    {
+      "name": "aim_turn",
+      "file": "Sprites/aim_turn.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "237268109909505f79ed07a8570e66c09d2179f35a1a4c0bd9424ad06924a407"
+    },
+    {
+      "name": "fx_collision",
+      "file": "Sprites/fx_collision.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "0429a214b930c5f692a77c9572631ee57218de4feead69680e4fe5260b8eddfb"
+    },
+    {
+      "name": "fx_launch",
+      "file": "Sprites/fx_launch.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "5944eefeaa8af741106a1e3cc46cb4e136dab0371b5ce71d0f9c768fbe35aeef"
+    },
+    {
+      "name": "fx_recovery",
+      "file": "Sprites/fx_recovery.png",
+      "size": [
+        128,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "5f0bcc6025dc7ffbbad1497fb46ccf07978b3ab51d3d6c8b217e9dba16234e57"
+    },
+    {
+      "name": "field_floor",
+      "file": "Sprites/field_floor.png",
+      "size": [
+        420,
+        210
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/existing_game_level1.png (60, 470, 480, 680)",
+      "method": "Exact existing screen-space tray extraction; opaque background panel.",
+      "sha256": "6a036ff15701d33807dadcf2d50cba5ee73acd51591cc3afe7f2783edf1c9467"
+    },
+    {
+      "name": "field_rail_left",
+      "file": "Sprites/field_rail_left.png",
+      "size": [
+        28,
+        1119
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/existing_game_level1.png (0, 24, 28, 1143)",
+      "method": "Exact existing screen-space tray extraction; opaque background panel.",
+      "sha256": "69150b91f96fcc4770684ef39e3a89f334c05a173b7403e9c2ff1b64efc9dcbd"
+    },
+    {
+      "name": "field_rail_right",
+      "file": "Sprites/field_rail_right.png",
+      "size": [
+        28,
+        1119
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/existing_game_level1.png (512, 24, 540, 1143)",
+      "method": "Exact existing screen-space tray extraction; opaque background panel.",
+      "sha256": "774deb907cdf2851097007e3b6ce9bc5b41634a95b8c3c8b943ac0d06ab6c39b"
+    },
+    {
+      "name": "field_top",
+      "file": "Sprites/field_top.png",
+      "size": [
+        486,
+        28
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/existing_game_level1.png (27, 0, 513, 28)",
+      "method": "Exact existing screen-space tray extraction; opaque background panel.",
+      "sha256": "e2643dc5d80bc70cbc5babba78834a54f4d31b32d2955eb95146d1e266e57fe4"
+    },
+    {
+      "name": "field_bottom",
+      "file": "Sprites/field_bottom.png",
+      "size": [
+        486,
+        28
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/existing_game_level1.png (27, 1142, 513, 1170)",
+      "method": "Exact existing screen-space tray extraction; opaque background panel.",
+      "sha256": "f653dcdb48fcdbb7bab7aec86b243e05b7146505bb7c05dedfc6498ed56da8fc"
+    },
+    {
+      "name": "field_recovery",
+      "file": "Sprites/field_recovery.png",
+      "size": [
+        512,
+        64
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Existing game cream/lavender/blue palette",
+      "method": "Simple subordinate support shape; no generative redraw.",
+      "sha256": "8dd18becc24b510fe9a0f821c7642eca2535ff218b4cf062abace62751322947"
+    },
+    {
+      "name": "cat_base",
+      "file": "Sprites/cat_base.png",
+      "size": [
+        289,
+        273
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_launcher_empty.png",
+      "method": "Exact existing asset, no edits.",
+      "sha256": "0545c642ef7a00b1e7ed48a74eab71d2c9a539e899e7ba365d33337f07b193b2"
+    },
+    {
+      "name": "cat_rear",
+      "file": "Sprites/cat_rear.png",
+      "size": [
+        289,
+        273
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_launcher_rear.png",
+      "method": "Exact existing asset, aligned full canvas.",
+      "sha256": "82a57366b7cb917562782b4ef723fa84de848e99b619f5b9c8cd3a8b7c67ff38"
+    },
+    {
+      "name": "cat_loading_lip",
+      "file": "Sprites/cat_loading_lip.png",
+      "size": [
+        289,
+        273
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_launcher_front.png",
+      "method": "Exact existing front layer, aligned full canvas.",
+      "sha256": "1aecf558100e94cbca77b581429cfe308fad838bf9a8f38badd321a387598bd2"
+    },
+    {
+      "name": "cat_nozzle",
+      "file": "Sprites/cat_nozzle.png",
+      "size": [
+        96,
+        128
+      ],
+      "pivot_unity": [
+        0.5,
+        0.18
+      ],
+      "source": "Source/current_launcher_empty.png front bowl texture",
+      "method": "Existing bowl texture clipped to short rounded nozzle; same lavender palette, no metal trim.",
+      "sha256": "5153834764fe1d9ea2d59e0525ec36397ddc4fcf29898537bfdfcfff0e097b5b"
+    },
+    {
+      "name": "cat_ammo",
+      "file": "Sprites/cat_ammo.png",
+      "size": [
+        388,
+        178
+      ],
+      "pivot_unity": [
+        0.5,
+        0.5
+      ],
+      "source": "Source/current_resource_capsule.png",
+      "method": "Exact existing cream capsule; dynamic count stays separate.",
+      "sha256": "e0eda3529eba1313441d8ddf2194f9e5960ec7e7293c41c5cbb7891d866de374"
+    }
+  ],
+  "checks": {
+    "frame0_exact_equal": true,
+    "damage_alpha_exact_equal": [
+      true,
+      true
+    ],
+    "changed_rgb_pixel_counts": [
+      1984,
+      4602
+    ],
+    "all_damage_outside_front_face_unchanged": true,
+    "cat_base_exact_equal": true,
+    "size_all_damage": [
+      256,
+      256
+    ],
+    "pivot_all_damage": [
+      0.5,
+      0.5
+    ],
+    "game_integrated": false,
+    "new_generated_brick": false,
+    "image_generation_used": false
+  },
+  "scope": "Only ArtSource/GameplayArt-v2; no Unity Assets or builds modified.",
+  "design": "Current soft pastel cream/blue/lavender assets. No metal trim, new leaves, new block geometry or replacement cat."
+}

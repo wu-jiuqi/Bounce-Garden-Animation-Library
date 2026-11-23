@@ -1,0 +1,23 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-11-19",
+  "source": "ArtSource\\LeagueCalendar-v1\\source-atlas.png",
+  "sha256": "3809ab63691da61ac730040df7b9c02a54cb7ecb4c1e1966d575c719a151061e",
+  "size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "layout": {
+    "topLeft": "medal",
+    "topRight": "up",
+    "bottomLeft": "down",
+    "bottomRight": "season"
+  },
+  "runtime": "BounceGarden/BounceGarden/Assets/Resources/Art/LeagueCalendarV1/league-motion-atlas.png",
+  "description": "Transparent candy garden league atlas: cat paw flower medal, mint upward arrow, lavender downward arrow, gold laurel and pink flower."
+}

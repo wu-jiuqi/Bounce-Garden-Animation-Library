@@ -1,0 +1,167 @@
+{
+  "status": "Art and motion preview only; not integrated",
+  "generator": "Built-in Image Gen; no API key",
+  "language": "English",
+  "sprites": [
+    {
+      "name": "hand-ready",
+      "file": "sprites/hand-ready.png",
+      "atlas": "atlases/hands.png",
+      "rect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "size": [
+        627,
+        627
+      ],
+      "alpha": true
+    },
+    {
+      "name": "hand-press",
+      "file": "sprites/hand-press.png",
+      "atlas": "atlases/hands.png",
+      "rect": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "size": [
+        627,
+        627
+      ],
+      "alpha": true
+    },
+    {
+      "name": "hand-drag",
+      "file": "sprites/hand-drag.png",
+      "atlas": "atlases/hands.png",
+      "rect": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "size": [
+        627,
+        627
+      ],
+      "alpha": true
+    },
+    {
+      "name": "hand-release",
+      "file": "sprites/hand-release.png",
+      "atlas": "atlases/hands.png",
+      "rect": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "size": [
+        627,
+        627
+      ],
+      "alpha": true
+    },
+    {
+      "name": "touch-rings",
+      "file": "sprites/touch-rings.png",
+      "atlas": "atlases/effects.png",
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true
+    },
+    {
+      "name": "curved-arrow",
+      "file": "sprites/curved-arrow.png",
+      "atlas": "atlases/effects.png",
+      "rect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true
+    },
+    {
+      "name": "target-outline",
+      "file": "sprites/target-outline.png",
+      "atlas": "atlases/effects.png",
+      "rect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true
+    },
+    {
+      "name": "drag-trail",
+      "file": "sprites/drag-trail.png",
+      "atlas": "atlases/effects.png",
+      "rect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true
+    },
+    {
+      "name": "blue-jelly",
+      "file": "sprites/blue-jelly.png",
+      "atlas": "atlases/effects.png",
+      "rect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true
+    },
+    {
+      "name": "reward-sparkles",
+      "file": "sprites/reward-sparkles.png",
+      "atlas": "atlases/effects.png",
+      "rect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "alpha": true
+    }
+  ]
+}

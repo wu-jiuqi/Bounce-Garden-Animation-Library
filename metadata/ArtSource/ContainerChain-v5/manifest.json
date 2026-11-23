@@ -1,0 +1,2002 @@
+{
+  "generator": "built-in image_gen",
+  "processing": "Original RGBA atlases preserved byte-for-byte; exact frame crops and metadata only. No alpha removal or repainting.",
+  "atlases": [
+    {
+      "name": "actors",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "c245451c2f39c1f46bd9c9c51952763bf318f7e3c4d20df1812fe6993678bdb5",
+      "rows": [
+        {
+          "name": "jar_states",
+          "frames": [
+            {
+              "rect": [
+                0,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/jar_states-00.png",
+              "alpha_bbox": [
+                27,
+                22,
+                251,
+                246
+              ]
+            },
+            {
+              "rect": [
+                256,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/jar_states-01.png",
+              "alpha_bbox": [
+                21,
+                22,
+                244,
+                246
+              ]
+            },
+            {
+              "rect": [
+                512,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/jar_states-02.png",
+              "alpha_bbox": [
+                13,
+                22,
+                236,
+                246
+              ]
+            },
+            {
+              "rect": [
+                768,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/jar_states-03.png",
+              "alpha_bbox": [
+                7,
+                22,
+                231,
+                246
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/jar_states-04.png",
+              "alpha_bbox": [
+                4,
+                22,
+                228,
+                246
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/jar_states-05.png",
+              "alpha_bbox": [
+                1,
+                22,
+                230,
+                246
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": true
+        },
+        {
+          "name": "box_states",
+          "frames": [
+            {
+              "rect": [
+                0,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/box_states-00.png",
+              "alpha_bbox": [
+                26,
+                37,
+                252,
+                246
+              ]
+            },
+            {
+              "rect": [
+                256,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/box_states-01.png",
+              "alpha_bbox": [
+                28,
+                11,
+                247,
+                246
+              ]
+            },
+            {
+              "rect": [
+                512,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/box_states-02.png",
+              "alpha_bbox": [
+                21,
+                17,
+                238,
+                247
+              ]
+            },
+            {
+              "rect": [
+                768,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/box_states-03.png",
+              "alpha_bbox": [
+                15,
+                18,
+                234,
+                247
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/box_states-04.png",
+              "alpha_bbox": [
+                12,
+                19,
+                229,
+                248
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/box_states-05.png",
+              "alpha_bbox": [
+                7,
+                16,
+                228,
+                247
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": true
+        },
+        {
+          "name": "needle_idle",
+          "frames": [
+            {
+              "rect": [
+                0,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/needle_idle-00.png",
+              "alpha_bbox": [
+                12,
+                19,
+                244,
+                242
+              ]
+            },
+            {
+              "rect": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/needle_idle-01.png",
+              "alpha_bbox": [
+                9,
+                19,
+                238,
+                244
+              ]
+            },
+            {
+              "rect": [
+                512,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/needle_idle-02.png",
+              "alpha_bbox": [
+                5,
+                20,
+                242,
+                245
+              ]
+            },
+            {
+              "rect": [
+                768,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/needle_idle-03.png",
+              "alpha_bbox": [
+                8,
+                20,
+                247,
+                244
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/needle_idle-04.png",
+              "alpha_bbox": [
+                33,
+                20,
+                238,
+                248
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/needle_idle-05.png",
+              "alpha_bbox": [
+                4,
+                21,
+                233,
+                242
+              ]
+            }
+          ],
+          "fps": 10,
+          "loop": true,
+          "static": false
+        },
+        {
+          "name": "drum_idle",
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                260,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/drum_idle-00.png",
+              "alpha_bbox": [
+                17,
+                32,
+                260,
+                209
+              ]
+            },
+            {
+              "rect": [
+                260,
+                0,
+                252,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/drum_idle-01.png",
+              "alpha_bbox": [
+                15,
+                21,
+                247,
+                211
+              ]
+            },
+            {
+              "rect": [
+                512,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/drum_idle-02.png",
+              "alpha_bbox": [
+                6,
+                11,
+                253,
+                209
+              ]
+            },
+            {
+              "rect": [
+                768,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/drum_idle-03.png",
+              "alpha_bbox": [
+                10,
+                29,
+                253,
+                211
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/drum_idle-04.png",
+              "alpha_bbox": [
+                10,
+                41,
+                250,
+                211
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/drum_idle-05.png",
+              "alpha_bbox": [
+                5,
+                32,
+                243,
+                211
+              ]
+            }
+          ],
+          "fps": 10,
+          "loop": true,
+          "static": false
+        }
+      ],
+      "alpha_zero_fraction": 0.3224995930989583
+    },
+    {
+      "name": "effects",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "e4224071edd349ddfd53fc248baff6297f13edbdb9e9ee2fd955e8e8ead2ba61",
+      "rows": [
+        {
+          "name": "jar_break",
+          "frames": [
+            {
+              "rect": [
+                0,
+                754,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.5259259259259259
+              ],
+              "file": "Frames/jar_break-00.png",
+              "alpha_bbox": [
+                31,
+                57,
+                232,
+                256
+              ]
+            },
+            {
+              "rect": [
+                256,
+                754,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.5259259259259259
+              ],
+              "file": "Frames/jar_break-01.png",
+              "alpha_bbox": [
+                12,
+                55,
+                255,
+                256
+              ]
+            },
+            {
+              "rect": [
+                512,
+                754,
+                257,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.5259259259259259
+              ],
+              "file": "Frames/jar_break-02.png",
+              "alpha_bbox": [
+                9,
+                24,
+                257,
+                256
+              ]
+            },
+            {
+              "rect": [
+                769,
+                754,
+                255,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.5259259259259259
+              ],
+              "file": "Frames/jar_break-03.png",
+              "alpha_bbox": [
+                17,
+                33,
+                252,
+                254
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                754,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.5259259259259259
+              ],
+              "file": "Frames/jar_break-04.png",
+              "alpha_bbox": [
+                28,
+                56,
+                256,
+                255
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                754,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.5259259259259259
+              ],
+              "file": "Frames/jar_break-05.png",
+              "alpha_bbox": [
+                37,
+                83,
+                221,
+                250
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "box_break",
+          "frames": [
+            {
+              "rect": [
+                0,
+                492,
+                256,
+                262
+              ],
+              "pivot": [
+                0.5,
+                0.5648854961832062
+              ],
+              "file": "Frames/box_break-00.png",
+              "alpha_bbox": [
+                23,
+                44,
+                245,
+                241
+              ]
+            },
+            {
+              "rect": [
+                256,
+                492,
+                262,
+                262
+              ],
+              "pivot": [
+                0.5,
+                0.5648854961832062
+              ],
+              "file": "Frames/box_break-01.png",
+              "alpha_bbox": [
+                12,
+                13,
+                262,
+                250
+              ]
+            },
+            {
+              "rect": [
+                518,
+                492,
+                260,
+                262
+              ],
+              "pivot": [
+                0.5,
+                0.5648854961832062
+              ],
+              "file": "Frames/box_break-02.png",
+              "alpha_bbox": [
+                7,
+                15,
+                260,
+                252
+              ]
+            },
+            {
+              "rect": [
+                778,
+                492,
+                251,
+                262
+              ],
+              "pivot": [
+                0.5,
+                0.5648854961832062
+              ],
+              "file": "Frames/box_break-03.png",
+              "alpha_bbox": [
+                0,
+                30,
+                251,
+                248
+              ]
+            },
+            {
+              "rect": [
+                1029,
+                492,
+                251,
+                262
+              ],
+              "pivot": [
+                0.5,
+                0.5648854961832062
+              ],
+              "file": "Frames/box_break-04.png",
+              "alpha_bbox": [
+                31,
+                47,
+                244,
+                243
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                492,
+                256,
+                262
+              ],
+              "pivot": [
+                0.5,
+                0.5648854961832062
+              ],
+              "file": "Frames/box_break-05.png",
+              "alpha_bbox": [
+                35,
+                75,
+                222,
+                231
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "needle_activate",
+          "frames": [
+            {
+              "rect": [
+                0,
+                270,
+                256,
+                222
+              ],
+              "pivot": [
+                0.5,
+                0.5135135135135135
+              ],
+              "file": "Frames/needle_activate-00.png",
+              "alpha_bbox": [
+                40,
+                7,
+                230,
+                215
+              ]
+            },
+            {
+              "rect": [
+                256,
+                270,
+                256,
+                222
+              ],
+              "pivot": [
+                0.5,
+                0.5135135135135135
+              ],
+              "file": "Frames/needle_activate-01.png",
+              "alpha_bbox": [
+                29,
+                12,
+                241,
+                216
+              ]
+            },
+            {
+              "rect": [
+                512,
+                270,
+                260,
+                222
+              ],
+              "pivot": [
+                0.5,
+                0.5135135135135135
+              ],
+              "file": "Frames/needle_activate-02.png",
+              "alpha_bbox": [
+                35,
+                41,
+                260,
+                219
+              ]
+            },
+            {
+              "rect": [
+                772,
+                270,
+                267,
+                222
+              ],
+              "pivot": [
+                0.5,
+                0.5135135135135135
+              ],
+              "file": "Frames/needle_activate-03.png",
+              "alpha_bbox": [
+                0,
+                58,
+                267,
+                207
+              ]
+            },
+            {
+              "rect": [
+                1039,
+                270,
+                241,
+                222
+              ],
+              "pivot": [
+                0.5,
+                0.5135135135135135
+              ],
+              "file": "Frames/needle_activate-04.png",
+              "alpha_bbox": [
+                0,
+                53,
+                238,
+                196
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                270,
+                256,
+                222
+              ],
+              "pivot": [
+                0.5,
+                0.5135135135135135
+              ],
+              "file": "Frames/needle_activate-05.png",
+              "alpha_bbox": [
+                41,
+                64,
+                226,
+                194
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "drum_activate",
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.4740740740740741
+              ],
+              "file": "Frames/drum_activate-00.png",
+              "alpha_bbox": [
+                17,
+                32,
+                255,
+                221
+              ]
+            },
+            {
+              "rect": [
+                256,
+                0,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.4740740740740741
+              ],
+              "file": "Frames/drum_activate-01.png",
+              "alpha_bbox": [
+                36,
+                33,
+                252,
+                225
+              ]
+            },
+            {
+              "rect": [
+                512,
+                0,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.4740740740740741
+              ],
+              "file": "Frames/drum_activate-02.png",
+              "alpha_bbox": [
+                21,
+                9,
+                256,
+                233
+              ]
+            },
+            {
+              "rect": [
+                768,
+                0,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.4740740740740741
+              ],
+              "file": "Frames/drum_activate-03.png",
+              "alpha_bbox": [
+                11,
+                5,
+                242,
+                229
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                0,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.4740740740740741
+              ],
+              "file": "Frames/drum_activate-04.png",
+              "alpha_bbox": [
+                21,
+                37,
+                242,
+                218
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                0,
+                256,
+                270
+              ],
+              "pivot": [
+                0.5,
+                0.4740740740740741
+              ],
+              "file": "Frames/drum_activate-05.png",
+              "alpha_bbox": [
+                18,
+                60,
+                238,
+                193
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        }
+      ],
+      "alpha_zero_fraction": 0.2860126495361328
+    },
+    {
+      "name": "details",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f739107d6156060c36440bf3a1e7d719e173c1e98e5b86c15f27a9f1678beb05",
+      "rows": [
+        {
+          "name": "rear_idle",
+          "frames": [
+            {
+              "rect": [
+                0,
+                738,
+                256,
+                238
+              ],
+              "pivot": [
+                0.55078125,
+                0.48705882352941177
+              ],
+              "file": "Frames/rear_idle-00.png",
+              "alpha_bbox": [
+                33,
+                26,
+                249,
+                218
+              ]
+            },
+            {
+              "rect": [
+                256,
+                738,
+                256,
+                238
+              ],
+              "pivot": [
+                0.53515625,
+                0.48705882352941177
+              ],
+              "file": "Frames/rear_idle-01.png",
+              "alpha_bbox": [
+                31,
+                26,
+                243,
+                218
+              ]
+            },
+            {
+              "rect": [
+                512,
+                738,
+                256,
+                238
+              ],
+              "pivot": [
+                0.509765625,
+                0.48705882352941177
+              ],
+              "file": "Frames/rear_idle-02.png",
+              "alpha_bbox": [
+                25,
+                26,
+                236,
+                218
+              ]
+            },
+            {
+              "rect": [
+                768,
+                738,
+                256,
+                238
+              ],
+              "pivot": [
+                0.4921875,
+                0.48705882352941177
+              ],
+              "file": "Frames/rear_idle-03.png",
+              "alpha_bbox": [
+                20,
+                26,
+                232,
+                218
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                738,
+                256,
+                238
+              ],
+              "pivot": [
+                0.470703125,
+                0.4828571428571429
+              ],
+              "file": "Frames/rear_idle-04.png",
+              "alpha_bbox": [
+                14,
+                27,
+                227,
+                219
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                738,
+                256,
+                238
+              ],
+              "pivot": [
+                0.455078125,
+                0.48705882352941177
+              ],
+              "file": "Frames/rear_idle-05.png",
+              "alpha_bbox": [
+                8,
+                26,
+                225,
+                218
+              ]
+            }
+          ],
+          "fps": 10,
+          "loop": true,
+          "static": false
+        },
+        {
+          "name": "rear_hit",
+          "frames": [
+            {
+              "rect": [
+                0,
+                479,
+                256,
+                259
+              ],
+              "pivot": [
+                0.5546875,
+                0.4437065637065638
+              ],
+              "file": "Frames/rear_hit-00.png",
+              "alpha_bbox": [
+                33,
+                48,
+                251,
+                240
+              ]
+            },
+            {
+              "rect": [
+                256,
+                479,
+                256,
+                259
+              ],
+              "pivot": [
+                0.54296875,
+                0.4359845559845561
+              ],
+              "file": "Frames/rear_hit-01.png",
+              "alpha_bbox": [
+                24,
+                10,
+                254,
+                242
+              ]
+            },
+            {
+              "rect": [
+                512,
+                479,
+                256,
+                259
+              ],
+              "pivot": [
+                0.5234375,
+                0.4359845559845561
+              ],
+              "file": "Frames/rear_hit-02.png",
+              "alpha_bbox": [
+                18,
+                5,
+                250,
+                242
+              ]
+            },
+            {
+              "rect": [
+                768,
+                479,
+                256,
+                259
+              ],
+              "pivot": [
+                0.501953125,
+                0.43212355212355213
+              ],
+              "file": "Frames/rear_hit-03.png",
+              "alpha_bbox": [
+                22,
+                30,
+                235,
+                243
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                479,
+                256,
+                259
+              ],
+              "pivot": [
+                0.4765625,
+                0.43212355212355213
+              ],
+              "file": "Frames/rear_hit-04.png",
+              "alpha_bbox": [
+                16,
+                32,
+                228,
+                243
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                479,
+                256,
+                259
+              ],
+              "pivot": [
+                0.45703125,
+                0.4437065637065638
+              ],
+              "file": "Frames/rear_hit-05.png",
+              "alpha_bbox": [
+                8,
+                47,
+                226,
+                240
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "loot_icons",
+          "frames": [
+            {
+              "rect": [
+                0,
+                249,
+                256,
+                230
+              ],
+              "pivot": [
+                0.55859375,
+                0.48043478260869565
+              ],
+              "file": "Frames/loot_icons-00.png",
+              "alpha_bbox": [
+                35,
+                45,
+                251,
+                194
+              ]
+            },
+            {
+              "rect": [
+                256,
+                249,
+                256,
+                230
+              ],
+              "pivot": [
+                0.556640625,
+                0.5
+              ],
+              "file": "Frames/loot_icons-01.png",
+              "alpha_bbox": [
+                35,
+                14,
+                250,
+                216
+              ]
+            },
+            {
+              "rect": [
+                512,
+                249,
+                256,
+                230
+              ],
+              "pivot": [
+                0.5390625,
+                0.45869565217391306
+              ],
+              "file": "Frames/loot_icons-02.png",
+              "alpha_bbox": [
+                51,
+                38,
+                225,
+                211
+              ]
+            },
+            {
+              "rect": [
+                768,
+                249,
+                256,
+                230
+              ],
+              "pivot": [
+                0.50390625,
+                0.48913043478260865
+              ],
+              "file": "Frames/loot_icons-03.png",
+              "alpha_bbox": [
+                37,
+                17,
+                221,
+                218
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                249,
+                256,
+                230
+              ],
+              "pivot": [
+                0.505859375,
+                0.4782608695652174
+              ],
+              "file": "Frames/loot_icons-04.png",
+              "alpha_bbox": [
+                34,
+                42,
+                225,
+                198
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                249,
+                256,
+                230
+              ],
+              "pivot": [
+                0.46875,
+                0.4956521739130435
+              ],
+              "file": "Frames/loot_icons-05.png",
+              "alpha_bbox": [
+                31,
+                43,
+                209,
+                189
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": true
+        },
+        {
+          "name": "collect",
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                256,
+                249
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/collect-00.png",
+              "alpha_bbox": [
+                66,
+                81,
+                190,
+                173
+              ]
+            },
+            {
+              "rect": [
+                256,
+                0,
+                256,
+                249
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/collect-01.png",
+              "alpha_bbox": [
+                50,
+                67,
+                244,
+                194
+              ]
+            },
+            {
+              "rect": [
+                512,
+                0,
+                256,
+                249
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/collect-02.png",
+              "alpha_bbox": [
+                43,
+                45,
+                233,
+                189
+              ]
+            },
+            {
+              "rect": [
+                768,
+                0,
+                256,
+                249
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/collect-03.png",
+              "alpha_bbox": [
+                11,
+                18,
+                239,
+                203
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                0,
+                256,
+                249
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/collect-04.png",
+              "alpha_bbox": [
+                22,
+                32,
+                230,
+                203
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                0,
+                256,
+                249
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/collect-05.png",
+              "alpha_bbox": [
+                48,
+                49,
+                166,
+                171
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        }
+      ],
+      "alpha_zero_fraction": 0.29581133524576825
+    },
+    {
+      "name": "impacts",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "e36392d2ef1564d675c8233d1d14606de8896e8ccb3e87b0bcfdcc2bd2698983",
+      "rows": [
+        {
+          "name": "stone_hit",
+          "frames": [
+            {
+              "rect": [
+                0,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/stone_hit-00.png",
+              "alpha_bbox": [
+                59,
+                76,
+                224,
+                238
+              ]
+            },
+            {
+              "rect": [
+                256,
+                768,
+                270,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/stone_hit-01.png",
+              "alpha_bbox": [
+                42,
+                59,
+                270,
+                238
+              ]
+            },
+            {
+              "rect": [
+                526,
+                768,
+                244,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/stone_hit-02.png",
+              "alpha_bbox": [
+                0,
+                85,
+                244,
+                243
+              ]
+            },
+            {
+              "rect": [
+                770,
+                768,
+                254,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/stone_hit-03.png",
+              "alpha_bbox": [
+                18,
+                74,
+                237,
+                242
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/stone_hit-04.png",
+              "alpha_bbox": [
+                9,
+                82,
+                224,
+                242
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                768,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/stone_hit-05.png",
+              "alpha_bbox": [
+                31,
+                78,
+                193,
+                238
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "armor_break",
+          "frames": [
+            {
+              "rect": [
+                0,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/armor_break-00.png",
+              "alpha_bbox": [
+                47,
+                29,
+                234,
+                224
+              ]
+            },
+            {
+              "rect": [
+                256,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/armor_break-01.png",
+              "alpha_bbox": [
+                15,
+                29,
+                251,
+                225
+              ]
+            },
+            {
+              "rect": [
+                512,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/armor_break-02.png",
+              "alpha_bbox": [
+                17,
+                29,
+                255,
+                227
+              ]
+            },
+            {
+              "rect": [
+                768,
+                512,
+                260,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/armor_break-03.png",
+              "alpha_bbox": [
+                17,
+                35,
+                260,
+                227
+              ]
+            },
+            {
+              "rect": [
+                1028,
+                512,
+                252,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/armor_break-04.png",
+              "alpha_bbox": [
+                36,
+                63,
+                214,
+                221
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                512,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/armor_break-05.png",
+              "alpha_bbox": [
+                48,
+                61,
+                200,
+                208
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "rear_break",
+          "frames": [
+            {
+              "rect": [
+                0,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/rear_break-00.png",
+              "alpha_bbox": [
+                48,
+                21,
+                235,
+                213
+              ]
+            },
+            {
+              "rect": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/rear_break-01.png",
+              "alpha_bbox": [
+                24,
+                15,
+                251,
+                213
+              ]
+            },
+            {
+              "rect": [
+                512,
+                256,
+                266,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/rear_break-02.png",
+              "alpha_bbox": [
+                1,
+                1,
+                266,
+                223
+              ]
+            },
+            {
+              "rect": [
+                778,
+                256,
+                253,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/rear_break-03.png",
+              "alpha_bbox": [
+                19,
+                24,
+                253,
+                222
+              ]
+            },
+            {
+              "rect": [
+                1031,
+                256,
+                249,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/rear_break-04.png",
+              "alpha_bbox": [
+                32,
+                36,
+                247,
+                208
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                256,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/rear_break-05.png",
+              "alpha_bbox": [
+                49,
+                39,
+                156,
+                196
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        },
+        {
+          "name": "hit_flash",
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/hit_flash-00.png",
+              "alpha_bbox": [
+                80,
+                41,
+                208,
+                159
+              ]
+            },
+            {
+              "rect": [
+                256,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/hit_flash-01.png",
+              "alpha_bbox": [
+                46,
+                42,
+                210,
+                169
+              ]
+            },
+            {
+              "rect": [
+                512,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/hit_flash-02.png",
+              "alpha_bbox": [
+                31,
+                2,
+                228,
+                199
+              ]
+            },
+            {
+              "rect": [
+                768,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/hit_flash-03.png",
+              "alpha_bbox": [
+                30,
+                23,
+                240,
+                188
+              ]
+            },
+            {
+              "rect": [
+                1024,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/hit_flash-04.png",
+              "alpha_bbox": [
+                48,
+                27,
+                216,
+                174
+              ]
+            },
+            {
+              "rect": [
+                1280,
+                0,
+                256,
+                256
+              ],
+              "pivot": [
+                0.5,
+                0.5
+              ],
+              "file": "Frames/hit_flash-05.png",
+              "alpha_bbox": [
+                52,
+                63,
+                176,
+                150
+              ]
+            }
+          ],
+          "fps": 18,
+          "loop": false,
+          "static": false
+        }
+      ],
+      "alpha_zero_fraction": 0.40138880411783856
+    }
+  ]
+}

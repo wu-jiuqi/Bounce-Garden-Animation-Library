@@ -1,0 +1,920 @@
+{
+  "version": "1.0",
+  "date": "2026-10-27",
+  "scope": "art only; no game integration",
+  "coordinates": "top-left unless explicitly Unity normalized",
+  "sprites": [
+    {
+      "name": "ball_pearl_gold",
+      "file": "Sprites/ball_pearl_gold.png",
+      "source": "Source/balls_trails.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        627,
+        700
+      ],
+      "source_crop_xyxy": [
+        118,
+        242,
+        516,
+        631
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "content_bounds_alpha24_xyxy": [
+        39,
+        44,
+        473,
+        468
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.41674,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "name": "ball_blue_cream",
+      "file": "Sprites/ball_blue_cream.png",
+      "source": "Source/balls_trails.png",
+      "source_region_xyxy": [
+        627,
+        0,
+        1254,
+        700
+      ],
+      "source_crop_xyxy": [
+        732,
+        241,
+        1136,
+        637
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "content_bounds_alpha24_xyxy": [
+        38,
+        43,
+        473,
+        468
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.41253,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "name": "trail_pearl_gold",
+      "file": "Sprites/trail_pearl_gold.png",
+      "source": "Source/balls_trails.png",
+      "source_region_xyxy": [
+        0,
+        760,
+        627,
+        1150
+      ],
+      "source_crop_xyxy": [
+        88,
+        888,
+        620,
+        1034
+      ],
+      "size": [
+        640,
+        192
+      ],
+      "content_bounds_alpha24_xyxy": [
+        35,
+        23,
+        604,
+        169
+      ],
+      "pivot_unity_normalized": [
+        0.94,
+        0.5
+      ],
+      "transparent_fraction": 0.56472,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": "Head is on the right; continuous ribbon, no dots."
+    },
+    {
+      "name": "trail_blue_cream",
+      "file": "Sprites/trail_blue_cream.png",
+      "source": "Source/balls_trails.png",
+      "source_region_xyxy": [
+        627,
+        760,
+        1254,
+        1150
+      ],
+      "source_crop_xyxy": [
+        687,
+        889,
+        1222,
+        1033
+      ],
+      "size": [
+        640,
+        192
+      ],
+      "content_bounds_alpha24_xyxy": [
+        30,
+        22,
+        610,
+        169
+      ],
+      "pivot_unity_normalized": [
+        0.94,
+        0.5
+      ],
+      "transparent_fraction": 0.56331,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": "Head is on the right; continuous ribbon, no dots."
+    },
+    {
+      "name": "fx_launch",
+      "file": "Sprites/fx_launch.png",
+      "source": "Source/feedback_aim_clean.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "source_crop_xyxy": [
+        180,
+        208,
+        404,
+        438
+      ],
+      "size": [
+        224,
+        230
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        218,
+        224
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.6387,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": "Static texture, not animation frame; use straight alpha."
+    },
+    {
+      "name": "fx_collision",
+      "file": "Sprites/fx_collision.png",
+      "source": "Source/feedback_aim_clean.png",
+      "source_region_xyxy": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "source_crop_xyxy": [
+        634,
+        196,
+        902,
+        451
+      ],
+      "size": [
+        268,
+        255
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        262,
+        249
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.74323,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": "Static texture, not animation frame; use straight alpha."
+    },
+    {
+      "name": "fx_recovery",
+      "file": "Sprites/fx_recovery.png",
+      "source": "Source/feedback_aim_clean.png",
+      "source_region_xyxy": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "source_crop_xyxy": [
+        1036,
+        226,
+        1444,
+        411
+      ],
+      "size": [
+        408,
+        185
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        402,
+        179
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.69111,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": "Static texture, not animation frame; use straight alpha."
+    },
+    {
+      "name": "aim_dot",
+      "file": "Sprites/aim_dot.png",
+      "source": "Source/feedback_aim_clean.png",
+      "source_region_xyxy": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "source_crop_xyxy": [
+        232,
+        684,
+        351,
+        802
+      ],
+      "size": [
+        119,
+        118
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        113,
+        112
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.29519,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": "Static texture, not animation frame; use straight alpha."
+    },
+    {
+      "name": "aim_endpoint",
+      "file": "Sprites/aim_endpoint.png",
+      "source": "Source/feedback_aim_clean.png",
+      "source_region_xyxy": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "source_crop_xyxy": [
+        646,
+        622,
+        890,
+        864
+      ],
+      "size": [
+        244,
+        242
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        238,
+        236
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.70013,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": "Static texture, not animation frame; use straight alpha."
+    },
+    {
+      "name": "aim_turn",
+      "file": "Sprites/aim_turn.png",
+      "source": "Source/feedback_aim_clean.png",
+      "source_region_xyxy": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "source_crop_xyxy": [
+        1188,
+        633,
+        1319,
+        850
+      ],
+      "size": [
+        131,
+        217
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        125,
+        211
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.63612,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": "Static texture, not animation frame; use straight alpha."
+    },
+    {
+      "name": "jelly_intact",
+      "file": "Sprites/jelly_intact.png",
+      "source": "Source/jelly_damage_clean.png",
+      "source_region_xyxy": [
+        0,
+        160,
+        512,
+        830
+      ],
+      "source_crop_xyxy": [
+        42,
+        285,
+        486,
+        718
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "content_bounds_alpha24_xyxy": [
+        38,
+        43,
+        474,
+        468
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.31472,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": "Same 512 canvas, centered 448 content envelope; visual-only damage."
+    },
+    {
+      "name": "jelly_dented",
+      "file": "Sprites/jelly_dented.png",
+      "source": "Source/jelly_damage_clean.png",
+      "source_region_xyxy": [
+        512,
+        160,
+        1024,
+        830
+      ],
+      "source_crop_xyxy": [
+        547,
+        285,
+        991,
+        718
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "content_bounds_alpha24_xyxy": [
+        38,
+        43,
+        474,
+        468
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.31239,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": "Same 512 canvas, centered 448 content envelope; visual-only damage."
+    },
+    {
+      "name": "jelly_heavy",
+      "file": "Sprites/jelly_heavy.png",
+      "source": "Source/jelly_damage_clean.png",
+      "source_region_xyxy": [
+        1024,
+        160,
+        1536,
+        830
+      ],
+      "source_crop_xyxy": [
+        1050,
+        285,
+        1494,
+        718
+      ],
+      "size": [
+        512,
+        512
+      ],
+      "content_bounds_alpha24_xyxy": [
+        38,
+        43,
+        474,
+        468
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.32418,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": "Same 512 canvas, centered 448 content envelope; visual-only damage."
+    },
+    {
+      "name": "field_floor",
+      "file": "Sprites/field_floor.png",
+      "source": "Source/field_kit.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        610,
+        630
+      ],
+      "source_crop_xyxy": [
+        38,
+        73,
+        591,
+        561
+      ],
+      "size": [
+        553,
+        488
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        547,
+        482
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.01177,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": ""
+    },
+    {
+      "name": "field_rail_left",
+      "file": "Sprites/field_rail_left.png",
+      "source": "Source/field_kit.png",
+      "source_region_xyxy": [
+        700,
+        0,
+        1020,
+        650
+      ],
+      "source_crop_xyxy": [
+        780,
+        26,
+        885,
+        596
+      ],
+      "size": [
+        105,
+        570
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        99,
+        564
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.30977,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": ""
+    },
+    {
+      "name": "field_rail_right",
+      "file": "Sprites/field_rail_right.png",
+      "source": "Source/field_kit.png",
+      "source_region_xyxy": [
+        1170,
+        0,
+        1440,
+        650
+      ],
+      "source_crop_xyxy": [
+        1256,
+        26,
+        1361,
+        596
+      ],
+      "size": [
+        105,
+        570
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        99,
+        564
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.28454,
+      "alpha_min_max": [
+        0,
+        253
+      ],
+      "note": ""
+    },
+    {
+      "name": "field_top",
+      "file": "Sprites/field_top.png",
+      "source": "Source/field_kit.png",
+      "source_region_xyxy": [
+        0,
+        680,
+        590,
+        960
+      ],
+      "source_crop_xyxy": [
+        42,
+        767,
+        569,
+        874
+      ],
+      "size": [
+        527,
+        107
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        521,
+        101
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.34211,
+      "alpha_min_max": [
+        0,
+        253
+      ],
+      "note": ""
+    },
+    {
+      "name": "field_recovery",
+      "file": "Sprites/field_recovery.png",
+      "source": "Source/field_kit.png",
+      "source_region_xyxy": [
+        590,
+        680,
+        1170,
+        990
+      ],
+      "source_crop_xyxy": [
+        596,
+        788,
+        1137,
+        904
+      ],
+      "size": [
+        541,
+        116
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        535,
+        110
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.29557,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": ""
+    },
+    {
+      "name": "field_corner",
+      "file": "Sprites/field_corner.png",
+      "source": "Source/field_kit.png",
+      "source_region_xyxy": [
+        1180,
+        650,
+        1536,
+        1024
+      ],
+      "source_crop_xyxy": [
+        1257,
+        719,
+        1480,
+        906
+      ],
+      "size": [
+        223,
+        187
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        217,
+        181
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.41491,
+      "alpha_min_max": [
+        0,
+        254
+      ],
+      "note": ""
+    },
+    {
+      "name": "cat_base",
+      "file": "Sprites/cat_base.png",
+      "source": "Source/cat_launcher_clean.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        745,
+        790
+      ],
+      "source_crop_xyxy": [
+        51,
+        213,
+        695,
+        694
+      ],
+      "size": [
+        644,
+        481
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        638,
+        475
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.26987,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "name": "cat_nozzle",
+      "file": "Sprites/cat_nozzle.png",
+      "source": "Source/cat_launcher_clean.png",
+      "source_region_xyxy": [
+        760,
+        0,
+        1254,
+        790
+      ],
+      "source_crop_xyxy": [
+        803,
+        108,
+        1147,
+        707
+      ],
+      "size": [
+        344,
+        599
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        338,
+        593
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.2
+      ],
+      "transparent_fraction": 0.31113,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "name": "cat_loading_lip",
+      "file": "Sprites/cat_loading_lip.png",
+      "source": "Source/cat_launcher_clean.png",
+      "source_region_xyxy": [
+        0,
+        800,
+        610,
+        1254
+      ],
+      "source_crop_xyxy": [
+        65,
+        877,
+        590,
+        1146
+      ],
+      "size": [
+        525,
+        269
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        519,
+        263
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.31458,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": ""
+    },
+    {
+      "name": "cat_ammo",
+      "file": "Sprites/cat_ammo.png",
+      "source": "Source/cat_launcher_clean.png",
+      "source_region_xyxy": [
+        610,
+        800,
+        1254,
+        1254
+      ],
+      "source_crop_xyxy": [
+        634,
+        912,
+        1227,
+        1130
+      ],
+      "size": [
+        593,
+        218
+      ],
+      "content_bounds_alpha24_xyxy": [
+        6,
+        6,
+        587,
+        212
+      ],
+      "pivot_unity_normalized": [
+        0.5,
+        0.5
+      ],
+      "transparent_fraction": 0.11169,
+      "alpha_min_max": [
+        0,
+        255
+      ],
+      "note": ""
+    }
+  ],
+  "selected_ball_variant": "pearl_gold",
+  "alternate_ball_variant": "blue_cream",
+  "launcher_layout_proposed": {
+    "reference_canvas": [
+      540,
+      960
+    ],
+    "base_center": [
+      270,
+      844
+    ],
+    "base_width": 118,
+    "nozzle_width": 43,
+    "nozzle_pivot_unity": [
+      0.5,
+      0.2
+    ],
+    "lip_offset": [
+      0,
+      32
+    ],
+    "lip_width": 78,
+    "ammo_offset": [
+      0,
+      76
+    ],
+    "ammo_width": 104,
+    "rotation_degrees": [
+      -30,
+      30
+    ],
+    "recoil_visual_pixels": [
+      0,
+      3
+    ],
+    "note": "Offline composite proposal. Fixed base; nozzle rotates/recoils. Gameplay coordinates untouched."
+  },
+  "import_proposed": {
+    "alpha": "straight",
+    "blend": "SrcAlpha OneMinusSrcAlpha",
+    "filter": "Bilinear",
+    "wrap": "Clamp",
+    "mipmaps": false,
+    "compression_during_review": "None",
+    "ppu": 100,
+    "sprite_mode": "Single",
+    "mesh": "Full Rect",
+    "border_floor_proposed_lbrt": [
+      30,
+      30,
+      30,
+      30
+    ],
+    "rail_border_proposed_lbrt": [
+      0,
+      95,
+      0,
+      95
+    ],
+    "warning": "Nine-slice border values require final target-size calibration; keep decorative endcaps unscaled."
+  }
+}

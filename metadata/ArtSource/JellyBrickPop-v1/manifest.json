@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "purpose": "Single ordinary blue brick destruction art sample; no game behavior changed.",
+  "generator": "Built-in image_gen",
+  "frame_count": 16,
+  "cell_size": [
+    384,
+    384
+  ],
+  "layout": [
+    4,
+    4
+  ],
+  "order": "left to right, top to bottom",
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "recommended_fps": 25,
+  "effect_duration_seconds": 0.64,
+  "preview_durations_ms": [
+    600,
+    40,
+    40,
+    40,
+    40,
+    30,
+    30,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    40,
+    650
+  ],
+  "alpha": "Generated RGBA preserved; previews composited on cream.",
+  "processing": "Grid extraction and pivot translation only. No procedural replacement art.",
+  "measurements": [
+    {
+      "frame": 0,
+      "source_rect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "offset": [
+        26,
+        -10
+      ],
+      "alpha_bounds": [
+        26,
+        3,
+        340,
+        304
+      ]
+    },
+    {
+      "frame": 1,
+      "source_rect": [
+        314,
+        0,
+        627,
+        314
+      ],
+      "offset": [
+        32,
+        -45
+      ],
+      "alpha_bounds": [
+        32,
+        0,
+        345,
+        269
+      ]
+    },
+    {
+      "frame": 2,
+      "source_rect": [
+        627,
+        0,
+        940,
+        314
+      ],
+      "offset": [
+        36,
+        5
+      ],
+      "alpha_bounds": [
+        37,
+        12,
+        349,
+        319
+      ]
+    },
+    {
+      "frame": 3,
+      "source_rect": [
+        940,
+        0,
+        1254,
+        314
+      ],
+      "offset": [
+        40,
+        -6
+      ],
+      "alpha_bounds": [
+        40,
+        1,
+        338,
+        308
+      ]
+    },
+    {
+      "frame": 4,
+      "source_rect": [
+        0,
+        314,
+        314,
+        627
+      ],
+      "offset": [
+        25,
+        10
+      ],
+      "alpha_bounds": [
+        25,
+        10,
+        339,
+        323
+      ]
+    },
+    {
+      "frame": 5,
+      "source_rect": [
+        314,
+        314,
+        627,
+        627
+      ],
+      "offset": [
+        29,
+        12
+      ],
+      "alpha_bounds": [
+        29,
+        12,
+        342,
+        325
+      ]
+    },
+    {
+      "frame": 6,
+      "source_rect": [
+        627,
+        314,
+        940,
+        627
+      ],
+      "offset": [
+        30,
+        16
+      ],
+      "alpha_bounds": [
+        30,
+        16,
+        343,
+        329
+      ]
+    },
+    {
+      "frame": 7,
+      "source_rect": [
+        940,
+        314,
+        1254,
+        627
+      ],
+      "offset": [
+        34,
+        12
+      ],
+      "alpha_bounds": [
+        34,
+        12,
+        336,
+        325
+      ]
+    },
+    {
+      "frame": 8,
+      "source_rect": [
+        0,
+        627,
+        314,
+        940
+      ],
+      "offset": [
+        16,
+        17
+      ],
+      "alpha_bounds": [
+        16,
+        17,
+        330,
+        324
+      ]
+    },
+    {
+      "frame": 9,
+      "source_rect": [
+        314,
+        627,
+        627,
+        940
+      ],
+      "offset": [
+        28,
+        11
+      ],
+      "alpha_bounds": [
+        28,
+        11,
+        341,
+        324
+      ]
+    },
+    {
+      "frame": 10,
+      "source_rect": [
+        627,
+        627,
+        940,
+        940
+      ],
+      "offset": [
+        27,
+        12
+      ],
+      "alpha_bounds": [
+        27,
+        12,
+        340,
+        325
+      ]
+    },
+    {
+      "frame": 11,
+      "source_rect": [
+        940,
+        627,
+        1254,
+        940
+      ],
+      "offset": [
+        30,
+        15
+      ],
+      "alpha_bounds": [
+        30,
+        15,
+        332,
+        328
+      ]
+    },
+    {
+      "frame": 12,
+      "source_rect": [
+        0,
+        940,
+        314,
+        1254
+      ],
+      "offset": [
+        14,
+        30
+      ],
+      "alpha_bounds": [
+        23,
+        31,
+        328,
+        344
+      ]
+    },
+    {
+      "frame": 13,
+      "source_rect": [
+        314,
+        940,
+        627,
+        1254
+      ],
+      "offset": [
+        36,
+        35
+      ],
+      "alpha_bounds": [
+        36,
+        35,
+        349,
+        349
+      ]
+    },
+    {
+      "frame": 14,
+      "source_rect": [
+        627,
+        940,
+        940,
+        1254
+      ],
+      "offset": [
+        36,
+        35
+      ],
+      "alpha_bounds": [
+        36,
+        35,
+        349,
+        349
+      ]
+    },
+    {
+      "frame": 15,
+      "source_rect": [
+        940,
+        940,
+        1254,
+        1254
+      ],
+      "offset": [
+        35,
+        35
+      ],
+      "alpha_bounds": null
+    }
+  ]
+}

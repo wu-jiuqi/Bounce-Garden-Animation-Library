@@ -1,0 +1,528 @@
+{
+  "canvas": [
+    540,
+    1170
+  ],
+  "anchors": [
+    {
+      "level": 38,
+      "x": 350,
+      "y": 150,
+      "current": false,
+      "complete": false
+    },
+    {
+      "level": 37,
+      "x": 170,
+      "y": 285,
+      "current": false,
+      "complete": false
+    },
+    {
+      "level": 36,
+      "x": 350,
+      "y": 420,
+      "current": true,
+      "complete": false
+    },
+    {
+      "level": 35,
+      "x": 170,
+      "y": 555,
+      "current": false,
+      "complete": true
+    },
+    {
+      "level": 34,
+      "x": 350,
+      "y": 690,
+      "current": false,
+      "complete": true
+    },
+    {
+      "level": 33,
+      "x": 170,
+      "y": 825,
+      "current": false,
+      "complete": true
+    },
+    {
+      "level": 32,
+      "x": 350,
+      "y": 960,
+      "current": false,
+      "complete": true
+    }
+  ],
+  "bounds": [
+    {
+      "level": 38,
+      "rect": [
+        255,
+        94,
+        177,
+        170
+      ]
+    },
+    {
+      "level": 37,
+      "rect": [
+        54,
+        229,
+        198,
+        170
+      ]
+    },
+    {
+      "level": 36,
+      "rect": [
+        268,
+        298,
+        242,
+        229
+      ]
+    },
+    {
+      "level": 35,
+      "rect": [
+        75,
+        499,
+        177,
+        170
+      ]
+    },
+    {
+      "level": 34,
+      "rect": [
+        262,
+        634,
+        170,
+        170
+      ]
+    },
+    {
+      "level": 33,
+      "rect": [
+        54,
+        769,
+        210,
+        170
+      ]
+    },
+    {
+      "level": 32,
+      "rect": [
+        255,
+        904,
+        177,
+        170
+      ]
+    }
+  ],
+  "adjacentCollisions": [],
+  "partBounds": [
+    {
+      "level": 38,
+      "key": "island-right",
+      "rect": [
+        268,
+        188,
+        164,
+        76
+      ]
+    },
+    {
+      "level": 37,
+      "key": "island-left",
+      "rect": [
+        88,
+        323,
+        164,
+        76
+      ]
+    },
+    {
+      "level": 36,
+      "key": "island-current",
+      "rect": [
+        271,
+        460,
+        235,
+        67
+      ]
+    },
+    {
+      "level": 35,
+      "key": "island-left",
+      "rect": [
+        88,
+        593,
+        164,
+        76
+      ]
+    },
+    {
+      "level": 34,
+      "key": "island-right",
+      "rect": [
+        268,
+        728,
+        164,
+        76
+      ]
+    },
+    {
+      "level": 33,
+      "key": "island-left",
+      "rect": [
+        88,
+        863,
+        164,
+        76
+      ]
+    },
+    {
+      "level": 32,
+      "key": "island-right",
+      "rect": [
+        268,
+        998,
+        164,
+        76
+      ]
+    },
+    {
+      "level": 38,
+      "key": "node-locked-lilac",
+      "rect": [
+        294,
+        94,
+        112,
+        112
+      ]
+    },
+    {
+      "level": 38,
+      "key": "badge-lock",
+      "rect": [
+        381,
+        173,
+        39,
+        40
+      ]
+    },
+    {
+      "level": 38,
+      "key": "jelly-cluster",
+      "rect": [
+        255,
+        188,
+        45,
+        45
+      ]
+    },
+    {
+      "level": 37,
+      "key": "node-locked-mint",
+      "rect": [
+        114,
+        229,
+        112,
+        112
+      ]
+    },
+    {
+      "level": 37,
+      "key": "badge-lock",
+      "rect": [
+        201,
+        308,
+        39,
+        40
+      ]
+    },
+    {
+      "level": 37,
+      "key": "foliage-daisy",
+      "rect": [
+        82,
+        325,
+        43,
+        39
+      ]
+    },
+    {
+      "level": 37,
+      "key": "bubble-cluster",
+      "rect": [
+        54,
+        260,
+        31,
+        36
+      ]
+    },
+    {
+      "level": 36,
+      "key": "current-halo",
+      "rect": [
+        270,
+        342,
+        160,
+        156
+      ]
+    },
+    {
+      "level": 36,
+      "key": "node-current",
+      "rect": [
+        285,
+        355,
+        130,
+        130
+      ]
+    },
+    {
+      "level": 36,
+      "key": "tag-current",
+      "rect": [
+        293,
+        298,
+        114,
+        62
+      ]
+    },
+    {
+      "level": 36,
+      "key": "cat-guide",
+      "rect": [
+        416,
+        404,
+        94,
+        96
+      ]
+    },
+    {
+      "level": 36,
+      "key": "flowers-lilac",
+      "rect": [
+        397,
+        462,
+        47,
+        40
+      ]
+    },
+    {
+      "level": 35,
+      "key": "node-mint",
+      "rect": [
+        114,
+        499,
+        112,
+        112
+      ]
+    },
+    {
+      "level": 35,
+      "key": "star-filled",
+      "rect": [
+        134,
+        585,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 35,
+      "key": "star-filled",
+      "rect": [
+        158,
+        585,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 35,
+      "key": "star-empty",
+      "rect": [
+        182,
+        585,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 35,
+      "key": "jelly-cluster",
+      "rect": [
+        75,
+        593,
+        45,
+        45
+      ]
+    },
+    {
+      "level": 34,
+      "key": "node-lilac",
+      "rect": [
+        294,
+        634,
+        112,
+        112
+      ]
+    },
+    {
+      "level": 34,
+      "key": "star-filled",
+      "rect": [
+        314,
+        720,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 34,
+      "key": "star-filled",
+      "rect": [
+        338,
+        720,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 34,
+      "key": "star-filled",
+      "rect": [
+        362,
+        720,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 34,
+      "key": "foliage-daisy",
+      "rect": [
+        262,
+        730,
+        43,
+        39
+      ]
+    },
+    {
+      "level": 33,
+      "key": "node-blue",
+      "rect": [
+        114,
+        769,
+        112,
+        112
+      ]
+    },
+    {
+      "level": 33,
+      "key": "star-filled",
+      "rect": [
+        134,
+        855,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 33,
+      "key": "star-filled",
+      "rect": [
+        158,
+        855,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 33,
+      "key": "star-empty",
+      "rect": [
+        182,
+        855,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 33,
+      "key": "flowers-lilac",
+      "rect": [
+        217,
+        867,
+        47,
+        40
+      ]
+    },
+    {
+      "level": 33,
+      "key": "bubble-cluster",
+      "rect": [
+        54,
+        800,
+        31,
+        36
+      ]
+    },
+    {
+      "level": 32,
+      "key": "node-pink",
+      "rect": [
+        294,
+        904,
+        112,
+        112
+      ]
+    },
+    {
+      "level": 32,
+      "key": "star-filled",
+      "rect": [
+        314,
+        990,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 32,
+      "key": "star-filled",
+      "rect": [
+        338,
+        990,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 32,
+      "key": "star-filled",
+      "rect": [
+        362,
+        990,
+        27,
+        26
+      ]
+    },
+    {
+      "level": 32,
+      "key": "jelly-cluster",
+      "rect": [
+        255,
+        998,
+        45,
+        45
+      ]
+    }
+  ],
+  "routeMaterial": "route-material",
+  "routeV": 0.5,
+  "routeWidth": 38
+}
