@@ -1,46 +1,28 @@
 {
   "url": "https://wu-jiuqi.github.io/Bounce-Garden-Animation-Library/",
-  "hosting": "GitHub Pages",
   "status": "succeeded",
-  "sourceBranch": "gh-pages",
-  "publishedCommit": "24f08d8e03b02e9ee4338a55ba68485eee00f69d",
+  "publishedCommit": "bf62c25429e4ee56248c9b7b58eaa19242a6d5c0",
+  "projectCommit": "21989eebb2f6165f9c51d239a52f6e9baca39d03",
+  "previewVersion": 3,
   "onlineStats": {
     "animations": 62,
     "frames": 906,
     "runtime": 62,
     "groups": 10
   },
-  "httpChecks": [
-    {
-      "path": "assets/previews/0c833b994f21495b1eb6.webp",
-      "status": 404
-    },
-    {
-      "path": "assets/originals/0780399529116fc8dce2e583e880cae10f6ba1527130309d41d6b1b435a173c5.png",
-      "status": 404
-    },
-    {
-      "path": "index.html",
-      "status": 200
-    },
-    {
-      "path": "app.js",
-      "status": 200
-    },
-    {
-      "path": "assets/previews/61d89305b8f678b08c15.webp",
-      "status": 200
-    },
-    {
-      "path": "assets/originals/69b6b4c77c67647b84b9f628bc981efe7cf864539474e39211e48571fc6e7c26.png",
-      "status": 200
-    }
+  "all906SourceRectsAndPivotsMatchUnity": true,
+  "all906RectangularMatteChecksPassed": true,
+  "reportedExampleCornerMeanAlpha": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
   ],
+  "onlineAtlasMatchesVerifiedLocalSHA256": true,
   "browserChecks": [
-    "Current-only page renders 62 sequences and 906 frames",
-    "Current 9-frame special activation loads",
-    "Frame selection works",
-    "Playback starts"
-  ],
-  "projectCommit": "d462cc5e5f97a8c774955dc4a0046433534084d5"
+    "New alpha-corrected atlas loads on the public website",
+    "Reported purple vertical first frame shows uniform checkerboard outside the effect",
+    "Filmstrip displays nine corrected frames",
+    "Origin-guide control is available"
+  ]
 }
